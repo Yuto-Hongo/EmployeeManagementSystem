@@ -1,7 +1,0 @@
-2025-10-29 22:17:11 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
-2025-10-29 22:17:11 [DBG] Entity Framework Core 9.0.7 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:9.0.7' with options: None
-2025-10-29 22:17:11 [DBG] Creating DbConnection.
-2025-10-29 22:17:11 [DBG] Created DbConnection. (9ms).
-2025-10-29 22:17:11 [DBG] 'AppDbContext' disposed.
-2025-10-29 22:17:11 [DBG] Disposing connection to database 'main' on server 'app.db'.
-2025-10-29 22:17:11 [DBG] Disposed connection to database 'main' on server 'app.db' (2ms).
