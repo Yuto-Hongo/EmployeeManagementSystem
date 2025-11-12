@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 共通ボタンスタイル */
+.btn {
+  @apply inline-flex items-center justify-center px-4 py-2.5 rounded-lg font-semibold shadow-soft transition-all duration-200 focus:outline-none;
+}
+
+/* カラーバリエーション */
+.btn-primary {
+  @apply bg-primary text-white hover:bg-primary-light active:bg-primary-dark;
+}
+
+.btn-secondary {
+  @apply bg-secondary text-white hover:bg-secondary-light active:bg-secondary-dark;
+}
+
+.btn-danger {
+  @apply bg-danger text-white hover:bg-danger-light active:bg-danger-dark;
+}
+
+.btn-outline {
+  @apply border border-gray-300 text-gray-700 hover:bg-gray-200;
+}
+
+/* 無効状態 */
+.btn:disabled {
+  @apply opacity-60 cursor-not-allowed;
+}

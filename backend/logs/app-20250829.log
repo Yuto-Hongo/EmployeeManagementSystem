@@ -1,0 +1,459 @@
+2025-08-29 13:27:32 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-08-29 13:27:36 [DBG] Entity Framework Core 8.0.5 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:8.0.5' with options: None
+2025-08-29 13:27:46 [DBG] 'AppDbContext' disposed.
+2025-08-29 13:29:21 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-08-29 13:29:25 [DBG] Entity Framework Core 8.0.5 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:8.0.5' with options: None
+2025-08-29 13:29:25 [DBG] Creating DbConnection.
+2025-08-29 13:29:26 [DBG] Created DbConnection. (110ms).
+2025-08-29 13:29:26 [DBG] Migrating using database 'main' on server 'app.db'.
+2025-08-29 13:29:26 [DBG] Creating DbConnection.
+2025-08-29 13:29:26 [DBG] Created DbConnection. (7ms).
+2025-08-29 13:29:26 [DBG] Opening connection to database 'main' on server 'app.db'.
+2025-08-29 13:29:26 [DBG] Opened connection to database 'main' on server 'C:\Users\TEC02\Desktop\practice\backend\app.db'.
+2025-08-29 13:29:26 [DBG] Disposing connection to database 'main' on server 'app.db'.
+2025-08-29 13:29:26 [DBG] Disposed connection to database 'main' on server 'app.db' (16ms).
+2025-08-29 13:29:26 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-08-29 13:29:26 [DBG] Created DbCommand for 'ExecuteScalar' (21ms).
+2025-08-29 13:29:26 [DBG] Initialized DbCommand for 'ExecuteScalar' (29ms).
+2025-08-29 13:29:26 [DBG] Opening connection to database 'main' on server 'app.db'.
+2025-08-29 13:29:26 [DBG] Opened connection to database 'main' on server 'C:\Users\TEC02\Desktop\practice\backend\app.db'.
+2025-08-29 13:29:26 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2025-08-29 13:29:26 [INF] Executed DbCommand (88ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2025-08-29 13:29:26 [DBG] Closing connection to database 'main' on server 'C:\Users\TEC02\Desktop\practice\backend\app.db'.
+2025-08-29 13:29:26 [DBG] Closed connection to database 'main' on server 'app.db' (4ms).
+2025-08-29 13:29:26 [DBG] Creating DbConnection.
+2025-08-29 13:29:26 [DBG] Created DbConnection. (1ms).
+2025-08-29 13:29:26 [DBG] Opening connection to database 'main' on server 'app.db'.
+2025-08-29 13:29:26 [DBG] Opened connection to database 'main' on server 'C:\Users\TEC02\Desktop\practice\backend\app.db'.
+2025-08-29 13:29:26 [DBG] Disposing connection to database 'main' on server 'app.db'.
+2025-08-29 13:29:26 [DBG] Disposed connection to database 'main' on server 'app.db' (5ms).
+2025-08-29 13:29:27 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-08-29 13:29:27 [DBG] Created DbCommand for 'ExecuteNonQuery' (1ms).
+2025-08-29 13:29:27 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (3ms).
+2025-08-29 13:29:27 [DBG] Opening connection to database 'main' on server 'app.db'.
+2025-08-29 13:29:27 [DBG] Opened connection to database 'main' on server 'C:\Users\TEC02\Desktop\practice\backend\app.db'.
+2025-08-29 13:29:27 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "__EFMigrationsHistory" (
+    "MigrationId" TEXT NOT NULL CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY,
+    "ProductVersion" TEXT NOT NULL
+);
+2025-08-29 13:29:27 [INF] Executed DbCommand (183ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "__EFMigrationsHistory" (
+    "MigrationId" TEXT NOT NULL CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY,
+    "ProductVersion" TEXT NOT NULL
+);
+2025-08-29 13:29:27 [DBG] Closing connection to database 'main' on server 'C:\Users\TEC02\Desktop\practice\backend\app.db'.
+2025-08-29 13:29:27 [DBG] Closed connection to database 'main' on server 'app.db' (2ms).
+2025-08-29 13:29:27 [DBG] Creating DbConnection.
+2025-08-29 13:29:27 [DBG] Created DbConnection. (1ms).
+2025-08-29 13:29:27 [DBG] Opening connection to database 'main' on server 'app.db'.
+2025-08-29 13:29:27 [DBG] Opened connection to database 'main' on server 'C:\Users\TEC02\Desktop\practice\backend\app.db'.
+2025-08-29 13:29:27 [DBG] Disposing connection to database 'main' on server 'app.db'.
+2025-08-29 13:29:27 [DBG] Disposed connection to database 'main' on server 'app.db' (9ms).
+2025-08-29 13:29:27 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-08-29 13:29:27 [DBG] Created DbCommand for 'ExecuteScalar' (2ms).
+2025-08-29 13:29:27 [DBG] Initialized DbCommand for 'ExecuteScalar' (6ms).
+2025-08-29 13:29:27 [DBG] Opening connection to database 'main' on server 'app.db'.
+2025-08-29 13:29:27 [DBG] Opened connection to database 'main' on server 'C:\Users\TEC02\Desktop\practice\backend\app.db'.
+2025-08-29 13:29:27 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2025-08-29 13:29:27 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2025-08-29 13:29:27 [DBG] Closing connection to database 'main' on server 'C:\Users\TEC02\Desktop\practice\backend\app.db'.
+2025-08-29 13:29:27 [DBG] Closed connection to database 'main' on server 'app.db' (7ms).
+2025-08-29 13:29:27 [DBG] Opening connection to database 'main' on server 'app.db'.
+2025-08-29 13:29:27 [DBG] Opened connection to database 'main' on server 'C:\Users\TEC02\Desktop\practice\backend\app.db'.
+2025-08-29 13:29:27 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-08-29 13:29:27 [DBG] Created DbCommand for 'ExecuteReader' (37ms).
+2025-08-29 13:29:27 [DBG] Initialized DbCommand for 'ExecuteReader' (103ms).
+2025-08-29 13:29:27 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-29 13:29:27 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-29 13:29:27 [DBG] Closing data reader to 'main' on server 'C:\Users\TEC02\Desktop\practice\backend\app.db'.
+2025-08-29 13:29:27 [DBG] A data reader for 'main' on server 'C:\Users\TEC02\Desktop\practice\backend\app.db' is being disposed after spending 13ms reading results.
+2025-08-29 13:29:27 [DBG] Closing connection to database 'main' on server 'C:\Users\TEC02\Desktop\practice\backend\app.db'.
+2025-08-29 13:29:27 [DBG] Closed connection to database 'main' on server 'app.db' (16ms).
+2025-08-29 13:29:27 [INF] Applying migration '20250731061029_InitialCreate'.
+2025-08-29 13:29:27 [DBG] Opening connection to database 'main' on server 'app.db'.
+2025-08-29 13:29:27 [DBG] Opened connection to database 'main' on server 'C:\Users\TEC02\Desktop\practice\backend\app.db'.
+2025-08-29 13:29:27 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2025-08-29 13:29:27 [DBG] Began transaction with isolation level 'Serializable'.
+2025-08-29 13:29:28 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-08-29 13:29:28 [DBG] Created DbCommand for 'ExecuteNonQuery' (1ms).
+2025-08-29 13:29:28 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (4ms).
+2025-08-29 13:29:28 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Employees" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Employees" PRIMARY KEY AUTOINCREMENT,
+    "FullName" TEXT NOT NULL,
+    "DateOfBirth" TEXT NOT NULL,
+    "Gender" INTEGER NOT NULL,
+    "Address" TEXT NOT NULL,
+    "JoinDate" TEXT NOT NULL,
+    "VacationRemaining" INTEGER NOT NULL,
+    "CurrentWorkplace" TEXT NOT NULL,
+    "Email" TEXT NOT NULL,
+    "PasswordHash" TEXT NOT NULL
+);
+2025-08-29 13:29:28 [ERR] Failed executing DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Employees" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Employees" PRIMARY KEY AUTOINCREMENT,
+    "FullName" TEXT NOT NULL,
+    "DateOfBirth" TEXT NOT NULL,
+    "Gender" INTEGER NOT NULL,
+    "Address" TEXT NOT NULL,
+    "JoinDate" TEXT NOT NULL,
+    "VacationRemaining" INTEGER NOT NULL,
+    "CurrentWorkplace" TEXT NOT NULL,
+    "Email" TEXT NOT NULL,
+    "PasswordHash" TEXT NOT NULL
+);
+2025-08-29 13:29:28 [DBG] Disposing transaction.
+2025-08-29 13:29:28 [DBG] Closing connection to database 'main' on server 'C:\Users\TEC02\Desktop\practice\backend\app.db'.
+2025-08-29 13:29:28 [DBG] Closed connection to database 'main' on server 'app.db' (2ms).
+2025-08-29 13:29:28 [DBG] 'AppDbContext' disposed.
+2025-08-29 13:29:28 [DBG] Disposing connection to database 'main' on server 'app.db'.
+2025-08-29 13:29:28 [DBG] Disposed connection to database 'main' on server 'app.db' (3ms).
+2025-08-29 17:12:44 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-08-29 17:12:47 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-08-29 17:12:49 [DBG] Entity Framework Core 8.0.5 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:8.0.5' with options: None
+2025-08-29 17:12:50 [DBG] Creating DbConnection.
+2025-08-29 17:12:50 [DBG] Created DbConnection. (23ms).
+2025-08-29 17:12:50 [DBG] Opening connection to database 'main' on server 'app.db'.
+2025-08-29 17:12:50 [DBG] Opened connection to database 'main' on server 'C:\Users\TEC02\Desktop\practice\backend\app.db'.
+2025-08-29 17:12:50 [DBG] Disposing connection to database 'main' on server 'app.db'.
+2025-08-29 17:12:50 [DBG] Disposed connection to database 'main' on server 'app.db' (5ms).
+2025-08-29 17:12:50 [DBG] Creating DbConnection.
+2025-08-29 17:12:50 [DBG] Created DbConnection. (3ms).
+2025-08-29 17:12:50 [DBG] Opening connection to database 'main' on server 'app.db'.
+2025-08-29 17:12:50 [DBG] Opened connection to database 'main' on server 'C:\Users\TEC02\Desktop\practice\backend\app.db'.
+2025-08-29 17:12:50 [DBG] Closing connection to database 'main' on server 'C:\Users\TEC02\Desktop\practice\backend\app.db'.
+2025-08-29 17:12:50 [DBG] Closed connection to database 'main' on server 'app.db' (6ms).
+2025-08-29 17:12:50 [DBG] Creating DbConnection.
+2025-08-29 17:12:50 [DBG] Created DbConnection. (1ms).
+2025-08-29 17:12:50 [DBG] Opening connection to database 'main' on server 'app.db'.
+2025-08-29 17:12:50 [DBG] An error occurred using the connection to database 'main' on server 'app.db'.
+2025-08-29 17:12:50 [DBG] Disposing connection to database 'main' on server 'app.db'.
+2025-08-29 17:12:50 [DBG] Disposed connection to database 'main' on server 'app.db' (2ms).
+2025-08-29 17:12:50 [DBG] Opening connection to database 'main' on server 'app.db'.
+2025-08-29 17:12:50 [DBG] Opened connection to database 'main' on server 'C:\Users\TEC02\Desktop\practice\backend\app.db'.
+2025-08-29 17:12:50 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-08-29 17:12:50 [DBG] Created DbCommand for 'ExecuteNonQuery' (55ms).
+2025-08-29 17:12:50 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (66ms).
+2025-08-29 17:12:50 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA journal_mode = 'wal';
+2025-08-29 17:12:51 [INF] Executed DbCommand (429ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA journal_mode = 'wal';
+2025-08-29 17:12:51 [DBG] Closing connection to database 'main' on server 'C:\Users\TEC02\Desktop\practice\backend\app.db'.
+2025-08-29 17:12:51 [DBG] Closed connection to database 'main' on server 'app.db' (2ms).
+2025-08-29 17:12:51 [DBG] Opening connection to database 'main' on server 'app.db'.
+2025-08-29 17:12:51 [DBG] Opened connection to database 'main' on server 'C:\Users\TEC02\Desktop\practice\backend\app.db'.
+2025-08-29 17:12:51 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2025-08-29 17:12:51 [DBG] Began transaction with isolation level 'Serializable'.
+2025-08-29 17:12:51 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-08-29 17:12:51 [DBG] Created DbCommand for 'ExecuteNonQuery' (3ms).
+2025-08-29 17:12:51 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (7ms).
+2025-08-29 17:12:51 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Employees" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Employees" PRIMARY KEY AUTOINCREMENT,
+    "FullName" TEXT NOT NULL,
+    "DateOfBirth" TEXT NOT NULL,
+    "Gender" INTEGER NOT NULL,
+    "Address" TEXT NOT NULL,
+    "JoinDate" TEXT NOT NULL,
+    "VacationRemaining" INTEGER NOT NULL,
+    "CurrentWorkplace" TEXT NOT NULL,
+    "Email" TEXT NOT NULL,
+    "PasswordHash" TEXT NOT NULL
+);
+2025-08-29 17:12:51 [INF] Executed DbCommand (147ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Employees" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Employees" PRIMARY KEY AUTOINCREMENT,
+    "FullName" TEXT NOT NULL,
+    "DateOfBirth" TEXT NOT NULL,
+    "Gender" INTEGER NOT NULL,
+    "Address" TEXT NOT NULL,
+    "JoinDate" TEXT NOT NULL,
+    "VacationRemaining" INTEGER NOT NULL,
+    "CurrentWorkplace" TEXT NOT NULL,
+    "Email" TEXT NOT NULL,
+    "PasswordHash" TEXT NOT NULL
+);
+2025-08-29 17:12:51 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-08-29 17:12:51 [DBG] Created DbCommand for 'ExecuteNonQuery' (10ms).
+2025-08-29 17:12:51 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (17ms).
+2025-08-29 17:12:51 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Users" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Users" PRIMARY KEY AUTOINCREMENT,
+    "Email" TEXT NOT NULL,
+    "PasswordHash" TEXT NOT NULL,
+    "Role" INTEGER NOT NULL
+);
+2025-08-29 17:12:51 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Users" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Users" PRIMARY KEY AUTOINCREMENT,
+    "Email" TEXT NOT NULL,
+    "PasswordHash" TEXT NOT NULL,
+    "Role" INTEGER NOT NULL
+);
+2025-08-29 17:12:51 [DBG] Committing transaction.
+2025-08-29 17:12:52 [DBG] Committed transaction.
+2025-08-29 17:12:52 [DBG] Disposing transaction.
+2025-08-29 17:12:52 [DBG] Closing connection to database 'main' on server 'C:\Users\TEC02\Desktop\practice\backend\app.db'.
+2025-08-29 17:12:52 [DBG] Closed connection to database 'main' on server 'app.db' (2ms).
+2025-08-29 17:12:52 [DBG] Compiling query expression: 
+'DbSet<Employee>()
+    .Any()'
+2025-08-29 17:12:53 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT EXISTS (
+            SELECT 1
+            FROM Employees AS e)), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+    Backend.Data.AppDbContext, 
+    False, 
+    False, 
+    True
+)
+    .Single()'
+2025-08-29 17:12:53 [DBG] Opening connection to database 'main' on server 'app.db'.
+2025-08-29 17:12:53 [DBG] Opened connection to database 'main' on server 'C:\Users\TEC02\Desktop\practice\backend\app.db'.
+2025-08-29 17:12:54 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-08-29 17:12:54 [DBG] Created DbCommand for 'ExecuteReader' (2ms).
+2025-08-29 17:12:54 [DBG] Initialized DbCommand for 'ExecuteReader' (4ms).
+2025-08-29 17:12:54 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Employees" AS "e")
+2025-08-29 17:12:54 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Employees" AS "e")
+2025-08-29 17:12:54 [DBG] Closing data reader to 'main' on server 'C:\Users\TEC02\Desktop\practice\backend\app.db'.
+2025-08-29 17:12:54 [DBG] A data reader for 'main' on server 'C:\Users\TEC02\Desktop\practice\backend\app.db' is being disposed after spending 14ms reading results.
+2025-08-29 17:12:54 [DBG] Closing connection to database 'main' on server 'C:\Users\TEC02\Desktop\practice\backend\app.db'.
+2025-08-29 17:12:54 [DBG] Closed connection to database 'main' on server 'app.db' (4ms).
+2025-08-29 17:12:54 [DBG] Compiling query expression: 
+'DbSet<User>()
+    .Any()'
+2025-08-29 17:12:54 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT EXISTS (
+            SELECT 1
+            FROM Users AS u)), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+    Backend.Data.AppDbContext, 
+    False, 
+    False, 
+    True
+)
+    .Single()'
+2025-08-29 17:12:54 [DBG] Opening connection to database 'main' on server 'app.db'.
+2025-08-29 17:12:54 [DBG] Opened connection to database 'main' on server 'C:\Users\TEC02\Desktop\practice\backend\app.db'.
+2025-08-29 17:12:54 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-08-29 17:12:54 [DBG] Created DbCommand for 'ExecuteReader' (9ms).
+2025-08-29 17:12:54 [DBG] Initialized DbCommand for 'ExecuteReader' (14ms).
+2025-08-29 17:12:54 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS "u")
+2025-08-29 17:12:54 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS "u")
+2025-08-29 17:12:54 [DBG] Closing data reader to 'main' on server 'C:\Users\TEC02\Desktop\practice\backend\app.db'.
+2025-08-29 17:12:54 [DBG] A data reader for 'main' on server 'C:\Users\TEC02\Desktop\practice\backend\app.db' is being disposed after spending 6ms reading results.
+2025-08-29 17:12:54 [DBG] Closing connection to database 'main' on server 'C:\Users\TEC02\Desktop\practice\backend\app.db'.
+2025-08-29 17:12:54 [DBG] Closed connection to database 'main' on server 'app.db' (3ms).
+2025-08-29 17:12:55 [DBG] Context 'AppDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-29 17:12:55 [DBG] Context 'AppDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-29 17:12:55 [DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-29 17:12:55 [DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-29 17:12:55 [DBG] SaveChanges starting for 'AppDbContext'.
+2025-08-29 17:12:55 [DBG] DetectChanges starting for 'AppDbContext'.
+2025-08-29 17:12:55 [DBG] DetectChanges completed for 'AppDbContext'.
+2025-08-29 17:12:55 [DBG] Opening connection to database 'main' on server 'app.db'.
+2025-08-29 17:12:55 [DBG] Opened connection to database 'main' on server 'C:\Users\TEC02\Desktop\practice\backend\app.db'.
+2025-08-29 17:12:55 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2025-08-29 17:12:55 [DBG] Began transaction with isolation level 'Serializable'.
+2025-08-29 17:12:55 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-08-29 17:12:55 [DBG] Created DbCommand for 'ExecuteReader' (3ms).
+2025-08-29 17:12:55 [DBG] Initialized DbCommand for 'ExecuteReader' (13ms).
+2025-08-29 17:12:55 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 6), @p2='?' (Size = 2), @p3='?' (DbType = DateTime), @p4='?' (Size = 23), @p5='?' (Size = 15), @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime), @p8='?' (Size = 11), @p9='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Employees" ("Id", "Address", "CurrentWorkplace", "DateOfBirth", "Email", "FullName", "Gender", "JoinDate", "PasswordHash", "VacationRemaining")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9);
+2025-08-29 17:12:55 [INF] Executed DbCommand (117ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 6), @p2='?' (Size = 2), @p3='?' (DbType = DateTime), @p4='?' (Size = 23), @p5='?' (Size = 15), @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime), @p8='?' (Size = 11), @p9='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Employees" ("Id", "Address", "CurrentWorkplace", "DateOfBirth", "Email", "FullName", "Gender", "JoinDate", "PasswordHash", "VacationRemaining")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9);
+2025-08-29 17:12:55 [DBG] Closing data reader to 'main' on server 'C:\Users\TEC02\Desktop\practice\backend\app.db'.
+2025-08-29 17:12:55 [DBG] A data reader for 'main' on server 'C:\Users\TEC02\Desktop\practice\backend\app.db' is being disposed after spending 9ms reading results.
+2025-08-29 17:12:55 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-08-29 17:12:55 [DBG] Created DbCommand for 'ExecuteReader' (14ms).
+2025-08-29 17:12:55 [DBG] Initialized DbCommand for 'ExecuteReader' (27ms).
+2025-08-29 17:12:55 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 7), @p2='?' (Size = 4), @p3='?' (DbType = DateTime), @p4='?' (Size = 25), @p5='?' (Size = 17), @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime), @p8='?' (Size = 11), @p9='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Employees" ("Id", "Address", "CurrentWorkplace", "DateOfBirth", "Email", "FullName", "Gender", "JoinDate", "PasswordHash", "VacationRemaining")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9);
+2025-08-29 17:12:55 [INF] Executed DbCommand (13ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 7), @p2='?' (Size = 4), @p3='?' (DbType = DateTime), @p4='?' (Size = 25), @p5='?' (Size = 17), @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime), @p8='?' (Size = 11), @p9='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Employees" ("Id", "Address", "CurrentWorkplace", "DateOfBirth", "Email", "FullName", "Gender", "JoinDate", "PasswordHash", "VacationRemaining")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9);
+2025-08-29 17:12:55 [DBG] Closing data reader to 'main' on server 'C:\Users\TEC02\Desktop\practice\backend\app.db'.
+2025-08-29 17:12:55 [DBG] A data reader for 'main' on server 'C:\Users\TEC02\Desktop\practice\backend\app.db' is being disposed after spending 2ms reading results.
+2025-08-29 17:12:55 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-08-29 17:12:55 [DBG] Created DbCommand for 'ExecuteReader' (2ms).
+2025-08-29 17:12:55 [DBG] Initialized DbCommand for 'ExecuteReader' (6ms).
+2025-08-29 17:12:55 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 23), @p2='?' (Size = 11), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Users" ("Id", "Email", "PasswordHash", "Role")
+VALUES (@p0, @p1, @p2, @p3);
+2025-08-29 17:12:55 [INF] Executed DbCommand (16ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 23), @p2='?' (Size = 11), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Users" ("Id", "Email", "PasswordHash", "Role")
+VALUES (@p0, @p1, @p2, @p3);
+2025-08-29 17:12:55 [DBG] Closing data reader to 'main' on server 'C:\Users\TEC02\Desktop\practice\backend\app.db'.
+2025-08-29 17:12:55 [DBG] A data reader for 'main' on server 'C:\Users\TEC02\Desktop\practice\backend\app.db' is being disposed after spending 2ms reading results.
+2025-08-29 17:12:55 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-08-29 17:12:55 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2025-08-29 17:12:55 [DBG] Initialized DbCommand for 'ExecuteReader' (4ms).
+2025-08-29 17:12:55 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 25), @p2='?' (Size = 11), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Users" ("Id", "Email", "PasswordHash", "Role")
+VALUES (@p0, @p1, @p2, @p3);
+2025-08-29 17:12:55 [INF] Executed DbCommand (12ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 25), @p2='?' (Size = 11), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Users" ("Id", "Email", "PasswordHash", "Role")
+VALUES (@p0, @p1, @p2, @p3);
+2025-08-29 17:12:55 [DBG] Closing data reader to 'main' on server 'C:\Users\TEC02\Desktop\practice\backend\app.db'.
+2025-08-29 17:12:55 [DBG] A data reader for 'main' on server 'C:\Users\TEC02\Desktop\practice\backend\app.db' is being disposed after spending 6ms reading results.
+2025-08-29 17:12:55 [DBG] Committing transaction.
+2025-08-29 17:12:56 [DBG] Committed transaction.
+2025-08-29 17:12:56 [DBG] Closing connection to database 'main' on server 'C:\Users\TEC02\Desktop\practice\backend\app.db'.
+2025-08-29 17:12:56 [DBG] Closed connection to database 'main' on server 'app.db' (3ms).
+2025-08-29 17:12:56 [DBG] Disposing transaction.
+2025-08-29 17:12:56 [DBG] An entity of type 'Employee' tracked by 'AppDbContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-29 17:12:56 [DBG] An entity of type 'Employee' tracked by 'AppDbContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-29 17:12:56 [DBG] An entity of type 'User' tracked by 'AppDbContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-29 17:12:56 [DBG] An entity of type 'User' tracked by 'AppDbContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-29 17:12:56 [DBG] SaveChanges completed for 'AppDbContext' with 4 entities written to the database.
+2025-08-29 17:12:56 [DBG] 'AppDbContext' disposed.
+2025-08-29 17:12:56 [DBG] Disposing connection to database 'main' on server 'app.db'.
+2025-08-29 17:12:56 [DBG] Disposed connection to database 'main' on server 'app.db' (2ms).
+2025-08-29 17:12:56 [DBG] Hosting starting
+2025-08-29 17:12:58 [INF] User profile is available. Using 'C:\Users\TEC02\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-29 17:12:59 [DBG] Reading data from file 'C:\Users\TEC02\AppData\Local\ASP.NET\DataProtection-Keys\key-0077a2cc-7ccb-46b4-9fab-2317a7fd74d0.xml'.
+2025-08-29 17:13:00 [DBG] Found key {0077a2cc-7ccb-46b4-9fab-2317a7fd74d0}.
+2025-08-29 17:13:01 [DBG] Considering key {0077a2cc-7ccb-46b4-9fab-2317a7fd74d0} with expiration date 2025-10-16 02:00:44Z as default key.
+2025-08-29 17:13:01 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-08-29 17:13:01 [DBG] Decrypting secret element using Windows DPAPI.
+2025-08-29 17:13:01 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-08-29 17:13:01 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2025-08-29 17:13:01 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2025-08-29 17:13:01 [DBG] Using key {0077a2cc-7ccb-46b4-9fab-2317a7fd74d0} as the default key.
+2025-08-29 17:13:01 [DBG] Key ring with default key {0077a2cc-7ccb-46b4-9fab-2317a7fd74d0} was loaded during application startup.
+2025-08-29 17:13:04 [INF] Now listening on: http://localhost:5237
+2025-08-29 17:13:04 [DBG] Loaded hosting startup assembly backend
+2025-08-29 17:13:04 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-29 17:13:04 [INF] Hosting environment: Development
+2025-08-29 17:13:04 [INF] Content root path: C:\Users\TEC02\Desktop\practice\backend
+2025-08-29 17:13:04 [DBG] Hosting started
+2025-08-29 17:15:57 [DBG] Connection id "0HNF6QH466PIE" accepted.
+2025-08-29 17:15:57 [DBG] Connection id "0HNF6QH466PIE" started.
+2025-08-29 17:15:59 [INF] Request starting HTTP/1.1 POST http://localhost:5237/api/auth/login - application/json 70
+2025-08-29 17:15:59 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-08-29 17:15:59 [DBG] 1 candidate(s) found for the request path '/api/auth/login'
+2025-08-29 17:15:59 [DBG] Endpoint 'Backend.Controllers.AuthController.Login (backend)' with route pattern 'api/Auth/login' is valid for the request path '/api/auth/login'
+2025-08-29 17:15:59 [DBG] Request matched endpoint 'Backend.Controllers.AuthController.Login (backend)'
+2025-08-29 17:15:59 [WRN] Failed to determine the https port for redirect.
+2025-08-29 17:16:07 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-08-29 17:16:07 [INF] Executing endpoint 'Backend.Controllers.AuthController.Login (backend)'
+2025-08-29 17:16:12 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Backend.DTOs.LoginRequest) on controller Backend.Controllers.AuthController (backend).
+2025-08-29 17:16:12 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-08-29 17:16:12 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-08-29 17:16:13 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-08-29 17:16:13 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-08-29 17:16:13 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-08-29 17:16:13 [DBG] Executing controller factory for controller Backend.Controllers.AuthController (backend)
+2025-08-29 17:16:14 [DBG] Executed controller factory for controller Backend.Controllers.AuthController (backend)
+2025-08-29 17:16:14 [DBG] Attempting to bind parameter 'request' of type 'Backend.DTOs.LoginRequest' ...
+2025-08-29 17:16:14 [DBG] Attempting to bind parameter 'request' of type 'Backend.DTOs.LoginRequest' using the name '' in request data ...
+2025-08-29 17:16:14 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-08-29 17:16:15 [DBG] Connection id "0HNF6QH466PIE", Request id "0HNF6QH466PIE:00000001": started reading request body.
+2025-08-29 17:16:15 [DBG] Connection id "0HNF6QH466PIE", Request id "0HNF6QH466PIE:00000001": done reading request body.
+2025-08-29 17:16:15 [DBG] JSON input formatter succeeded, deserializing to type 'Backend.DTOs.LoginRequest'
+2025-08-29 17:16:15 [DBG] Done attempting to bind parameter 'request' of type 'Backend.DTOs.LoginRequest'.
+2025-08-29 17:16:15 [DBG] Done attempting to bind parameter 'request' of type 'Backend.DTOs.LoginRequest'.
+2025-08-29 17:16:15 [DBG] Attempting to validate the bound parameter 'request' of type 'Backend.DTOs.LoginRequest' ...
+2025-08-29 17:16:15 [DBG] Done attempting to validate the bound parameter 'request' of type 'Backend.DTOs.LoginRequest'.
+2025-08-29 17:16:15 [DBG] The request has model state errors, returning an error response.
+2025-08-29 17:16:15 [DBG] Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2025-08-29 17:16:15 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-08-29 17:16:15 [DBG] No information found on request to perform content negotiation.
+2025-08-29 17:16:15 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2025-08-29 17:16:15 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2025-08-29 17:16:15 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-08-29 17:16:16 [INF] Executed action Backend.Controllers.AuthController.Login (backend) in 2393.8647ms
+2025-08-29 17:16:16 [INF] Executed endpoint 'Backend.Controllers.AuthController.Login (backend)'
+2025-08-29 17:16:16 [DBG] Connection id "0HNF6QH466PIE" completed keep alive response.
+2025-08-29 17:16:16 [INF] Request finished HTTP/1.1 POST http://localhost:5237/api/auth/login - 400 null application/problem+json; charset=utf-8 17078.1624ms
+2025-08-29 17:17:52 [INF] Request starting HTTP/1.1 POST http://localhost:5237/api/auth/login - application/json 78
+2025-08-29 17:17:52 [DBG] 1 candidate(s) found for the request path '/api/auth/login'
+2025-08-29 17:17:52 [DBG] Endpoint 'Backend.Controllers.AuthController.Login (backend)' with route pattern 'api/Auth/login' is valid for the request path '/api/auth/login'
+2025-08-29 17:17:52 [DBG] Request matched endpoint 'Backend.Controllers.AuthController.Login (backend)'
+2025-08-29 17:17:52 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-08-29 17:17:52 [INF] Executing endpoint 'Backend.Controllers.AuthController.Login (backend)'
+2025-08-29 17:17:52 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Backend.DTOs.LoginRequest) on controller Backend.Controllers.AuthController (backend).
+2025-08-29 17:17:52 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-08-29 17:17:52 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-08-29 17:17:52 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-08-29 17:17:52 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-08-29 17:17:52 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-08-29 17:17:52 [DBG] Executing controller factory for controller Backend.Controllers.AuthController (backend)
+2025-08-29 17:17:52 [DBG] Executed controller factory for controller Backend.Controllers.AuthController (backend)
+2025-08-29 17:17:52 [DBG] Attempting to bind parameter 'request' of type 'Backend.DTOs.LoginRequest' ...
+2025-08-29 17:17:52 [DBG] Attempting to bind parameter 'request' of type 'Backend.DTOs.LoginRequest' using the name '' in request data ...
+2025-08-29 17:17:52 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-08-29 17:17:52 [DBG] Connection id "0HNF6QH466PIE", Request id "0HNF6QH466PIE:00000002": started reading request body.
+2025-08-29 17:17:52 [DBG] Connection id "0HNF6QH466PIE", Request id "0HNF6QH466PIE:00000002": done reading request body.
+2025-08-29 17:17:52 [DBG] JSON input formatter succeeded, deserializing to type 'Backend.DTOs.LoginRequest'
+2025-08-29 17:17:52 [DBG] Done attempting to bind parameter 'request' of type 'Backend.DTOs.LoginRequest'.
+2025-08-29 17:17:52 [DBG] Done attempting to bind parameter 'request' of type 'Backend.DTOs.LoginRequest'.
+2025-08-29 17:17:52 [DBG] Attempting to validate the bound parameter 'request' of type 'Backend.DTOs.LoginRequest' ...
+2025-08-29 17:17:52 [DBG] Done attempting to validate the bound parameter 'request' of type 'Backend.DTOs.LoginRequest'.
+2025-08-29 17:17:52 [INF] Executed action Backend.Controllers.AuthController.Login (backend) in 179.0196ms
+2025-08-29 17:17:52 [INF] Executed endpoint 'Backend.Controllers.AuthController.Login (backend)'
+2025-08-29 17:17:52 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Backend.Services.AuthService.ValidateUserAsync(String email, String password) in C:\Users\TEC02\Desktop\practice\backend\Services\AuthService.cs:line 49
+   at Backend.Controllers.AuthController.Login(LoginRequest request) in C:\Users\TEC02\Desktop\practice\backend\Controllers\AuthController.cs:line 55
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-08-29 17:17:53 [DBG] Connection id "0HNF6QH466PIE" completed keep alive response.
+2025-08-29 17:17:53 [INF] Request finished HTTP/1.1 POST http://localhost:5237/api/auth/login - 500 null text/plain; charset=utf-8 1049.9997ms
+2025-08-29 17:18:39 [INF] Application is shutting down...
+2025-08-29 17:18:39 [DBG] Hosting stopping
+2025-08-29 17:18:39 [DBG] Connection id "0HNF6QH466PIE" disconnecting.
+2025-08-29 17:18:39 [DBG] Connection id "0HNF6QH466PIE" stopped.
+2025-08-29 17:18:39 [DBG] Connection id "0HNF6QH466PIE" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-08-29 17:18:39 [DBG] Hosting stopped

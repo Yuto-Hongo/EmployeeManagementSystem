@@ -1,0 +1,1342 @@
+2025-11-12 00:14:12 [DBG] Connection id "0HNH1669CFR54" accepted.
+2025-11-12 00:14:12 [DBG] Connection id "0HNH1669CFR54" started.
+2025-11-12 00:14:12 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5211/api/auth/login - null null
+2025-11-12 00:14:12 [DBG] 1 candidate(s) found for the request path '/api/auth/login'
+2025-11-12 00:14:12 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2025-11-12 00:14:13 [DBG] The request has an origin header: 'http://localhost:5173'.
+2025-11-12 00:14:13 [INF] CORS policy execution successful.
+2025-11-12 00:14:13 [DBG] The request is a preflight request.
+2025-11-12 00:14:13 [DBG] Connection id "0HNH1669CFR54" completed keep alive response.
+2025-11-12 00:14:13 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5211/api/auth/login - 204 null null 8.1309ms
+2025-11-12 00:14:13 [INF] Request starting HTTP/1.1 POST http://localhost:5211/api/auth/login - application/json 60
+2025-11-12 00:14:13 [DBG] 1 candidate(s) found for the request path '/api/auth/login'
+2025-11-12 00:14:13 [DBG] Endpoint 'Backend.Controllers.AuthController.Login (EmployeeManagement.Api)' with route pattern 'api/Auth/login' is valid for the request path '/api/auth/login'
+2025-11-12 00:14:13 [DBG] Request matched endpoint 'Backend.Controllers.AuthController.Login (EmployeeManagement.Api)'
+2025-11-12 00:14:13 [DBG] The request has an origin header: 'http://localhost:5173'.
+2025-11-12 00:14:13 [INF] CORS policy execution successful.
+2025-11-12 00:14:13 [DBG] Successfully validated the token.
+2025-11-12 00:14:13 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2025-11-12 00:14:13 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-11-12 00:14:13 [INF] Executing endpoint 'Backend.Controllers.AuthController.Login (EmployeeManagement.Api)'
+2025-11-12 00:14:13 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Backend.DTOs.LoginRequest) on controller Backend.Controllers.AuthController (EmployeeManagement.Api).
+2025-11-12 00:14:13 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-12 00:14:13 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-12 00:14:13 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-12 00:14:13 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-12 00:14:13 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-12 00:14:13 [DBG] Executing controller factory for controller Backend.Controllers.AuthController (EmployeeManagement.Api)
+2025-11-12 00:14:13 [DBG] Executed controller factory for controller Backend.Controllers.AuthController (EmployeeManagement.Api)
+2025-11-12 00:14:13 [DBG] Attempting to bind parameter 'request' of type 'Backend.DTOs.LoginRequest' ...
+2025-11-12 00:14:13 [DBG] Attempting to bind parameter 'request' of type 'Backend.DTOs.LoginRequest' using the name '' in request data ...
+2025-11-12 00:14:13 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-11-12 00:14:13 [DBG] Connection id "0HNH1669CFR54", Request id "0HNH1669CFR54:00000002": started reading request body.
+2025-11-12 00:14:13 [DBG] Connection id "0HNH1669CFR54", Request id "0HNH1669CFR54:00000002": done reading request body.
+2025-11-12 00:14:13 [DBG] JSON input formatter succeeded, deserializing to type 'Backend.DTOs.LoginRequest'
+2025-11-12 00:14:13 [DBG] Done attempting to bind parameter 'request' of type 'Backend.DTOs.LoginRequest'.
+2025-11-12 00:14:13 [DBG] Done attempting to bind parameter 'request' of type 'Backend.DTOs.LoginRequest'.
+2025-11-12 00:14:13 [DBG] Attempting to validate the bound parameter 'request' of type 'Backend.DTOs.LoginRequest' ...
+2025-11-12 00:14:13 [DBG] Done attempting to validate the bound parameter 'request' of type 'Backend.DTOs.LoginRequest'.
+2025-11-12 00:14:13 [DBG] Entity Framework Core 9.0.7 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:9.0.7' with options: None
+2025-11-12 00:14:13 [DBG] Creating DbConnection.
+2025-11-12 00:14:13 [DBG] Created DbConnection. (0ms).
+2025-11-12 00:14:13 [DBG] Opening connection to database 'main' on server 'app.db'.
+2025-11-12 00:14:13 [DBG] Opened connection to database 'main' on server 'C:\Users\xmilk\portfolio\employee-management-app\backend\app.db'.
+2025-11-12 00:14:13 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-11-12 00:14:13 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-11-12 00:14:13 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2025-11-12 00:14:13 [DBG] Executing DbCommand [Parameters=[@__email_0='?' (Size = 23)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."PasswordHash", "u"."Role", "u"."Salt"
+FROM "Users" AS "u"
+WHERE "u"."Email" = @__email_0
+LIMIT 1
+2025-11-12 00:14:13 [INF] Executed DbCommand (2ms) [Parameters=[@__email_0='?' (Size = 23)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."PasswordHash", "u"."Role", "u"."Salt"
+FROM "Users" AS "u"
+WHERE "u"."Email" = @__email_0
+LIMIT 1
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Closing data reader to 'main' on server 'C:\Users\xmilk\portfolio\employee-management-app\backend\app.db'.
+2025-11-12 00:14:13 [DBG] A data reader for 'main' on server 'C:\Users\xmilk\portfolio\employee-management-app\backend\app.db' is being disposed after spending 1ms reading results.
+2025-11-12 00:14:13 [DBG] Closing connection to database 'main' on server 'C:\Users\xmilk\portfolio\employee-management-app\backend\app.db'.
+2025-11-12 00:14:13 [DBG] Closed connection to database 'main' on server 'app.db' (1ms).
+2025-11-12 00:14:13 [INF] ログイン処理成功 : UserId : 1
+2025-11-12 00:14:13 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-11-12 00:14:13 [DBG] No information found on request to perform content negotiation.
+2025-11-12 00:14:13 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-11-12 00:14:13 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-11-12 00:14:13 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-11-12 00:14:13 [INF] Executing OkObjectResult, writing value of type 'Backend.DTOs.LoginResponse'.
+2025-11-12 00:14:13 [INF] Executed action Backend.Controllers.AuthController.Login (EmployeeManagement.Api) in 29.5177ms
+2025-11-12 00:14:13 [INF] Executed endpoint 'Backend.Controllers.AuthController.Login (EmployeeManagement.Api)'
+2025-11-12 00:14:13 [DBG] Connection id "0HNH1669CFR54" completed keep alive response.
+2025-11-12 00:14:13 [DBG] 'AppDbContext' disposed.
+2025-11-12 00:14:13 [DBG] Disposing connection to database 'main' on server 'app.db'.
+2025-11-12 00:14:13 [DBG] Disposed connection to database 'main' on server 'app.db' (0ms).
+2025-11-12 00:14:13 [INF] Request finished HTTP/1.1 POST http://localhost:5211/api/auth/login - 200 null application/json; charset=utf-8 45.9052ms
+2025-11-12 00:14:13 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5211/api/employeeskill/skills - null null
+2025-11-12 00:14:13 [DBG] Connection id "0HNH1669CFR55" accepted.
+2025-11-12 00:14:13 [DBG] 1 candidate(s) found for the request path '/api/employeeskill/skills'
+2025-11-12 00:14:13 [DBG] Connection id "0HNH1669CFR55" started.
+2025-11-12 00:14:13 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2025-11-12 00:14:13 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5211/api/admin/search?name=&workplace=&joinDateFrom=&joinDateTo=&mode=and&page=1&pageSize=10&sortBy=id&sortOrder=asc - null null
+2025-11-12 00:14:13 [DBG] The request has an origin header: 'http://localhost:5173'.
+2025-11-12 00:14:13 [DBG] 1 candidate(s) found for the request path '/api/admin/search'
+2025-11-12 00:14:13 [INF] CORS policy execution successful.
+2025-11-12 00:14:13 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2025-11-12 00:14:13 [DBG] The request is a preflight request.
+2025-11-12 00:14:13 [DBG] The request has an origin header: 'http://localhost:5173'.
+2025-11-12 00:14:13 [DBG] Connection id "0HNH1669CFR54" completed keep alive response.
+2025-11-12 00:14:13 [INF] CORS policy execution successful.
+2025-11-12 00:14:13 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5211/api/employeeskill/skills - 204 null null 11.9794ms
+2025-11-12 00:14:13 [DBG] The request is a preflight request.
+2025-11-12 00:14:13 [INF] Request starting HTTP/1.1 GET http://localhost:5211/api/employeeskill/skills - null null
+2025-11-12 00:14:13 [DBG] Connection id "0HNH1669CFR55" completed keep alive response.
+2025-11-12 00:14:13 [DBG] 2 candidate(s) found for the request path '/api/employeeskill/skills'
+2025-11-12 00:14:13 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5211/api/admin/search?name=&workplace=&joinDateFrom=&joinDateTo=&mode=and&page=1&pageSize=10&sortBy=id&sortOrder=asc - 204 null null 9.525ms
+2025-11-12 00:14:13 [DBG] Endpoint 'Backend.Controllers.EmployeeSkillController.GetAllSkills (EmployeeManagement.Api)' with route pattern 'api/EmployeeSkill/skills' is valid for the request path '/api/employeeskill/skills'
+2025-11-12 00:14:13 [INF] Request starting HTTP/1.1 GET http://localhost:5211/api/admin/search?name=&workplace=&joinDateFrom=&joinDateTo=&mode=and&page=1&pageSize=10&sortBy=id&sortOrder=asc - null null
+2025-11-12 00:14:13 [DBG] Endpoint 'Backend.Controllers.EmployeeSkillController.GetSkillByEmployee (EmployeeManagement.Api)' with route pattern 'api/EmployeeSkill/{employeeId}' is valid for the request path '/api/employeeskill/skills'
+2025-11-12 00:14:13 [DBG] 2 candidate(s) found for the request path '/api/admin/search'
+2025-11-12 00:14:13 [DBG] Request matched endpoint 'Backend.Controllers.EmployeeSkillController.GetAllSkills (EmployeeManagement.Api)'
+2025-11-12 00:14:13 [DBG] Endpoint 'Backend.Controllers.AdminController.SearchEmployee (EmployeeManagement.Api)' with route pattern 'api/Admin/search' is valid for the request path '/api/admin/search'
+2025-11-12 00:14:13 [DBG] The request has an origin header: 'http://localhost:5173'.
+2025-11-12 00:14:13 [DBG] Endpoint 'Backend.Controllers.AdminController.GetEmployeeById (EmployeeManagement.Api)' with route pattern 'api/Admin/{id}' is valid for the request path '/api/admin/search'
+2025-11-12 00:14:13 [INF] CORS policy execution successful.
+2025-11-12 00:14:13 [DBG] Request matched endpoint 'Backend.Controllers.AdminController.SearchEmployee (EmployeeManagement.Api)'
+2025-11-12 00:14:13 [DBG] Successfully validated the token.
+2025-11-12 00:14:13 [DBG] The request has an origin header: 'http://localhost:5173'.
+2025-11-12 00:14:13 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2025-11-12 00:14:13 [INF] CORS policy execution successful.
+2025-11-12 00:14:13 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-11-12 00:14:13 [DBG] Successfully validated the token.
+2025-11-12 00:14:13 [INF] Executing endpoint 'Backend.Controllers.EmployeeSkillController.GetAllSkills (EmployeeManagement.Api)'
+2025-11-12 00:14:13 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2025-11-12 00:14:13 [INF] Route matched with {action = "GetAllSkills", controller = "EmployeeSkill"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllSkills() on controller Backend.Controllers.EmployeeSkillController (EmployeeManagement.Api).
+2025-11-12 00:14:13 [DBG] Authorization was successful.
+2025-11-12 00:14:13 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-12 00:14:13 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-11-12 00:14:13 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-12 00:14:13 [INF] Executing endpoint 'Backend.Controllers.AdminController.SearchEmployee (EmployeeManagement.Api)'
+2025-11-12 00:14:13 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-12 00:14:13 [INF] Route matched with {action = "SearchEmployee", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SearchEmployee(System.String, System.String, System.Nullable`1[System.DateTime], System.Nullable`1[System.DateTime], System.Collections.Generic.List`1[System.Int32], System.String, Int32, Int32, System.String, System.String) on controller Backend.Controllers.AdminController (EmployeeManagement.Api).
+2025-11-12 00:14:13 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-12 00:14:13 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-12 00:14:13 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-12 00:14:13 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-12 00:14:13 [DBG] Executing controller factory for controller Backend.Controllers.EmployeeSkillController (EmployeeManagement.Api)
+2025-11-12 00:14:13 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-12 00:14:13 [DBG] Executed controller factory for controller Backend.Controllers.EmployeeSkillController (EmployeeManagement.Api)
+2025-11-12 00:14:13 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-12 00:14:13 [DBG] Entity Framework Core 9.0.7 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:9.0.7' with options: None
+2025-11-12 00:14:13 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-12 00:14:13 [DBG] Creating DbConnection.
+2025-11-12 00:14:13 [DBG] Executing controller factory for controller Backend.Controllers.AdminController (EmployeeManagement.Api)
+2025-11-12 00:14:13 [DBG] Created DbConnection. (1ms).
+2025-11-12 00:14:13 [DBG] Executed controller factory for controller Backend.Controllers.AdminController (EmployeeManagement.Api)
+2025-11-12 00:14:13 [DBG] Opening connection to database 'main' on server 'app.db'.
+2025-11-12 00:14:13 [DBG] Attempting to bind parameter 'name' of type 'System.String' ...
+2025-11-12 00:14:13 [DBG] Opened connection to database 'main' on server 'C:\Users\xmilk\portfolio\employee-management-app\backend\app.db'.
+2025-11-12 00:14:13 [DBG] Attempting to bind parameter 'name' of type 'System.String' using the name 'name' in request data ...
+2025-11-12 00:14:13 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-11-12 00:14:13 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2025-11-12 00:14:13 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2025-11-12 00:14:13 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2025-11-12 00:14:13 [DBG] Initialized DbCommand for 'ExecuteReader' (2ms).
+2025-11-12 00:14:13 [DBG] Attempting to validate the bound parameter 'name' of type 'System.String' ...
+2025-11-12 00:14:13 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Category", "s"."IconPath", "s"."Name"
+FROM "Skills" AS "s"
+2025-11-12 00:14:13 [DBG] Done attempting to validate the bound parameter 'name' of type 'System.String'.
+2025-11-12 00:14:13 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."Category", "s"."IconPath", "s"."Name"
+FROM "Skills" AS "s"
+2025-11-12 00:14:13 [DBG] Attempting to bind parameter 'workplace' of type 'System.String' ...
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'Skill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Attempting to bind parameter 'workplace' of type 'System.String' using the name 'workplace' in request data ...
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'Skill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Done attempting to bind parameter 'workplace' of type 'System.String'.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'Skill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Done attempting to bind parameter 'workplace' of type 'System.String'.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'Skill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Attempting to validate the bound parameter 'workplace' of type 'System.String' ...
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'Skill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Done attempting to validate the bound parameter 'workplace' of type 'System.String'.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'Skill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Attempting to bind parameter 'joinDateFrom' of type 'System.Nullable`1[System.DateTime]' ...
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'Skill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Attempting to bind parameter 'joinDateFrom' of type 'System.Nullable`1[System.DateTime]' using the name 'joinDateFrom' in request data ...
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'Skill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Done attempting to bind parameter 'joinDateFrom' of type 'System.Nullable`1[System.DateTime]'.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'Skill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Done attempting to bind parameter 'joinDateFrom' of type 'System.Nullable`1[System.DateTime]'.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'Skill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Attempting to validate the bound parameter 'joinDateFrom' of type 'System.Nullable`1[System.DateTime]' ...
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'Skill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Done attempting to validate the bound parameter 'joinDateFrom' of type 'System.Nullable`1[System.DateTime]'.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'Skill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Attempting to bind parameter 'joinDateTo' of type 'System.Nullable`1[System.DateTime]' ...
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'Skill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Attempting to bind parameter 'joinDateTo' of type 'System.Nullable`1[System.DateTime]' using the name 'joinDateTo' in request data ...
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'Skill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'Skill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Done attempting to bind parameter 'joinDateTo' of type 'System.Nullable`1[System.DateTime]'.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'Skill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Done attempting to bind parameter 'joinDateTo' of type 'System.Nullable`1[System.DateTime]'.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'Skill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Attempting to validate the bound parameter 'joinDateTo' of type 'System.Nullable`1[System.DateTime]' ...
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'Skill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Done attempting to validate the bound parameter 'joinDateTo' of type 'System.Nullable`1[System.DateTime]'.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'Skill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Attempting to bind parameter 'skillIds' of type 'System.Collections.Generic.List`1[System.Int32]' ...
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'Skill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Attempting to bind parameter 'skillIds' of type 'System.Collections.Generic.List`1[System.Int32]' using the name '' in request data ...
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'Skill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Could not bind to collection using a format like =value1&=value2
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'Skill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Attempting to bind model using indices. Example formats include: [0]=value1&[1]=value2, [0]=value1&[1]=value2, .index=zero&.index=one&[zero]=value1&[one]=value2
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'Skill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Attempting to bind model of type 'System.Int32' using the name '[0]' in request data ...
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'Skill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Could not find a value in the request with name '[0]' of type 'System.Int32'.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'Skill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Done attempting to bind model of type 'System.Int32' using the name '[0]'.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'Skill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Done attempting to bind parameter 'skillIds' of type 'System.Collections.Generic.List`1[System.Int32]'.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'Skill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Done attempting to bind parameter 'skillIds' of type 'System.Collections.Generic.List`1[System.Int32]'.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'Skill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Attempting to validate the bound parameter 'skillIds' of type 'System.Collections.Generic.List`1[System.Int32]' ...
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'Skill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Done attempting to validate the bound parameter 'skillIds' of type 'System.Collections.Generic.List`1[System.Int32]'.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'Skill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Attempting to bind parameter 'mode' of type 'System.String' ...
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'Skill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Attempting to bind parameter 'mode' of type 'System.String' using the name 'mode' in request data ...
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'Skill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Done attempting to bind parameter 'mode' of type 'System.String'.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'Skill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Done attempting to bind parameter 'mode' of type 'System.String'.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'Skill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Attempting to validate the bound parameter 'mode' of type 'System.String' ...
+2025-11-12 00:14:13 [DBG] Closing data reader to 'main' on server 'C:\Users\xmilk\portfolio\employee-management-app\backend\app.db'.
+2025-11-12 00:14:13 [DBG] Done attempting to validate the bound parameter 'mode' of type 'System.String'.
+2025-11-12 00:14:13 [DBG] A data reader for 'main' on server 'C:\Users\xmilk\portfolio\employee-management-app\backend\app.db' is being disposed after spending 52ms reading results.
+2025-11-12 00:14:13 [DBG] Attempting to bind parameter 'page' of type 'System.Int32' ...
+2025-11-12 00:14:13 [DBG] Closing connection to database 'main' on server 'C:\Users\xmilk\portfolio\employee-management-app\backend\app.db'.
+2025-11-12 00:14:13 [DBG] Attempting to bind parameter 'page' of type 'System.Int32' using the name 'page' in request data ...
+2025-11-12 00:14:13 [DBG] Closed connection to database 'main' on server 'app.db' (1ms).
+2025-11-12 00:14:13 [DBG] Done attempting to bind parameter 'page' of type 'System.Int32'.
+2025-11-12 00:14:13 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-11-12 00:14:13 [DBG] Done attempting to bind parameter 'page' of type 'System.Int32'.
+2025-11-12 00:14:13 [DBG] No information found on request to perform content negotiation.
+2025-11-12 00:14:13 [DBG] Attempting to validate the bound parameter 'page' of type 'System.Int32' ...
+2025-11-12 00:14:13 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-11-12 00:14:13 [DBG] Done attempting to validate the bound parameter 'page' of type 'System.Int32'.
+2025-11-12 00:14:13 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-11-12 00:14:13 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' ...
+2025-11-12 00:14:13 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-11-12 00:14:13 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' using the name 'pageSize' in request data ...
+2025-11-12 00:14:13 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Backend.Models.Skill, EmployeeManagement.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-12 00:14:13 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2025-11-12 00:14:13 [INF] Executed action Backend.Controllers.EmployeeSkillController.GetAllSkills (EmployeeManagement.Api) in 82.6272ms
+2025-11-12 00:14:13 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2025-11-12 00:14:13 [INF] Executed endpoint 'Backend.Controllers.EmployeeSkillController.GetAllSkills (EmployeeManagement.Api)'
+2025-11-12 00:14:13 [DBG] Attempting to validate the bound parameter 'pageSize' of type 'System.Int32' ...
+2025-11-12 00:14:13 [DBG] Connection id "0HNH1669CFR54" completed keep alive response.
+2025-11-12 00:14:13 [DBG] Done attempting to validate the bound parameter 'pageSize' of type 'System.Int32'.
+2025-11-12 00:14:13 [DBG] 'AppDbContext' disposed.
+2025-11-12 00:14:13 [DBG] Attempting to bind parameter 'sortBy' of type 'System.String' ...
+2025-11-12 00:14:13 [DBG] Disposing connection to database 'main' on server 'app.db'.
+2025-11-12 00:14:13 [DBG] Attempting to bind parameter 'sortBy' of type 'System.String' using the name 'sortBy' in request data ...
+2025-11-12 00:14:13 [DBG] Disposed connection to database 'main' on server 'app.db' (1ms).
+2025-11-12 00:14:13 [DBG] Done attempting to bind parameter 'sortBy' of type 'System.String'.
+2025-11-12 00:14:13 [INF] Request finished HTTP/1.1 GET http://localhost:5211/api/employeeskill/skills - 200 null application/json; charset=utf-8 113.0866ms
+2025-11-12 00:14:13 [DBG] Done attempting to bind parameter 'sortBy' of type 'System.String'.
+2025-11-12 00:14:13 [DBG] Attempting to validate the bound parameter 'sortBy' of type 'System.String' ...
+2025-11-12 00:14:13 [DBG] Done attempting to validate the bound parameter 'sortBy' of type 'System.String'.
+2025-11-12 00:14:13 [DBG] Attempting to bind parameter 'sortOrder' of type 'System.String' ...
+2025-11-12 00:14:13 [DBG] Attempting to bind parameter 'sortOrder' of type 'System.String' using the name 'sortOrder' in request data ...
+2025-11-12 00:14:13 [DBG] Done attempting to bind parameter 'sortOrder' of type 'System.String'.
+2025-11-12 00:14:13 [DBG] Done attempting to bind parameter 'sortOrder' of type 'System.String'.
+2025-11-12 00:14:13 [DBG] Attempting to validate the bound parameter 'sortOrder' of type 'System.String' ...
+2025-11-12 00:14:13 [DBG] Done attempting to validate the bound parameter 'sortOrder' of type 'System.String'.
+2025-11-12 00:14:13 [DBG] Entity Framework Core 9.0.7 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:9.0.7' with options: None
+2025-11-12 00:14:13 [DBG] Creating DbConnection.
+2025-11-12 00:14:13 [DBG] Created DbConnection. (0ms).
+2025-11-12 00:14:13 [DBG] Opening connection to database 'main' on server 'app.db'.
+2025-11-12 00:14:13 [DBG] Opened connection to database 'main' on server 'C:\Users\xmilk\portfolio\employee-management-app\backend\app.db'.
+2025-11-12 00:14:13 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-11-12 00:14:13 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-11-12 00:14:13 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2025-11-12 00:14:13 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Employees" AS "e"
+2025-11-12 00:14:13 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Employees" AS "e"
+2025-11-12 00:14:13 [DBG] Closing data reader to 'main' on server 'C:\Users\xmilk\portfolio\employee-management-app\backend\app.db'.
+2025-11-12 00:14:13 [DBG] A data reader for 'main' on server 'C:\Users\xmilk\portfolio\employee-management-app\backend\app.db' is being disposed after spending 0ms reading results.
+2025-11-12 00:14:13 [DBG] Closing connection to database 'main' on server 'C:\Users\xmilk\portfolio\employee-management-app\backend\app.db'.
+2025-11-12 00:14:13 [DBG] Closed connection to database 'main' on server 'app.db' (0ms).
+2025-11-12 00:14:13 [DBG] Opening connection to database 'main' on server 'app.db'.
+2025-11-12 00:14:13 [DBG] Opened connection to database 'main' on server 'C:\Users\xmilk\portfolio\employee-management-app\backend\app.db'.
+2025-11-12 00:14:13 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-11-12 00:14:13 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-11-12 00:14:13 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2025-11-12 00:14:13 [DBG] Executing DbCommand [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "e0"."Id", "e0"."Address", "e0"."CurrentWorkplace", "e0"."DateOfBirth", "e0"."FullName", "e0"."Gender", "e0"."JoinDate", "e0"."UserId", "e0"."VacationRemaining", "u"."Id", "u"."Email", "u"."PasswordHash", "u"."Role", "u"."Salt", "s0"."Id", "s0"."EmployeeId", "s0"."Level", "s0"."SkillId", "s0"."Id0", "s0"."Category", "s0"."IconPath", "s0"."Name"
+FROM (
+    SELECT "e"."Id", "e"."Address", "e"."CurrentWorkplace", "e"."DateOfBirth", "e"."FullName", "e"."Gender", "e"."JoinDate", "e"."UserId", "e"."VacationRemaining"
+    FROM "Employees" AS "e"
+    ORDER BY "e"."Id"
+    LIMIT @__p_1 OFFSET @__p_0
+) AS "e0"
+INNER JOIN "Users" AS "u" ON "e0"."UserId" = "u"."Id"
+LEFT JOIN (
+    SELECT "e1"."Id", "e1"."EmployeeId", "e1"."Level", "e1"."SkillId", "s"."Id" AS "Id0", "s"."Category", "s"."IconPath", "s"."Name"
+    FROM "EmployeeSkills" AS "e1"
+    INNER JOIN "Skills" AS "s" ON "e1"."SkillId" = "s"."Id"
+) AS "s0" ON "e0"."Id" = "s0"."EmployeeId"
+ORDER BY "e0"."Id", "u"."Id", "s0"."Id"
+2025-11-12 00:14:13 [INF] Executed DbCommand (2ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "e0"."Id", "e0"."Address", "e0"."CurrentWorkplace", "e0"."DateOfBirth", "e0"."FullName", "e0"."Gender", "e0"."JoinDate", "e0"."UserId", "e0"."VacationRemaining", "u"."Id", "u"."Email", "u"."PasswordHash", "u"."Role", "u"."Salt", "s0"."Id", "s0"."EmployeeId", "s0"."Level", "s0"."SkillId", "s0"."Id0", "s0"."Category", "s0"."IconPath", "s0"."Name"
+FROM (
+    SELECT "e"."Id", "e"."Address", "e"."CurrentWorkplace", "e"."DateOfBirth", "e"."FullName", "e"."Gender", "e"."JoinDate", "e"."UserId", "e"."VacationRemaining"
+    FROM "Employees" AS "e"
+    ORDER BY "e"."Id"
+    LIMIT @__p_1 OFFSET @__p_0
+) AS "e0"
+INNER JOIN "Users" AS "u" ON "e0"."UserId" = "u"."Id"
+LEFT JOIN (
+    SELECT "e1"."Id", "e1"."EmployeeId", "e1"."Level", "e1"."SkillId", "s"."Id" AS "Id0", "s"."Category", "s"."IconPath", "s"."Name"
+    FROM "EmployeeSkills" AS "e1"
+    INNER JOIN "Skills" AS "s" ON "e1"."SkillId" = "s"."Id"
+) AS "s0" ON "e0"."Id" = "s0"."EmployeeId"
+ORDER BY "e0"."Id", "u"."Id", "s0"."Id"
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] The navigation 'Employee.User' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'EmployeeSkill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] The navigation 'EmployeeSkill.Skill' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'Skill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'EmployeeSkill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] The navigation 'EmployeeSkill.Skill' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'Skill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] The navigation 'Employee.User' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'EmployeeSkill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] The navigation 'EmployeeSkill.Skill' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'Skill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'EmployeeSkill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] The navigation 'EmployeeSkill.Skill' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'Skill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] The navigation 'Employee.User' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'EmployeeSkill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] The navigation 'EmployeeSkill.Skill' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'Skill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'EmployeeSkill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] The navigation 'EmployeeSkill.Skill' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'Skill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] The navigation 'Employee.User' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] The navigation 'EmployeeSkill.Skill' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'EmployeeSkill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'EmployeeSkill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] The navigation 'EmployeeSkill.Skill' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'Skill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] The navigation 'Employee.User' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] The navigation 'EmployeeSkill.Skill' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'EmployeeSkill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] The navigation 'Employee.User' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'EmployeeSkill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] The navigation 'EmployeeSkill.Skill' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'Skill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] The navigation 'Employee.User' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] The navigation 'EmployeeSkill.Skill' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'EmployeeSkill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] The navigation 'EmployeeSkill.Skill' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'EmployeeSkill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] The navigation 'Employee.User' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] The navigation 'EmployeeSkill.Skill' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'EmployeeSkill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] The navigation 'Employee.User' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] The navigation 'EmployeeSkill.Skill' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'EmployeeSkill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] The navigation 'Employee.User' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] The navigation 'EmployeeSkill.Skill' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Context 'AppDbContext' started tracking 'EmployeeSkill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:14:13 [DBG] Closing data reader to 'main' on server 'C:\Users\xmilk\portfolio\employee-management-app\backend\app.db'.
+2025-11-12 00:14:13 [DBG] A data reader for 'main' on server 'C:\Users\xmilk\portfolio\employee-management-app\backend\app.db' is being disposed after spending 53ms reading results.
+2025-11-12 00:14:13 [DBG] Closing connection to database 'main' on server 'C:\Users\xmilk\portfolio\employee-management-app\backend\app.db'.
+2025-11-12 00:14:13 [DBG] Closed connection to database 'main' on server 'app.db' (0ms).
+2025-11-12 00:14:13 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-11-12 00:14:13 [DBG] No information found on request to perform content negotiation.
+2025-11-12 00:14:13 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-11-12 00:14:13 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-11-12 00:14:13 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-11-12 00:14:13 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`5[[System.Collections.Generic.List`1[[Backend.DTOs.SelectedEmployeeInfoResponse, EmployeeManagement.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-12 00:14:13 [INF] Executed action Backend.Controllers.AdminController.SearchEmployee (EmployeeManagement.Api) in 176.0135ms
+2025-11-12 00:14:13 [INF] Executed endpoint 'Backend.Controllers.AdminController.SearchEmployee (EmployeeManagement.Api)'
+2025-11-12 00:14:13 [DBG] Connection id "0HNH1669CFR55" completed keep alive response.
+2025-11-12 00:14:13 [DBG] 'AppDbContext' disposed.
+2025-11-12 00:14:13 [DBG] Disposing connection to database 'main' on server 'app.db'.
+2025-11-12 00:14:13 [DBG] Disposed connection to database 'main' on server 'app.db' (0ms).
+2025-11-12 00:14:13 [INF] Request finished HTTP/1.1 GET http://localhost:5211/api/admin/search?name=&workplace=&joinDateFrom=&joinDateTo=&mode=and&page=1&pageSize=10&sortBy=id&sortOrder=asc - 200 null application/json; charset=utf-8 204.195ms
+2025-11-12 00:16:24 [DBG] Connection id "0HNH1669CFR55" disconnecting.
+2025-11-12 00:16:24 [DBG] Connection id "0HNH1669CFR54" disconnecting.
+2025-11-12 00:16:24 [DBG] Connection id "0HNH1669CFR55" stopped.
+2025-11-12 00:16:24 [DBG] Connection id "0HNH1669CFR54" stopped.
+2025-11-12 00:16:24 [DBG] Connection id "0HNH1669CFR55" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-12 00:16:24 [DBG] Connection id "0HNH1669CFR54" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-12 00:16:37 [DBG] Connection id "0HNH1669CFR56" accepted.
+2025-11-12 00:16:37 [DBG] Connection id "0HNH1669CFR56" started.
+2025-11-12 00:16:37 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5211/api/admin/5 - null null
+2025-11-12 00:16:37 [DBG] 1 candidate(s) found for the request path '/api/admin/5'
+2025-11-12 00:16:37 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2025-11-12 00:16:37 [DBG] The request has an origin header: 'http://localhost:5173'.
+2025-11-12 00:16:37 [INF] CORS policy execution successful.
+2025-11-12 00:16:37 [DBG] The request is a preflight request.
+2025-11-12 00:16:37 [DBG] Connection id "0HNH1669CFR56" completed keep alive response.
+2025-11-12 00:16:37 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5211/api/admin/5 - 204 null null 7.5967ms
+2025-11-12 00:16:37 [INF] Request starting HTTP/1.1 GET http://localhost:5211/api/admin/5 - null null
+2025-11-12 00:16:37 [DBG] 1 candidate(s) found for the request path '/api/admin/5'
+2025-11-12 00:16:37 [DBG] Endpoint 'Backend.Controllers.AdminController.GetEmployeeById (EmployeeManagement.Api)' with route pattern 'api/Admin/{id}' is valid for the request path '/api/admin/5'
+2025-11-12 00:16:37 [DBG] Request matched endpoint 'Backend.Controllers.AdminController.GetEmployeeById (EmployeeManagement.Api)'
+2025-11-12 00:16:37 [DBG] The request has an origin header: 'http://localhost:5173'.
+2025-11-12 00:16:37 [INF] CORS policy execution successful.
+2025-11-12 00:16:37 [DBG] Successfully validated the token.
+2025-11-12 00:16:37 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2025-11-12 00:16:37 [DBG] Authorization was successful.
+2025-11-12 00:16:37 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-11-12 00:16:37 [INF] Executing endpoint 'Backend.Controllers.AdminController.GetEmployeeById (EmployeeManagement.Api)'
+2025-11-12 00:16:37 [INF] Route matched with {action = "GetEmployeeById", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetEmployeeById(Int32) on controller Backend.Controllers.AdminController (EmployeeManagement.Api).
+2025-11-12 00:16:37 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-12 00:16:37 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-12 00:16:37 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-12 00:16:37 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-12 00:16:37 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-12 00:16:37 [DBG] Executing controller factory for controller Backend.Controllers.AdminController (EmployeeManagement.Api)
+2025-11-12 00:16:37 [DBG] Executed controller factory for controller Backend.Controllers.AdminController (EmployeeManagement.Api)
+2025-11-12 00:16:37 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2025-11-12 00:16:37 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2025-11-12 00:16:37 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2025-11-12 00:16:37 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2025-11-12 00:16:37 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2025-11-12 00:16:37 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2025-11-12 00:16:37 [DBG] Entity Framework Core 9.0.7 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:9.0.7' with options: None
+2025-11-12 00:16:37 [DBG] Compiling query expression: 
+'DbSet<Employee>()
+    .Include(e => e.User)
+    .Include(e => e.EmployeeSkills)
+    .ThenInclude(es => es.Skill)
+    .FirstOrDefault(e => e.Id == __id_0)'
+2025-11-12 00:16:37 [DBG] Including navigation: 'Employee.User'.
+2025-11-12 00:16:37 [DBG] Including navigation: 'Employee.EmployeeSkills'.
+2025-11-12 00:16:37 [DBG] Including navigation: 'EmployeeSkill.Skill'.
+2025-11-12 00:16:37 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Employee>(
+    asyncEnumerable: SingleQueryingEnumerable.Create<Employee>(
+        relationalQueryContext: (RelationalQueryContext)queryContext, 
+        relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+            Client Projections:
+                0 -> Dictionary<IProperty, int> { [Property: Employee.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Employee.Address (string), 1], [Property: Employee.CurrentWorkplace (string), 2], [Property: Employee.DateOfBirth (DateTime?), 3], [Property: Employee.FullName (string), 4], [Property: Employee.Gender (Gender?), 5], [Property: Employee.JoinDate (DateTime?), 6], [Property: Employee.UserId (int) Required FK Index, 7], [Property: Employee.VacationRemaining (int?), 8] }
+                1 -> Dictionary<IProperty, int> { [Property: User.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 9], [Property: User.Email (string) Required, 10], [Property: User.PasswordHash (string) Required MaxLength(100), 11], [Property: User.Role (UserRole) Required, 12], [Property: User.Salt (string) Required, 13] }
+                2 -> 0
+                3 -> 9
+                4 -> Dictionary<IProperty, int> { [Property: EmployeeSkill.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 14], [Property: EmployeeSkill.EmployeeId (int) Required FK Index, 15], [Property: EmployeeSkill.Level (int?), 16], [Property: EmployeeSkill.SkillId (int) Required FK Index, 17] }
+                5 -> Dictionary<IProperty, int> { [Property: Skill.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 18], [Property: Skill.Category (SkillCategory) Required, 19], [Property: Skill.IconPath (string), 20], [Property: Skill.Name (string) Required Index, 21] }
+                6 -> 14
+                7 -> 18
+            SELECT s0.Id, s0.Address, s0.CurrentWorkplace, s0.DateOfBirth, s0.FullName, s0.Gender, s0.JoinDate, s0.UserId, s0.VacationRemaining, s0.Id0, s0.Email, s0.PasswordHash, s0.Role, s0.Salt, s1.Id, s1.EmployeeId, s1.Level, s1.SkillId, s1.Id0, s1.Category, s1.IconPath, s1.Name
+            FROM 
+            (
+                SELECT TOP(1) e.Id, e.Address, e.CurrentWorkplace, e.DateOfBirth, e.FullName, e.Gender, e.JoinDate, e.UserId, e.VacationRemaining, u.Id AS Id0, u.Email, u.PasswordHash, u.Role, u.Salt
+                FROM Employees AS e
+                INNER JOIN Users AS u ON e.UserId == u.Id
+                WHERE e.Id == @__id_0
+            ) AS s0
+            LEFT JOIN 
+            (
+                SELECT e0.Id, e0.EmployeeId, e0.Level, e0.SkillId, s.Id AS Id0, s.Category, s.IconPath, s.Name
+                FROM EmployeeSkills AS e0
+                INNER JOIN Skills AS s ON e0.SkillId == s.Id
+            ) AS s1 ON s0.Id == s1.EmployeeId
+            ORDER BY s0.Id ASC, s0.Id0 ASC, s1.Id ASC) | Resolver: c => new RelationalCommandCache(
+            c.Dependencies.MemoryCache, 
+            c.RelationalDependencies.QuerySqlGeneratorFactory, 
+            c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+            Client Projections:
+                0 -> Dictionary<IProperty, int> { [Property: Employee.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Employee.Address (string), 1], [Property: Employee.CurrentWorkplace (string), 2], [Property: Employee.DateOfBirth (DateTime?), 3], [Property: Employee.FullName (string), 4], [Property: Employee.Gender (Gender?), 5], [Property: Employee.JoinDate (DateTime?), 6], [Property: Employee.UserId (int) Required FK Index, 7], [Property: Employee.VacationRemaining (int?), 8] }
+                1 -> Dictionary<IProperty, int> { [Property: User.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 9], [Property: User.Email (string) Required, 10], [Property: User.PasswordHash (string) Required MaxLength(100), 11], [Property: User.Role (UserRole) Required, 12], [Property: User.Salt (string) Required, 13] }
+                2 -> 0
+                3 -> 9
+                4 -> Dictionary<IProperty, int> { [Property: EmployeeSkill.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 14], [Property: EmployeeSkill.EmployeeId (int) Required FK Index, 15], [Property: EmployeeSkill.Level (int?), 16], [Property: EmployeeSkill.SkillId (int) Required FK Index, 17] }
+                5 -> Dictionary<IProperty, int> { [Property: Skill.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 18], [Property: Skill.Category (SkillCategory) Required, 19], [Property: Skill.IconPath (string), 20], [Property: Skill.Name (string) Required Index, 21] }
+                6 -> 14
+                7 -> 18
+            SELECT s0.Id, s0.Address, s0.CurrentWorkplace, s0.DateOfBirth, s0.FullName, s0.Gender, s0.JoinDate, s0.UserId, s0.VacationRemaining, s0.Id0, s0.Email, s0.PasswordHash, s0.Role, s0.Salt, s1.Id, s1.EmployeeId, s1.Level, s1.SkillId, s1.Id0, s1.Category, s1.IconPath, s1.Name
+            FROM 
+            (
+                SELECT TOP(1) e.Id, e.Address, e.CurrentWorkplace, e.DateOfBirth, e.FullName, e.Gender, e.JoinDate, e.UserId, e.VacationRemaining, u.Id AS Id0, u.Email, u.PasswordHash, u.Role, u.Salt
+                FROM Employees AS e
+                INNER JOIN Users AS u ON e.UserId == u.Id
+                WHERE e.Id == @__id_0
+            ) AS s0
+            LEFT JOIN 
+            (
+                SELECT e0.Id, e0.EmployeeId, e0.Level, e0.SkillId, s.Id AS Id0, s.Category, s.IconPath, s.Name
+                FROM EmployeeSkills AS e0
+                INNER JOIN Skills AS s ON e0.SkillId == s.Id
+            ) AS s1 ON s0.Id == s1.EmployeeId
+            ORDER BY s0.Id ASC, s0.Id0 ASC, s1.Id ASC, 
+            False, 
+            new HashSet<string>(
+                new string[]{ }, 
+                StringComparer.Ordinal
+            )
+        )].GetRelationalCommandTemplate(parameters), 
+        readerColumns: null, 
+        shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+        {
+            resultContext.Values == null ? 
+            {
+                Employee entity;
+                User entity;
+                entity = 
+                {
+                    MaterializationContext materializationContext1;
+                    IEntityType entityType1;
+                    Employee instance1;
+                    InternalEntityEntry entry1;
+                    bool hasNullKey1;
+                    materializationContext1 = new MaterializationContext(
+                        [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                        queryContext.Context
+                    );
+                    instance1 = default(Employee);
+                    entry1 = queryContext.TryGetEntry(
+                        key: [LIFTABLE Constant: Key: Employee.Id PK | Resolver: c => c.Dependencies.Model.FindEntityType("Backend.Models.Employee").FindPrimaryKey()], 
+                        keyValues: new object[]{ (object)dataReader.GetInt32(0) }, 
+                        throwOnNullKey: True, 
+                        hasNullKey: hasNullKey1);
+                    !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+                    {
+                        entityType1 = entry1.EntityType;
+                        return instance1 = (Employee)entry1.Entity;
+                    } : 
+                    {
+                        ISnapshot shadowSnapshot1;
+                        shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                        entityType1 = [LIFTABLE Constant: EntityType: Employee | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("Backend.Models.Employee")];
+                        instance1 = switch (entityType1)
+                        {
+                            case [LIFTABLE Constant: EntityType: Employee | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("Backend.Models.Employee")]: 
+                                {
+                                    return 
+                                    {
+                                        Employee instance;
+                                        instance = new Employee();
+                                        instance.<Id>k__BackingField = dataReader.GetInt32(0);
+                                        instance.<Address>k__BackingField = dataReader.IsDBNull(1) ? default(string) : dataReader.GetString(1);
+                                        instance.<CurrentWorkplace>k__BackingField = dataReader.IsDBNull(2) ? default(string) : dataReader.GetString(2);
+                                        instance.<DateOfBirth>k__BackingField = dataReader.IsDBNull(3) ? default(DateTime?) : (DateTime?)dataReader.GetDateTime(3);
+                                        instance.<FullName>k__BackingField = dataReader.IsDBNull(4) ? default(string) : dataReader.GetString(4);
+                                        instance.<Gender>k__BackingField = dataReader.IsDBNull(5) ? default(Gender?) : (Gender?)Invoke(((EnumToNumberConverter<Gender, int>)((IReadOnlyProperty)[LIFTABLE Constant: Property: Employee.Gender (Gender?) | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("Backend.Models.Employee").FindProperty("Gender")]).GetTypeMapping().Converter).ConvertFromProviderTyped, dataReader.GetInt32(5));
+                                        instance.<JoinDate>k__BackingField = dataReader.IsDBNull(6) ? default(DateTime?) : (DateTime?)dataReader.GetDateTime(6);
+                                        instance.<UserId>k__BackingField = dataReader.GetInt32(7);
+                                        instance.<VacationRemaining>k__BackingField = dataReader.IsDBNull(8) ? default(int?) : (int?)dataReader.GetInt32(8);
+                                        (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                            context: materializationContext1.Context, 
+                                            entity: instance, 
+                                            queryTrackingBehavior: TrackAll, 
+                                            structuralType: [LIFTABLE Constant: EntityType: Employee | Resolver: namelessParameter{3} => namelessParameter{3}.Dependencies.Model.FindEntityType("Backend.Models.Employee")]) : default(void);
+                                        return instance;
+                                    }}
+                            default: 
+                                default(Employee)
+                        }
+                        ;
+                        entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                            entityType: entityType1, 
+                            entity: instance1, 
+                            snapshot: shadowSnapshot1);
+                        return instance1;
+                    } : default(void);
+                    return instance1;
+                };
+                entity = 
+                {
+                    MaterializationContext materializationContext2;
+                    IEntityType entityType2;
+                    User instance2;
+                    InternalEntityEntry entry2;
+                    bool hasNullKey2;
+                    materializationContext2 = new MaterializationContext(
+                        [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                        queryContext.Context
+                    );
+                    instance2 = default(User);
+                    entry2 = queryContext.TryGetEntry(
+                        key: [LIFTABLE Constant: Key: User.Id PK | Resolver: c => c.Dependencies.Model.FindEntityType("Backend.Models.User").FindPrimaryKey()], 
+                        keyValues: new object[]{ (object)dataReader.GetInt32(9) }, 
+                        throwOnNullKey: True, 
+                        hasNullKey: hasNullKey2);
+                    !(hasNullKey2) ? entry2 != default(InternalEntityEntry) ? 
+                    {
+                        entityType2 = entry2.EntityType;
+                        return instance2 = (User)entry2.Entity;
+                    } : 
+                    {
+                        ISnapshot shadowSnapshot2;
+                        shadowSnapshot2 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                        entityType2 = [LIFTABLE Constant: EntityType: User | Resolver: namelessParameter{4} => namelessParameter{4}.Dependencies.Model.FindEntityType("Backend.Models.User")];
+                        instance2 = switch (entityType2)
+                        {
+                            case [LIFTABLE Constant: EntityType: User | Resolver: namelessParameter{5} => namelessParameter{5}.Dependencies.Model.FindEntityType("Backend.Models.User")]: 
+                                {
+                                    return 
+                                    {
+                                        User instance;
+                                        instance = new User();
+                                        instance.<Id>k__BackingField = dataReader.GetInt32(9);
+                                        instance.<Email>k__BackingField = dataReader.GetString(10);
+                                        instance.<PasswordHash>k__BackingField = dataReader.GetString(11);
+                                        instance.<Role>k__BackingField = Invoke(((EnumToNumberConverter<UserRole, int>)((IReadOnlyProperty)[LIFTABLE Constant: Property: User.Role (UserRole) Required | Resolver: namelessParameter{6} => namelessParameter{6}.Dependencies.Model.FindEntityType("Backend.Models.User").FindProperty("Role")]).GetTypeMapping().Converter).ConvertFromProviderTyped, dataReader.GetInt32(12));
+                                        instance.<Salt>k__BackingField = dataReader.GetString(13);
+                                        (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                            context: materializationContext2.Context, 
+                                            entity: instance, 
+                                            queryTrackingBehavior: TrackAll, 
+                                            structuralType: [LIFTABLE Constant: EntityType: User | Resolver: namelessParameter{7} => namelessParameter{7}.Dependencies.Model.FindEntityType("Backend.Models.User")]) : default(void);
+                                        return instance;
+                                    }}
+                            default: 
+                                default(User)
+                        }
+                        ;
+                        entry2 = entityType2 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                            entityType: entityType2, 
+                            entity: instance2, 
+                            snapshot: shadowSnapshot2);
+                        return instance2;
+                    } : default(void);
+                    return instance2;
+                };
+                resultContext.Values = new object[]
+                { 
+                    entity, 
+                    entity 
+                };
+                ShaperProcessingExpressionVisitor.IncludeReference<Employee, Employee, User>(
+                    queryContext: queryContext, 
+                    entity: (Employee)(resultContext.Values[0]), 
+                    relatedEntity: (User)(resultContext.Values[1]), 
+                    navigation: [LIFTABLE Constant: Navigation: Employee.User (User) ToPrincipal User | Resolver: namelessParameter{8} => namelessParameter{8}.Dependencies.Model.FindEntityType("Backend.Models.Employee").FindNavigation("User")], 
+                    inverseNavigation: default(INavigation), 
+                    fixup: (namelessParameter{9}, namelessParameter{10}) => 
+                    {
+                        return namelessParameter{9}.<User>k__BackingField = namelessParameter{10};
+                    }, 
+                    trackingQuery: True);
+                ShaperProcessingExpressionVisitor.InitializeIncludeCollection<Employee, Employee>(
+                    collectionId: 0, 
+                    queryContext: queryContext, 
+                    dbDataReader: dataReader, 
+                    resultCoordinator: resultCoordinator, 
+                    entity: (Employee)(resultContext.Values[0]), 
+                    parentIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]
+                    { 
+                        (object)(int?)dataReader.GetInt32(0), 
+                        (object)(int?)dataReader.GetInt32(9) 
+                    }], 
+                    outerIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]
+                    { 
+                        (object)(int?)dataReader.GetInt32(0), 
+                        (object)(int?)dataReader.GetInt32(9) 
+                    }], 
+                    navigation: [LIFTABLE Constant: Navigation: Employee.EmployeeSkills (ICollection<EmployeeSkill>) Collection ToDependent EmployeeSkill Inverse: Employee | Resolver: namelessParameter{11} => namelessParameter{11}.Dependencies.Model.FindEntityType("Backend.Models.Employee").FindNavigation("EmployeeSkills")], 
+                    clrCollectionAccessor: [LIFTABLE Constant: ClrICollectionAccessor<Employee, ICollection<EmployeeSkill>, EmployeeSkill> | Resolver: namelessParameter{12} => namelessParameter{12}.Dependencies.Model.FindEntityType("Backend.Models.Employee").FindNavigation("EmployeeSkills").GetCollectionAccessor()], 
+                    trackingQuery: True, 
+                    setLoaded: True);
+            } : default(void);
+            ShaperProcessingExpressionVisitor.PopulateIncludeCollection<Employee, EmployeeSkill>(
+                collectionId: 0, 
+                queryContext: queryContext, 
+                dbDataReader: dataReader, 
+                resultCoordinator: resultCoordinator, 
+                parentIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]
+                { 
+                    (object)(int?)dataReader.GetInt32(0), 
+                    (object)(int?)dataReader.GetInt32(9) 
+                }], 
+                outerIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]
+                { 
+                    (object)(int?)dataReader.GetInt32(0), 
+                    (object)(int?)dataReader.GetInt32(9) 
+                }], 
+                selfIdentifier: [LIFTABLE Constant: Func<QueryContext, DbDataReader, object[]> | Resolver: _ => (queryContext, dataReader) => new object[]
+                { 
+                    (object)dataReader.IsDBNull(14) ? default(int?) : (int?)dataReader.GetInt32(14), 
+                    (object)dataReader.IsDBNull(18) ? default(int?) : (int?)dataReader.GetInt32(18) 
+                }], 
+                parentIdentifierValueComparers: [LIFTABLE Constant: Func<object, object, bool>[] { Func<object, object, bool>, Func<object, object, bool> } | Resolver: _ => new Func<object, object, bool>[]
+                { 
+                    (left, right) => left == null ? right == null : right != null && (int)left == (int)right, 
+                    (left, right) => left == null ? right == null : right != null && (int)left == (int)right 
+                }], 
+                outerIdentifierValueComparers: [LIFTABLE Constant: Func<object, object, bool>[] { Func<object, object, bool>, Func<object, object, bool> } | Resolver: _ => new Func<object, object, bool>[]
+                { 
+                    (left, right) => left == null ? right == null : right != null && (int)left == (int)right, 
+                    (left, right) => left == null ? right == null : right != null && (int)left == (int)right 
+                }], 
+                selfIdentifierValueComparers: [LIFTABLE Constant: Func<object, object, bool>[] { Func<object, object, bool>, Func<object, object, bool> } | Resolver: _ => new Func<object, object, bool>[]
+                { 
+                    (left, right) => left == null ? right == null : right != null && (int)left == (int)right, 
+                    (left, right) => left == null ? right == null : right != null && (int)left == (int)right 
+                }], 
+                innerShaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+                {
+                    EmployeeSkill entity;
+                    Skill entity;
+                    entity = 
+                    {
+                        MaterializationContext materializationContext3;
+                        IEntityType entityType3;
+                        EmployeeSkill instance3;
+                        InternalEntityEntry entry3;
+                        bool hasNullKey3;
+                        materializationContext3 = new MaterializationContext(
+                            [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                            queryContext.Context
+                        );
+                        instance3 = default(EmployeeSkill);
+                        entry3 = queryContext.TryGetEntry(
+                            key: [LIFTABLE Constant: Key: EmployeeSkill.Id PK | Resolver: c => c.Dependencies.Model.FindEntityType("Backend.Models.EmployeeSkill").FindPrimaryKey()], 
+                            keyValues: new object[]{ dataReader.IsDBNull(14) ? default(object) : (object)dataReader.GetInt32(14) }, 
+                            throwOnNullKey: False, 
+                            hasNullKey: hasNullKey3);
+                        !(hasNullKey3) ? entry3 != default(InternalEntityEntry) ? 
+                        {
+                            entityType3 = entry3.EntityType;
+                            return instance3 = (EmployeeSkill)entry3.Entity;
+                        } : 
+                        {
+                            ISnapshot shadowSnapshot3;
+                            shadowSnapshot3 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                            entityType3 = [LIFTABLE Constant: EntityType: EmployeeSkill | Resolver: namelessParameter{13} => namelessParameter{13}.Dependencies.Model.FindEntityType("Backend.Models.EmployeeSkill")];
+                            instance3 = switch (entityType3)
+                            {
+                                case [LIFTABLE Constant: EntityType: EmployeeSkill | Resolver: namelessParameter{14} => namelessParameter{14}.Dependencies.Model.FindEntityType("Backend.Models.EmployeeSkill")]: 
+                                    {
+                                        return 
+                                        {
+                                            EmployeeSkill instance;
+                                            instance = new EmployeeSkill();
+                                            instance.<Id>k__BackingField = dataReader.IsDBNull(14) ? default(int) : dataReader.GetInt32(14);
+                                            instance.<EmployeeId>k__BackingField = dataReader.IsDBNull(15) ? default(int) : dataReader.GetInt32(15);
+                                            instance.<Level>k__BackingField = dataReader.IsDBNull(16) ? default(int?) : (int?)dataReader.GetInt32(16);
+                                            instance.<SkillId>k__BackingField = dataReader.IsDBNull(17) ? default(int) : dataReader.GetInt32(17);
+                                            (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                                context: materializationContext3.Context, 
+                                                entity: instance, 
+                                                queryTrackingBehavior: TrackAll, 
+                                                structuralType: [LIFTABLE Constant: EntityType: EmployeeSkill | Resolver: namelessParameter{15} => namelessParameter{15}.Dependencies.Model.FindEntityType("Backend.Models.EmployeeSkill")]) : default(void);
+                                            return instance;
+                                        }}
+                                default: 
+                                    default(EmployeeSkill)
+                            }
+                            ;
+                            entry3 = entityType3 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                                entityType: entityType3, 
+                                entity: instance3, 
+                                snapshot: shadowSnapshot3);
+                            return instance3;
+                        } : default(void);
+                        return instance3;
+                    };
+                    entity = 
+                    {
+                        MaterializationContext materializationContext4;
+                        IEntityType entityType4;
+                        Skill instance4;
+                        InternalEntityEntry entry4;
+                        bool hasNullKey4;
+                        materializationContext4 = new MaterializationContext(
+                            [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                            queryContext.Context
+                        );
+                        instance4 = default(Skill);
+                        entry4 = queryContext.TryGetEntry(
+                            key: [LIFTABLE Constant: Key: Skill.Id PK | Resolver: c => c.Dependencies.Model.FindEntityType("Backend.Models.Skill").FindPrimaryKey()], 
+                            keyValues: new object[]{ dataReader.IsDBNull(18) ? default(object) : (object)dataReader.GetInt32(18) }, 
+                            throwOnNullKey: False, 
+                            hasNullKey: hasNullKey4);
+                        !(hasNullKey4) ? entry4 != default(InternalEntityEntry) ? 
+                        {
+                            entityType4 = entry4.EntityType;
+                            return instance4 = (Skill)entry4.Entity;
+                        } : 
+                        {
+                            ISnapshot shadowSnapshot4;
+                            shadowSnapshot4 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                            entityType4 = [LIFTABLE Constant: EntityType: Skill | Resolver: namelessParameter{16} => namelessParameter{16}.Dependencies.Model.FindEntityType("Backend.Models.Skill")];
+                            instance4 = switch (entityType4)
+                            {
+                                case [LIFTABLE Constant: EntityType: Skill | Resolver: namelessParameter{17} => namelessParameter{17}.Dependencies.Model.FindEntityType("Backend.Models.Skill")]: 
+                                    {
+                                        return 
+                                        {
+                                            Skill instance;
+                                            instance = new Skill();
+                                            instance.<Id>k__BackingField = dataReader.IsDBNull(18) ? default(int) : dataReader.GetInt32(18);
+                                            instance.<Category>k__BackingField = dataReader.IsDBNull(19) ? default(SkillCategory) : Invoke(((EnumToNumberConverter<SkillCategory, int>)((IReadOnlyProperty)[LIFTABLE Constant: Property: Skill.Category (SkillCategory) Required | Resolver: namelessParameter{18} => namelessParameter{18}.Dependencies.Model.FindEntityType("Backend.Models.Skill").FindProperty("Category")]).GetTypeMapping().Converter).ConvertFromProviderTyped, dataReader.GetInt32(19));
+                                            instance.<IconPath>k__BackingField = dataReader.IsDBNull(20) ? default(string) : dataReader.GetString(20);
+                                            instance.<Name>k__BackingField = dataReader.IsDBNull(21) ? default(string) : dataReader.GetString(21);
+                                            (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                                context: materializationContext4.Context, 
+                                                entity: instance, 
+                                                queryTrackingBehavior: TrackAll, 
+                                                structuralType: [LIFTABLE Constant: EntityType: Skill | Resolver: namelessParameter{19} => namelessParameter{19}.Dependencies.Model.FindEntityType("Backend.Models.Skill")]) : default(void);
+                                            return instance;
+                                        }}
+                                default: 
+                                    default(Skill)
+                            }
+                            ;
+                            entry4 = entityType4 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                                entityType: entityType4, 
+                                entity: instance4, 
+                                snapshot: shadowSnapshot4);
+                            return instance4;
+                        } : default(void);
+                        return instance4;
+                    };
+                    ShaperProcessingExpressionVisitor.IncludeReference<EmployeeSkill, EmployeeSkill, Skill>(
+                        queryContext: queryContext, 
+                        entity: entity, 
+                        relatedEntity: entity, 
+                        navigation: [LIFTABLE Constant: Navigation: EmployeeSkill.Skill (Skill) ToPrincipal Skill Inverse: EmployeeSkills | Resolver: namelessParameter{20} => namelessParameter{20}.Dependencies.Model.FindEntityType("Backend.Models.EmployeeSkill").FindNavigation("Skill")], 
+                        inverseNavigation: [LIFTABLE Constant: Navigation: Skill.EmployeeSkills (ICollection<EmployeeSkill>) Collection ToDependent EmployeeSkill Inverse: Skill | Resolver: namelessParameter{21} => namelessParameter{21}.Dependencies.Model.FindEntityType("Backend.Models.Skill").FindNavigation("EmployeeSkills")], 
+                        fixup: (namelessParameter{22}, namelessParameter{23}) => 
+                        {
+                            namelessParameter{22}.<Skill>k__BackingField = namelessParameter{23};
+                            return [LIFTABLE Constant: ClrICollectionAccessor<Skill, ICollection<EmployeeSkill>, EmployeeSkill> | Resolver: namelessParameter{24} => namelessParameter{24}.Dependencies.Model.FindEntityType("Backend.Models.Skill").FindNavigation("EmployeeSkills").GetCollectionAccessor()].Add(
+                                entity: namelessParameter{23}, 
+                                value: namelessParameter{22}, 
+                                forMaterialization: True);
+                        }, 
+                        trackingQuery: True);
+                    return entity;
+                }, 
+                inverseNavigation: [LIFTABLE Constant: Navigation: EmployeeSkill.Employee (Employee) ToPrincipal Employee Inverse: EmployeeSkills | Resolver: namelessParameter{25} => namelessParameter{25}.Dependencies.Model.FindEntityType("Backend.Models.EmployeeSkill").FindNavigation("Employee")], 
+                fixup: (namelessParameter{26}, namelessParameter{27}) => 
+                {
+                    [LIFTABLE Constant: ClrICollectionAccessor<Employee, ICollection<EmployeeSkill>, EmployeeSkill> | Resolver: namelessParameter{28} => namelessParameter{28}.Dependencies.Model.FindEntityType("Backend.Models.Employee").FindNavigation("EmployeeSkills").GetCollectionAccessor()].Add(
+                        entity: namelessParameter{26}, 
+                        value: namelessParameter{27}, 
+                        forMaterialization: True);
+                    return namelessParameter{27}.<Employee>k__BackingField = namelessParameter{26};
+                }, 
+                trackingQuery: True);
+            return IsTrue(resultCoordinator.ResultReady)
+             ? (Employee)(resultContext.Values[0]) : default(Employee);
+        }, 
+        contextType: Backend.Data.AppDbContext, 
+        standAloneStateManager: False, 
+        detailedErrorsEnabled: False, 
+        threadSafetyChecksEnabled: True), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-11-12 00:16:37 [DBG] Creating DbConnection.
+2025-11-12 00:16:37 [DBG] Created DbConnection. (0ms).
+2025-11-12 00:16:37 [DBG] Opening connection to database 'main' on server 'app.db'.
+2025-11-12 00:16:37 [DBG] Opened connection to database 'main' on server 'C:\Users\xmilk\portfolio\employee-management-app\backend\app.db'.
+2025-11-12 00:16:37 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-11-12 00:16:37 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2025-11-12 00:16:37 [DBG] Initialized DbCommand for 'ExecuteReader' (5ms).
+2025-11-12 00:16:37 [DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "s0"."Id", "s0"."Address", "s0"."CurrentWorkplace", "s0"."DateOfBirth", "s0"."FullName", "s0"."Gender", "s0"."JoinDate", "s0"."UserId", "s0"."VacationRemaining", "s0"."Id0", "s0"."Email", "s0"."PasswordHash", "s0"."Role", "s0"."Salt", "s1"."Id", "s1"."EmployeeId", "s1"."Level", "s1"."SkillId", "s1"."Id0", "s1"."Category", "s1"."IconPath", "s1"."Name"
+FROM (
+    SELECT "e"."Id", "e"."Address", "e"."CurrentWorkplace", "e"."DateOfBirth", "e"."FullName", "e"."Gender", "e"."JoinDate", "e"."UserId", "e"."VacationRemaining", "u"."Id" AS "Id0", "u"."Email", "u"."PasswordHash", "u"."Role", "u"."Salt"
+    FROM "Employees" AS "e"
+    INNER JOIN "Users" AS "u" ON "e"."UserId" = "u"."Id"
+    WHERE "e"."Id" = @__id_0
+    LIMIT 1
+) AS "s0"
+LEFT JOIN (
+    SELECT "e0"."Id", "e0"."EmployeeId", "e0"."Level", "e0"."SkillId", "s"."Id" AS "Id0", "s"."Category", "s"."IconPath", "s"."Name"
+    FROM "EmployeeSkills" AS "e0"
+    INNER JOIN "Skills" AS "s" ON "e0"."SkillId" = "s"."Id"
+) AS "s1" ON "s0"."Id" = "s1"."EmployeeId"
+ORDER BY "s0"."Id", "s0"."Id0", "s1"."Id"
+2025-11-12 00:16:37 [INF] Executed DbCommand (9ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "s0"."Id", "s0"."Address", "s0"."CurrentWorkplace", "s0"."DateOfBirth", "s0"."FullName", "s0"."Gender", "s0"."JoinDate", "s0"."UserId", "s0"."VacationRemaining", "s0"."Id0", "s0"."Email", "s0"."PasswordHash", "s0"."Role", "s0"."Salt", "s1"."Id", "s1"."EmployeeId", "s1"."Level", "s1"."SkillId", "s1"."Id0", "s1"."Category", "s1"."IconPath", "s1"."Name"
+FROM (
+    SELECT "e"."Id", "e"."Address", "e"."CurrentWorkplace", "e"."DateOfBirth", "e"."FullName", "e"."Gender", "e"."JoinDate", "e"."UserId", "e"."VacationRemaining", "u"."Id" AS "Id0", "u"."Email", "u"."PasswordHash", "u"."Role", "u"."Salt"
+    FROM "Employees" AS "e"
+    INNER JOIN "Users" AS "u" ON "e"."UserId" = "u"."Id"
+    WHERE "e"."Id" = @__id_0
+    LIMIT 1
+) AS "s0"
+LEFT JOIN (
+    SELECT "e0"."Id", "e0"."EmployeeId", "e0"."Level", "e0"."SkillId", "s"."Id" AS "Id0", "s"."Category", "s"."IconPath", "s"."Name"
+    FROM "EmployeeSkills" AS "e0"
+    INNER JOIN "Skills" AS "s" ON "e0"."SkillId" = "s"."Id"
+) AS "s1" ON "s0"."Id" = "s1"."EmployeeId"
+ORDER BY "s0"."Id", "s0"."Id0", "s1"."Id"
+2025-11-12 00:16:37 [DBG] Context 'AppDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:16:37 [DBG] The navigation 'Employee.User' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:16:37 [DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:16:37 [DBG] Context 'AppDbContext' started tracking 'EmployeeSkill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:16:37 [DBG] The navigation 'EmployeeSkill.Skill' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:16:37 [DBG] Context 'AppDbContext' started tracking 'Skill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:16:37 [DBG] Closing data reader to 'main' on server 'C:\Users\xmilk\portfolio\employee-management-app\backend\app.db'.
+2025-11-12 00:16:37 [DBG] A data reader for 'main' on server 'C:\Users\xmilk\portfolio\employee-management-app\backend\app.db' is being disposed after spending 33ms reading results.
+2025-11-12 00:16:37 [DBG] Closing connection to database 'main' on server 'C:\Users\xmilk\portfolio\employee-management-app\backend\app.db'.
+2025-11-12 00:16:37 [DBG] Closed connection to database 'main' on server 'app.db' (1ms).
+2025-11-12 00:16:37 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-11-12 00:16:37 [DBG] No information found on request to perform content negotiation.
+2025-11-12 00:16:37 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-11-12 00:16:37 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-11-12 00:16:37 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-11-12 00:16:37 [INF] Executing OkObjectResult, writing value of type 'Backend.DTOs.SelectedEmployeeInfoResponse'.
+2025-11-12 00:16:37 [INF] Executed action Backend.Controllers.AdminController.GetEmployeeById (EmployeeManagement.Api) in 178.0132ms
+2025-11-12 00:16:37 [INF] Executed endpoint 'Backend.Controllers.AdminController.GetEmployeeById (EmployeeManagement.Api)'
+2025-11-12 00:16:37 [DBG] Connection id "0HNH1669CFR56" completed keep alive response.
+2025-11-12 00:16:37 [DBG] 'AppDbContext' disposed.
+2025-11-12 00:16:37 [DBG] Disposing connection to database 'main' on server 'app.db'.
+2025-11-12 00:16:37 [DBG] Disposed connection to database 'main' on server 'app.db' (1ms).
+2025-11-12 00:16:37 [INF] Request finished HTTP/1.1 GET http://localhost:5211/api/admin/5 - 200 null application/json; charset=utf-8 205.5134ms
+2025-11-12 00:18:48 [DBG] Connection id "0HNH1669CFR56" disconnecting.
+2025-11-12 00:18:48 [DBG] Connection id "0HNH1669CFR56" stopped.
+2025-11-12 00:18:48 [DBG] Connection id "0HNH1669CFR56" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-12 00:19:14 [DBG] Connection id "0HNH1669CFR57" accepted.
+2025-11-12 00:19:14 [DBG] Connection id "0HNH1669CFR57" started.
+2025-11-12 00:19:14 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5211/api/admin/5 - null null
+2025-11-12 00:19:14 [DBG] 1 candidate(s) found for the request path '/api/admin/5'
+2025-11-12 00:19:14 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2025-11-12 00:19:14 [DBG] The request has an origin header: 'http://localhost:5173'.
+2025-11-12 00:19:14 [INF] CORS policy execution successful.
+2025-11-12 00:19:14 [DBG] The request is a preflight request.
+2025-11-12 00:19:14 [DBG] Connection id "0HNH1669CFR57" completed keep alive response.
+2025-11-12 00:19:14 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5211/api/admin/5 - 204 null null 6.7565ms
+2025-11-12 00:19:14 [INF] Request starting HTTP/1.1 GET http://localhost:5211/api/admin/5 - null null
+2025-11-12 00:19:14 [DBG] 1 candidate(s) found for the request path '/api/admin/5'
+2025-11-12 00:19:14 [DBG] Endpoint 'Backend.Controllers.AdminController.GetEmployeeById (EmployeeManagement.Api)' with route pattern 'api/Admin/{id}' is valid for the request path '/api/admin/5'
+2025-11-12 00:19:14 [DBG] Request matched endpoint 'Backend.Controllers.AdminController.GetEmployeeById (EmployeeManagement.Api)'
+2025-11-12 00:19:14 [DBG] The request has an origin header: 'http://localhost:5173'.
+2025-11-12 00:19:14 [INF] CORS policy execution successful.
+2025-11-12 00:19:14 [DBG] Successfully validated the token.
+2025-11-12 00:19:14 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2025-11-12 00:19:14 [DBG] Authorization was successful.
+2025-11-12 00:19:14 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-11-12 00:19:14 [INF] Executing endpoint 'Backend.Controllers.AdminController.GetEmployeeById (EmployeeManagement.Api)'
+2025-11-12 00:19:14 [INF] Route matched with {action = "GetEmployeeById", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetEmployeeById(Int32) on controller Backend.Controllers.AdminController (EmployeeManagement.Api).
+2025-11-12 00:19:14 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-12 00:19:14 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-12 00:19:14 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-12 00:19:14 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-12 00:19:14 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-12 00:19:14 [DBG] Executing controller factory for controller Backend.Controllers.AdminController (EmployeeManagement.Api)
+2025-11-12 00:19:14 [DBG] Executed controller factory for controller Backend.Controllers.AdminController (EmployeeManagement.Api)
+2025-11-12 00:19:14 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2025-11-12 00:19:14 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2025-11-12 00:19:14 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2025-11-12 00:19:14 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2025-11-12 00:19:14 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2025-11-12 00:19:14 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2025-11-12 00:19:14 [DBG] Entity Framework Core 9.0.7 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:9.0.7' with options: None
+2025-11-12 00:19:14 [DBG] Creating DbConnection.
+2025-11-12 00:19:14 [DBG] Created DbConnection. (0ms).
+2025-11-12 00:19:14 [DBG] Opening connection to database 'main' on server 'app.db'.
+2025-11-12 00:19:14 [DBG] Opened connection to database 'main' on server 'C:\Users\xmilk\portfolio\employee-management-app\backend\app.db'.
+2025-11-12 00:19:14 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-11-12 00:19:14 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-11-12 00:19:14 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2025-11-12 00:19:14 [DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "s0"."Id", "s0"."Address", "s0"."CurrentWorkplace", "s0"."DateOfBirth", "s0"."FullName", "s0"."Gender", "s0"."JoinDate", "s0"."UserId", "s0"."VacationRemaining", "s0"."Id0", "s0"."Email", "s0"."PasswordHash", "s0"."Role", "s0"."Salt", "s1"."Id", "s1"."EmployeeId", "s1"."Level", "s1"."SkillId", "s1"."Id0", "s1"."Category", "s1"."IconPath", "s1"."Name"
+FROM (
+    SELECT "e"."Id", "e"."Address", "e"."CurrentWorkplace", "e"."DateOfBirth", "e"."FullName", "e"."Gender", "e"."JoinDate", "e"."UserId", "e"."VacationRemaining", "u"."Id" AS "Id0", "u"."Email", "u"."PasswordHash", "u"."Role", "u"."Salt"
+    FROM "Employees" AS "e"
+    INNER JOIN "Users" AS "u" ON "e"."UserId" = "u"."Id"
+    WHERE "e"."Id" = @__id_0
+    LIMIT 1
+) AS "s0"
+LEFT JOIN (
+    SELECT "e0"."Id", "e0"."EmployeeId", "e0"."Level", "e0"."SkillId", "s"."Id" AS "Id0", "s"."Category", "s"."IconPath", "s"."Name"
+    FROM "EmployeeSkills" AS "e0"
+    INNER JOIN "Skills" AS "s" ON "e0"."SkillId" = "s"."Id"
+) AS "s1" ON "s0"."Id" = "s1"."EmployeeId"
+ORDER BY "s0"."Id", "s0"."Id0", "s1"."Id"
+2025-11-12 00:19:14 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "s0"."Id", "s0"."Address", "s0"."CurrentWorkplace", "s0"."DateOfBirth", "s0"."FullName", "s0"."Gender", "s0"."JoinDate", "s0"."UserId", "s0"."VacationRemaining", "s0"."Id0", "s0"."Email", "s0"."PasswordHash", "s0"."Role", "s0"."Salt", "s1"."Id", "s1"."EmployeeId", "s1"."Level", "s1"."SkillId", "s1"."Id0", "s1"."Category", "s1"."IconPath", "s1"."Name"
+FROM (
+    SELECT "e"."Id", "e"."Address", "e"."CurrentWorkplace", "e"."DateOfBirth", "e"."FullName", "e"."Gender", "e"."JoinDate", "e"."UserId", "e"."VacationRemaining", "u"."Id" AS "Id0", "u"."Email", "u"."PasswordHash", "u"."Role", "u"."Salt"
+    FROM "Employees" AS "e"
+    INNER JOIN "Users" AS "u" ON "e"."UserId" = "u"."Id"
+    WHERE "e"."Id" = @__id_0
+    LIMIT 1
+) AS "s0"
+LEFT JOIN (
+    SELECT "e0"."Id", "e0"."EmployeeId", "e0"."Level", "e0"."SkillId", "s"."Id" AS "Id0", "s"."Category", "s"."IconPath", "s"."Name"
+    FROM "EmployeeSkills" AS "e0"
+    INNER JOIN "Skills" AS "s" ON "e0"."SkillId" = "s"."Id"
+) AS "s1" ON "s0"."Id" = "s1"."EmployeeId"
+ORDER BY "s0"."Id", "s0"."Id0", "s1"."Id"
+2025-11-12 00:19:14 [DBG] Context 'AppDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:19:14 [DBG] The navigation 'Employee.User' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:19:14 [DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:19:14 [DBG] Context 'AppDbContext' started tracking 'EmployeeSkill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:19:14 [DBG] The navigation 'EmployeeSkill.Skill' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:19:14 [DBG] Context 'AppDbContext' started tracking 'Skill' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:19:14 [DBG] Closing data reader to 'main' on server 'C:\Users\xmilk\portfolio\employee-management-app\backend\app.db'.
+2025-11-12 00:19:14 [DBG] A data reader for 'main' on server 'C:\Users\xmilk\portfolio\employee-management-app\backend\app.db' is being disposed after spending 4ms reading results.
+2025-11-12 00:19:14 [DBG] Closing connection to database 'main' on server 'C:\Users\xmilk\portfolio\employee-management-app\backend\app.db'.
+2025-11-12 00:19:14 [DBG] Closed connection to database 'main' on server 'app.db' (0ms).
+2025-11-12 00:19:14 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-11-12 00:19:14 [DBG] No information found on request to perform content negotiation.
+2025-11-12 00:19:14 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-11-12 00:19:14 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-11-12 00:19:14 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-11-12 00:19:14 [INF] Executing OkObjectResult, writing value of type 'Backend.DTOs.SelectedEmployeeInfoResponse'.
+2025-11-12 00:19:14 [INF] Executed action Backend.Controllers.AdminController.GetEmployeeById (EmployeeManagement.Api) in 25.5163ms
+2025-11-12 00:19:14 [INF] Executed endpoint 'Backend.Controllers.AdminController.GetEmployeeById (EmployeeManagement.Api)'
+2025-11-12 00:19:14 [DBG] Connection id "0HNH1669CFR57" completed keep alive response.
+2025-11-12 00:19:14 [DBG] 'AppDbContext' disposed.
+2025-11-12 00:19:14 [DBG] Disposing connection to database 'main' on server 'app.db'.
+2025-11-12 00:19:14 [DBG] Disposed connection to database 'main' on server 'app.db' (0ms).
+2025-11-12 00:19:14 [INF] Request finished HTTP/1.1 GET http://localhost:5211/api/admin/5 - 200 null application/json; charset=utf-8 43.4494ms
+2025-11-12 00:19:47 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5211/api/auth/login - null null
+2025-11-12 00:19:47 [DBG] 1 candidate(s) found for the request path '/api/auth/login'
+2025-11-12 00:19:47 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2025-11-12 00:19:47 [DBG] The request has an origin header: 'http://localhost:5173'.
+2025-11-12 00:19:47 [INF] CORS policy execution successful.
+2025-11-12 00:19:47 [DBG] The request is a preflight request.
+2025-11-12 00:19:47 [DBG] Connection id "0HNH1669CFR57" completed keep alive response.
+2025-11-12 00:19:47 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5211/api/auth/login - 204 null null 9.8262ms
+2025-11-12 00:19:47 [INF] Request starting HTTP/1.1 POST http://localhost:5211/api/auth/login - application/json 62
+2025-11-12 00:19:47 [DBG] 1 candidate(s) found for the request path '/api/auth/login'
+2025-11-12 00:19:47 [DBG] Endpoint 'Backend.Controllers.AuthController.Login (EmployeeManagement.Api)' with route pattern 'api/Auth/login' is valid for the request path '/api/auth/login'
+2025-11-12 00:19:47 [DBG] Request matched endpoint 'Backend.Controllers.AuthController.Login (EmployeeManagement.Api)'
+2025-11-12 00:19:47 [DBG] The request has an origin header: 'http://localhost:5173'.
+2025-11-12 00:19:47 [INF] CORS policy execution successful.
+2025-11-12 00:19:47 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-11-12 00:19:47 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-11-12 00:19:47 [INF] Executing endpoint 'Backend.Controllers.AuthController.Login (EmployeeManagement.Api)'
+2025-11-12 00:19:47 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Backend.DTOs.LoginRequest) on controller Backend.Controllers.AuthController (EmployeeManagement.Api).
+2025-11-12 00:19:47 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-12 00:19:47 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-12 00:19:47 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-12 00:19:47 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-12 00:19:47 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-12 00:19:47 [DBG] Executing controller factory for controller Backend.Controllers.AuthController (EmployeeManagement.Api)
+2025-11-12 00:19:47 [DBG] Executed controller factory for controller Backend.Controllers.AuthController (EmployeeManagement.Api)
+2025-11-12 00:19:47 [DBG] Attempting to bind parameter 'request' of type 'Backend.DTOs.LoginRequest' ...
+2025-11-12 00:19:47 [DBG] Attempting to bind parameter 'request' of type 'Backend.DTOs.LoginRequest' using the name '' in request data ...
+2025-11-12 00:19:47 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-11-12 00:19:47 [DBG] Connection id "0HNH1669CFR57", Request id "0HNH1669CFR57:00000004": started reading request body.
+2025-11-12 00:19:47 [DBG] Connection id "0HNH1669CFR57", Request id "0HNH1669CFR57:00000004": done reading request body.
+2025-11-12 00:19:47 [DBG] JSON input formatter succeeded, deserializing to type 'Backend.DTOs.LoginRequest'
+2025-11-12 00:19:47 [DBG] Done attempting to bind parameter 'request' of type 'Backend.DTOs.LoginRequest'.
+2025-11-12 00:19:47 [DBG] Done attempting to bind parameter 'request' of type 'Backend.DTOs.LoginRequest'.
+2025-11-12 00:19:47 [DBG] Attempting to validate the bound parameter 'request' of type 'Backend.DTOs.LoginRequest' ...
+2025-11-12 00:19:47 [DBG] Done attempting to validate the bound parameter 'request' of type 'Backend.DTOs.LoginRequest'.
+2025-11-12 00:19:47 [DBG] Entity Framework Core 9.0.7 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:9.0.7' with options: None
+2025-11-12 00:19:47 [DBG] Creating DbConnection.
+2025-11-12 00:19:47 [DBG] Created DbConnection. (0ms).
+2025-11-12 00:19:47 [DBG] Opening connection to database 'main' on server 'app.db'.
+2025-11-12 00:19:47 [DBG] Opened connection to database 'main' on server 'C:\Users\xmilk\portfolio\employee-management-app\backend\app.db'.
+2025-11-12 00:19:47 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-11-12 00:19:47 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-11-12 00:19:47 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2025-11-12 00:19:47 [DBG] Executing DbCommand [Parameters=[@__email_0='?' (Size = 25)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."PasswordHash", "u"."Role", "u"."Salt"
+FROM "Users" AS "u"
+WHERE "u"."Email" = @__email_0
+LIMIT 1
+2025-11-12 00:19:47 [INF] Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 25)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."PasswordHash", "u"."Role", "u"."Salt"
+FROM "Users" AS "u"
+WHERE "u"."Email" = @__email_0
+LIMIT 1
+2025-11-12 00:19:47 [DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:19:47 [DBG] Closing data reader to 'main' on server 'C:\Users\xmilk\portfolio\employee-management-app\backend\app.db'.
+2025-11-12 00:19:47 [DBG] A data reader for 'main' on server 'C:\Users\xmilk\portfolio\employee-management-app\backend\app.db' is being disposed after spending 3ms reading results.
+2025-11-12 00:19:47 [DBG] Closing connection to database 'main' on server 'C:\Users\xmilk\portfolio\employee-management-app\backend\app.db'.
+2025-11-12 00:19:47 [DBG] Closed connection to database 'main' on server 'app.db' (1ms).
+2025-11-12 00:19:47 [INF] ログイン処理成功 : UserId : 2
+2025-11-12 00:19:47 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-11-12 00:19:47 [DBG] No information found on request to perform content negotiation.
+2025-11-12 00:19:47 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-11-12 00:19:47 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-11-12 00:19:47 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-11-12 00:19:47 [INF] Executing OkObjectResult, writing value of type 'Backend.DTOs.LoginResponse'.
+2025-11-12 00:19:47 [INF] Executed action Backend.Controllers.AuthController.Login (EmployeeManagement.Api) in 37.2862ms
+2025-11-12 00:19:47 [INF] Executed endpoint 'Backend.Controllers.AuthController.Login (EmployeeManagement.Api)'
+2025-11-12 00:19:47 [DBG] Connection id "0HNH1669CFR57" completed keep alive response.
+2025-11-12 00:19:47 [DBG] 'AppDbContext' disposed.
+2025-11-12 00:19:47 [DBG] Disposing connection to database 'main' on server 'app.db'.
+2025-11-12 00:19:47 [DBG] Disposed connection to database 'main' on server 'app.db' (1ms).
+2025-11-12 00:19:47 [INF] Request finished HTTP/1.1 POST http://localhost:5211/api/auth/login - 200 null application/json; charset=utf-8 55.6013ms
+2025-11-12 00:19:47 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5211/api/general/info - null null
+2025-11-12 00:19:47 [DBG] 1 candidate(s) found for the request path '/api/general/info'
+2025-11-12 00:19:47 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2025-11-12 00:19:47 [DBG] The request has an origin header: 'http://localhost:5173'.
+2025-11-12 00:19:47 [INF] CORS policy execution successful.
+2025-11-12 00:19:47 [DBG] The request is a preflight request.
+2025-11-12 00:19:47 [DBG] Connection id "0HNH1669CFR57" completed keep alive response.
+2025-11-12 00:19:47 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5211/api/general/info - 204 null null 6.4925ms
+2025-11-12 00:19:47 [INF] Request starting HTTP/1.1 GET http://localhost:5211/api/general/info - null null
+2025-11-12 00:19:47 [DBG] 1 candidate(s) found for the request path '/api/general/info'
+2025-11-12 00:19:47 [DBG] Endpoint 'Backend.Controllers.GeneralController.GetMyEmployeeInfo (EmployeeManagement.Api)' with route pattern 'api/General/info' is valid for the request path '/api/general/info'
+2025-11-12 00:19:47 [DBG] Request matched endpoint 'Backend.Controllers.GeneralController.GetMyEmployeeInfo (EmployeeManagement.Api)'
+2025-11-12 00:19:47 [DBG] The request has an origin header: 'http://localhost:5173'.
+2025-11-12 00:19:47 [INF] CORS policy execution successful.
+2025-11-12 00:19:47 [DBG] Successfully validated the token.
+2025-11-12 00:19:47 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2025-11-12 00:19:47 [DBG] Authorization was successful.
+2025-11-12 00:19:47 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-11-12 00:19:47 [INF] Executing endpoint 'Backend.Controllers.GeneralController.GetMyEmployeeInfo (EmployeeManagement.Api)'
+2025-11-12 00:19:47 [INF] Route matched with {action = "GetMyEmployeeInfo", controller = "General"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyEmployeeInfo() on controller Backend.Controllers.GeneralController (EmployeeManagement.Api).
+2025-11-12 00:19:47 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-12 00:19:47 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-12 00:19:47 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-12 00:19:47 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-12 00:19:47 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-12 00:19:47 [DBG] Executing controller factory for controller Backend.Controllers.GeneralController (EmployeeManagement.Api)
+2025-11-12 00:19:47 [DBG] Executed controller factory for controller Backend.Controllers.GeneralController (EmployeeManagement.Api)
+2025-11-12 00:19:47 [DBG] Entity Framework Core 9.0.7 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:9.0.7' with options: None
+2025-11-12 00:19:47 [DBG] Compiling query expression: 
+'DbSet<Employee>()
+    .Include(e => e.User)
+    .FirstOrDefault(e => e.Id == __userId_0)'
+2025-11-12 00:19:47 [DBG] Including navigation: 'Employee.User'.
+2025-11-12 00:19:47 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Employee>(
+    asyncEnumerable: SingleQueryingEnumerable.Create<Employee>(
+        relationalQueryContext: (RelationalQueryContext)queryContext, 
+        relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+            Client Projections:
+                0 -> Dictionary<IProperty, int> { [Property: Employee.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Employee.Address (string), 1], [Property: Employee.CurrentWorkplace (string), 2], [Property: Employee.DateOfBirth (DateTime?), 3], [Property: Employee.FullName (string), 4], [Property: Employee.Gender (Gender?), 5], [Property: Employee.JoinDate (DateTime?), 6], [Property: Employee.UserId (int) Required FK Index, 7], [Property: Employee.VacationRemaining (int?), 8] }
+                1 -> Dictionary<IProperty, int> { [Property: User.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 9], [Property: User.Email (string) Required, 10], [Property: User.PasswordHash (string) Required MaxLength(100), 11], [Property: User.Role (UserRole) Required, 12], [Property: User.Salt (string) Required, 13] }
+            SELECT TOP(1) e.Id, e.Address, e.CurrentWorkplace, e.DateOfBirth, e.FullName, e.Gender, e.JoinDate, e.UserId, e.VacationRemaining, u.Id, u.Email, u.PasswordHash, u.Role, u.Salt
+            FROM Employees AS e
+            INNER JOIN Users AS u ON e.UserId == u.Id
+            WHERE e.Id == @__userId_0) | Resolver: c => new RelationalCommandCache(
+            c.Dependencies.MemoryCache, 
+            c.RelationalDependencies.QuerySqlGeneratorFactory, 
+            c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+            Client Projections:
+                0 -> Dictionary<IProperty, int> { [Property: Employee.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Employee.Address (string), 1], [Property: Employee.CurrentWorkplace (string), 2], [Property: Employee.DateOfBirth (DateTime?), 3], [Property: Employee.FullName (string), 4], [Property: Employee.Gender (Gender?), 5], [Property: Employee.JoinDate (DateTime?), 6], [Property: Employee.UserId (int) Required FK Index, 7], [Property: Employee.VacationRemaining (int?), 8] }
+                1 -> Dictionary<IProperty, int> { [Property: User.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 9], [Property: User.Email (string) Required, 10], [Property: User.PasswordHash (string) Required MaxLength(100), 11], [Property: User.Role (UserRole) Required, 12], [Property: User.Salt (string) Required, 13] }
+            SELECT TOP(1) e.Id, e.Address, e.CurrentWorkplace, e.DateOfBirth, e.FullName, e.Gender, e.JoinDate, e.UserId, e.VacationRemaining, u.Id, u.Email, u.PasswordHash, u.Role, u.Salt
+            FROM Employees AS e
+            INNER JOIN Users AS u ON e.UserId == u.Id
+            WHERE e.Id == @__userId_0, 
+            False, 
+            new HashSet<string>(
+                new string[]{ }, 
+                StringComparer.Ordinal
+            )
+        )].GetRelationalCommandTemplate(parameters), 
+        readerColumns: null, 
+        shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+        {
+            Employee entity;
+            User entity;
+            entity = 
+            {
+                MaterializationContext materializationContext1;
+                IEntityType entityType1;
+                Employee instance1;
+                InternalEntityEntry entry1;
+                bool hasNullKey1;
+                materializationContext1 = new MaterializationContext(
+                    [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                    queryContext.Context
+                );
+                instance1 = default(Employee);
+                entry1 = queryContext.TryGetEntry(
+                    key: [LIFTABLE Constant: Key: Employee.Id PK | Resolver: c => c.Dependencies.Model.FindEntityType("Backend.Models.Employee").FindPrimaryKey()], 
+                    keyValues: new object[]{ (object)dataReader.GetInt32(0) }, 
+                    throwOnNullKey: True, 
+                    hasNullKey: hasNullKey1);
+                !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+                {
+                    entityType1 = entry1.EntityType;
+                    return instance1 = (Employee)entry1.Entity;
+                } : 
+                {
+                    ISnapshot shadowSnapshot1;
+                    shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                    entityType1 = [LIFTABLE Constant: EntityType: Employee | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("Backend.Models.Employee")];
+                    instance1 = switch (entityType1)
+                    {
+                        case [LIFTABLE Constant: EntityType: Employee | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("Backend.Models.Employee")]: 
+                            {
+                                return 
+                                {
+                                    Employee instance;
+                                    instance = new Employee();
+                                    instance.<Id>k__BackingField = dataReader.GetInt32(0);
+                                    instance.<Address>k__BackingField = dataReader.IsDBNull(1) ? default(string) : dataReader.GetString(1);
+                                    instance.<CurrentWorkplace>k__BackingField = dataReader.IsDBNull(2) ? default(string) : dataReader.GetString(2);
+                                    instance.<DateOfBirth>k__BackingField = dataReader.IsDBNull(3) ? default(DateTime?) : (DateTime?)dataReader.GetDateTime(3);
+                                    instance.<FullName>k__BackingField = dataReader.IsDBNull(4) ? default(string) : dataReader.GetString(4);
+                                    instance.<Gender>k__BackingField = dataReader.IsDBNull(5) ? default(Gender?) : (Gender?)Invoke(((EnumToNumberConverter<Gender, int>)((IReadOnlyProperty)[LIFTABLE Constant: Property: Employee.Gender (Gender?) | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("Backend.Models.Employee").FindProperty("Gender")]).GetTypeMapping().Converter).ConvertFromProviderTyped, dataReader.GetInt32(5));
+                                    instance.<JoinDate>k__BackingField = dataReader.IsDBNull(6) ? default(DateTime?) : (DateTime?)dataReader.GetDateTime(6);
+                                    instance.<UserId>k__BackingField = dataReader.GetInt32(7);
+                                    instance.<VacationRemaining>k__BackingField = dataReader.IsDBNull(8) ? default(int?) : (int?)dataReader.GetInt32(8);
+                                    (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                        context: materializationContext1.Context, 
+                                        entity: instance, 
+                                        queryTrackingBehavior: TrackAll, 
+                                        structuralType: [LIFTABLE Constant: EntityType: Employee | Resolver: namelessParameter{3} => namelessParameter{3}.Dependencies.Model.FindEntityType("Backend.Models.Employee")]) : default(void);
+                                    return instance;
+                                }}
+                        default: 
+                            default(Employee)
+                    }
+                    ;
+                    entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                        entityType: entityType1, 
+                        entity: instance1, 
+                        snapshot: shadowSnapshot1);
+                    return instance1;
+                } : default(void);
+                return instance1;
+            };
+            entity = 
+            {
+                MaterializationContext materializationContext2;
+                IEntityType entityType2;
+                User instance2;
+                InternalEntityEntry entry2;
+                bool hasNullKey2;
+                materializationContext2 = new MaterializationContext(
+                    [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                    queryContext.Context
+                );
+                instance2 = default(User);
+                entry2 = queryContext.TryGetEntry(
+                    key: [LIFTABLE Constant: Key: User.Id PK | Resolver: c => c.Dependencies.Model.FindEntityType("Backend.Models.User").FindPrimaryKey()], 
+                    keyValues: new object[]{ (object)dataReader.GetInt32(9) }, 
+                    throwOnNullKey: True, 
+                    hasNullKey: hasNullKey2);
+                !(hasNullKey2) ? entry2 != default(InternalEntityEntry) ? 
+                {
+                    entityType2 = entry2.EntityType;
+                    return instance2 = (User)entry2.Entity;
+                } : 
+                {
+                    ISnapshot shadowSnapshot2;
+                    shadowSnapshot2 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                    entityType2 = [LIFTABLE Constant: EntityType: User | Resolver: namelessParameter{4} => namelessParameter{4}.Dependencies.Model.FindEntityType("Backend.Models.User")];
+                    instance2 = switch (entityType2)
+                    {
+                        case [LIFTABLE Constant: EntityType: User | Resolver: namelessParameter{5} => namelessParameter{5}.Dependencies.Model.FindEntityType("Backend.Models.User")]: 
+                            {
+                                return 
+                                {
+                                    User instance;
+                                    instance = new User();
+                                    instance.<Id>k__BackingField = dataReader.GetInt32(9);
+                                    instance.<Email>k__BackingField = dataReader.GetString(10);
+                                    instance.<PasswordHash>k__BackingField = dataReader.GetString(11);
+                                    instance.<Role>k__BackingField = Invoke(((EnumToNumberConverter<UserRole, int>)((IReadOnlyProperty)[LIFTABLE Constant: Property: User.Role (UserRole) Required | Resolver: namelessParameter{6} => namelessParameter{6}.Dependencies.Model.FindEntityType("Backend.Models.User").FindProperty("Role")]).GetTypeMapping().Converter).ConvertFromProviderTyped, dataReader.GetInt32(12));
+                                    instance.<Salt>k__BackingField = dataReader.GetString(13);
+                                    (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                        context: materializationContext2.Context, 
+                                        entity: instance, 
+                                        queryTrackingBehavior: TrackAll, 
+                                        structuralType: [LIFTABLE Constant: EntityType: User | Resolver: namelessParameter{7} => namelessParameter{7}.Dependencies.Model.FindEntityType("Backend.Models.User")]) : default(void);
+                                    return instance;
+                                }}
+                        default: 
+                            default(User)
+                    }
+                    ;
+                    entry2 = entityType2 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                        entityType: entityType2, 
+                        entity: instance2, 
+                        snapshot: shadowSnapshot2);
+                    return instance2;
+                } : default(void);
+                return instance2;
+            };
+            ShaperProcessingExpressionVisitor.IncludeReference<Employee, Employee, User>(
+                queryContext: queryContext, 
+                entity: entity, 
+                relatedEntity: entity, 
+                navigation: [LIFTABLE Constant: Navigation: Employee.User (User) ToPrincipal User | Resolver: namelessParameter{8} => namelessParameter{8}.Dependencies.Model.FindEntityType("Backend.Models.Employee").FindNavigation("User")], 
+                inverseNavigation: default(INavigation), 
+                fixup: (namelessParameter{9}, namelessParameter{10}) => 
+                {
+                    return namelessParameter{9}.<User>k__BackingField = namelessParameter{10};
+                }, 
+                trackingQuery: True);
+            return entity;
+        }, 
+        contextType: Backend.Data.AppDbContext, 
+        standAloneStateManager: False, 
+        detailedErrorsEnabled: False, 
+        threadSafetyChecksEnabled: True), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-11-12 00:19:47 [DBG] Creating DbConnection.
+2025-11-12 00:19:47 [DBG] Created DbConnection. (0ms).
+2025-11-12 00:19:47 [DBG] Opening connection to database 'main' on server 'app.db'.
+2025-11-12 00:19:47 [DBG] Opened connection to database 'main' on server 'C:\Users\xmilk\portfolio\employee-management-app\backend\app.db'.
+2025-11-12 00:19:47 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-11-12 00:19:47 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-11-12 00:19:47 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2025-11-12 00:19:47 [DBG] Executing DbCommand [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "e"."Id", "e"."Address", "e"."CurrentWorkplace", "e"."DateOfBirth", "e"."FullName", "e"."Gender", "e"."JoinDate", "e"."UserId", "e"."VacationRemaining", "u"."Id", "u"."Email", "u"."PasswordHash", "u"."Role", "u"."Salt"
+FROM "Employees" AS "e"
+INNER JOIN "Users" AS "u" ON "e"."UserId" = "u"."Id"
+WHERE "e"."Id" = @__userId_0
+LIMIT 1
+2025-11-12 00:19:47 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "e"."Id", "e"."Address", "e"."CurrentWorkplace", "e"."DateOfBirth", "e"."FullName", "e"."Gender", "e"."JoinDate", "e"."UserId", "e"."VacationRemaining", "u"."Id", "u"."Email", "u"."PasswordHash", "u"."Role", "u"."Salt"
+FROM "Employees" AS "e"
+INNER JOIN "Users" AS "u" ON "e"."UserId" = "u"."Id"
+WHERE "e"."Id" = @__userId_0
+LIMIT 1
+2025-11-12 00:19:47 [DBG] Context 'AppDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:19:47 [DBG] The navigation 'Employee.User' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:19:47 [DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-12 00:19:47 [DBG] Closing data reader to 'main' on server 'C:\Users\xmilk\portfolio\employee-management-app\backend\app.db'.
+2025-11-12 00:19:47 [DBG] A data reader for 'main' on server 'C:\Users\xmilk\portfolio\employee-management-app\backend\app.db' is being disposed after spending 2ms reading results.
+2025-11-12 00:19:47 [DBG] Closing connection to database 'main' on server 'C:\Users\xmilk\portfolio\employee-management-app\backend\app.db'.
+2025-11-12 00:19:47 [DBG] Closed connection to database 'main' on server 'app.db' (0ms).
+2025-11-12 00:19:47 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-11-12 00:19:47 [DBG] No information found on request to perform content negotiation.
+2025-11-12 00:19:47 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-11-12 00:19:47 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-11-12 00:19:47 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-11-12 00:19:47 [INF] Executing OkObjectResult, writing value of type 'Backend.Models.Employee'.
+2025-11-12 00:19:47 [INF] Executed action Backend.Controllers.GeneralController.GetMyEmployeeInfo (EmployeeManagement.Api) in 46.6267ms
+2025-11-12 00:19:47 [INF] Executed endpoint 'Backend.Controllers.GeneralController.GetMyEmployeeInfo (EmployeeManagement.Api)'
+2025-11-12 00:19:47 [DBG] Connection id "0HNH1669CFR57" completed keep alive response.
+2025-11-12 00:19:47 [DBG] 'AppDbContext' disposed.
+2025-11-12 00:19:47 [DBG] Disposing connection to database 'main' on server 'app.db'.
+2025-11-12 00:19:47 [DBG] Disposed connection to database 'main' on server 'app.db' (0ms).
+2025-11-12 00:19:47 [INF] Request finished HTTP/1.1 GET http://localhost:5211/api/general/info - 200 null application/json; charset=utf-8 66.5118ms
+2025-11-12 00:21:58 [DBG] Connection id "0HNH1669CFR57" disconnecting.
+2025-11-12 00:21:58 [DBG] Connection id "0HNH1669CFR57" stopped.
+2025-11-12 00:21:58 [DBG] Connection id "0HNH1669CFR57" sending FIN because: "The Socket transport's send loop completed gracefully."

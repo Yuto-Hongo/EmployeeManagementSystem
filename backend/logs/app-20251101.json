@@ -1,0 +1,3 @@
+{"Timestamp":"2025-11-01T01:24:32.1793157+09:00","Level":"Information","MessageTemplate":"Application is shutting down...","Properties":{"SourceContext":"Microsoft.Hosting.Lifetime"}}
+{"Timestamp":"2025-11-01T01:24:32.1800865+09:00","Level":"Debug","MessageTemplate":"Hosting stopping","Properties":{"EventId":{"Id":3,"Name":"Stopping"},"SourceContext":"Microsoft.Extensions.Hosting.Internal.Host"}}
+{"Timestamp":"2025-11-01T01:24:32.1901040+09:00","Level":"Debug","MessageTemplate":"Hosting stopped","Properties":{"EventId":{"Id":4,"Name":"Stopped"},"SourceContext":"Microsoft.Extensions.Hosting.Internal.Host"}}

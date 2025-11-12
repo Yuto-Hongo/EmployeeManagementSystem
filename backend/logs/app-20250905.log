@@ -1,0 +1,1161 @@
+2025-09-05 00:08:02 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-09-05 00:08:02 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-09-05 00:08:03 [DBG] Entity Framework Core 9.0.7 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:9.0.7' with options: None
+2025-09-05 00:08:03 [DBG] Creating DbConnection.
+2025-09-05 00:08:03 [DBG] Created DbConnection. (9ms).
+2025-09-05 00:08:03 [DBG] Opening connection to database 'main' on server 'app.db'.
+2025-09-05 00:08:03 [DBG] Opened connection to database 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db'.
+2025-09-05 00:08:03 [DBG] Disposing connection to database 'main' on server 'app.db'.
+2025-09-05 00:08:03 [DBG] Disposed connection to database 'main' on server 'app.db' (1ms).
+2025-09-05 00:08:03 [DBG] Creating DbConnection.
+2025-09-05 00:08:03 [DBG] Created DbConnection. (1ms).
+2025-09-05 00:08:03 [DBG] Opening connection to database 'main' on server 'app.db'.
+2025-09-05 00:08:03 [DBG] Opened connection to database 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db'.
+2025-09-05 00:08:03 [DBG] Closing connection to database 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db'.
+2025-09-05 00:08:03 [DBG] Closed connection to database 'main' on server 'app.db' (1ms).
+2025-09-05 00:08:03 [DBG] Creating DbConnection.
+2025-09-05 00:08:03 [DBG] Created DbConnection. (0ms).
+2025-09-05 00:08:03 [DBG] Opening connection to database 'main' on server 'app.db'.
+2025-09-05 00:08:03 [DBG] An error occurred using the connection to database 'main' on server 'app.db'.
+2025-09-05 00:08:03 [DBG] Disposing connection to database 'main' on server 'app.db'.
+2025-09-05 00:08:03 [DBG] Disposed connection to database 'main' on server 'app.db' (0ms).
+2025-09-05 00:08:03 [DBG] Opening connection to database 'main' on server 'app.db'.
+2025-09-05 00:08:03 [DBG] Opened connection to database 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db'.
+2025-09-05 00:08:03 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-09-05 00:08:03 [DBG] Created DbCommand for 'ExecuteNonQuery' (2ms).
+2025-09-05 00:08:03 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (5ms).
+2025-09-05 00:08:03 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA journal_mode = 'wal';
+2025-09-05 00:08:03 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA journal_mode = 'wal';
+2025-09-05 00:08:03 [DBG] Closing connection to database 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db'.
+2025-09-05 00:08:03 [DBG] Closed connection to database 'main' on server 'app.db' (0ms).
+2025-09-05 00:08:03 [DBG] Opening connection to database 'main' on server 'app.db'.
+2025-09-05 00:08:03 [DBG] Opened connection to database 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db'.
+2025-09-05 00:08:03 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2025-09-05 00:08:03 [DBG] Began transaction with isolation level 'Serializable'.
+2025-09-05 00:08:03 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-09-05 00:08:03 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2025-09-05 00:08:03 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2025-09-05 00:08:03 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Users" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Users" PRIMARY KEY AUTOINCREMENT,
+    "Email" TEXT NOT NULL,
+    "PasswordHash" TEXT NOT NULL,
+    "Role" INTEGER NOT NULL
+);
+2025-09-05 00:08:03 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Users" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Users" PRIMARY KEY AUTOINCREMENT,
+    "Email" TEXT NOT NULL,
+    "PasswordHash" TEXT NOT NULL,
+    "Role" INTEGER NOT NULL
+);
+2025-09-05 00:08:03 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-09-05 00:08:03 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2025-09-05 00:08:03 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2025-09-05 00:08:03 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Employees" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Employees" PRIMARY KEY AUTOINCREMENT,
+    "UserId" INTEGER NOT NULL,
+    "FullName" TEXT NOT NULL,
+    "DateOfBirth" TEXT NOT NULL,
+    "Gender" INTEGER NOT NULL,
+    "Address" TEXT NOT NULL,
+    "JoinDate" TEXT NOT NULL,
+    "VacationRemaining" INTEGER NOT NULL,
+    "CurrentWorkplace" TEXT NOT NULL,
+    "Email" TEXT NOT NULL,
+    "PasswordHash" TEXT NOT NULL,
+    CONSTRAINT "FK_Employees_Users_UserId" FOREIGN KEY ("UserId") REFERENCES "Users" ("Id") ON DELETE CASCADE
+);
+2025-09-05 00:08:03 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Employees" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Employees" PRIMARY KEY AUTOINCREMENT,
+    "UserId" INTEGER NOT NULL,
+    "FullName" TEXT NOT NULL,
+    "DateOfBirth" TEXT NOT NULL,
+    "Gender" INTEGER NOT NULL,
+    "Address" TEXT NOT NULL,
+    "JoinDate" TEXT NOT NULL,
+    "VacationRemaining" INTEGER NOT NULL,
+    "CurrentWorkplace" TEXT NOT NULL,
+    "Email" TEXT NOT NULL,
+    "PasswordHash" TEXT NOT NULL,
+    CONSTRAINT "FK_Employees_Users_UserId" FOREIGN KEY ("UserId") REFERENCES "Users" ("Id") ON DELETE CASCADE
+);
+2025-09-05 00:08:03 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-09-05 00:08:03 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2025-09-05 00:08:03 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2025-09-05 00:08:03 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_Employees_UserId" ON "Employees" ("UserId");
+2025-09-05 00:08:03 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_Employees_UserId" ON "Employees" ("UserId");
+2025-09-05 00:08:03 [DBG] Committing transaction.
+2025-09-05 00:08:03 [DBG] Committed transaction.
+2025-09-05 00:08:03 [DBG] Disposing transaction.
+2025-09-05 00:08:03 [DBG] Closing connection to database 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db'.
+2025-09-05 00:08:03 [DBG] Closed connection to database 'main' on server 'app.db' (0ms).
+2025-09-05 00:08:03 [DBG] Compiling query expression: 
+'DbSet<Employee>()
+    .Any()'
+2025-09-05 00:08:03 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<bool>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT EXISTS (
+            SELECT 1
+            FROM Employees AS e)) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT EXISTS (
+            SELECT 1
+            FROM Employees AS e), 
+        False, 
+        new HashSet<string>(
+            new string[]{ }, 
+            StringComparer.Ordinal
+        )
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        bool? value1;
+        value1 = dataReader.IsDBNull(0) ? default(bool?) : (bool?)dataReader.GetBoolean(0);
+        return (bool)value1;
+    }, 
+    contextType: Backend.Data.AppDbContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)
+    .Single()'
+2025-09-05 00:08:03 [DBG] Opening connection to database 'main' on server 'app.db'.
+2025-09-05 00:08:03 [DBG] Opened connection to database 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db'.
+2025-09-05 00:08:03 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-09-05 00:08:03 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-09-05 00:08:03 [DBG] Initialized DbCommand for 'ExecuteReader' (2ms).
+2025-09-05 00:08:03 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Employees" AS "e")
+2025-09-05 00:08:03 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Employees" AS "e")
+2025-09-05 00:08:03 [DBG] Closing data reader to 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db'.
+2025-09-05 00:08:03 [DBG] A data reader for 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db' is being disposed after spending 3ms reading results.
+2025-09-05 00:08:03 [DBG] Closing connection to database 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db'.
+2025-09-05 00:08:03 [DBG] Closed connection to database 'main' on server 'app.db' (0ms).
+2025-09-05 00:08:03 [DBG] Compiling query expression: 
+'DbSet<User>()
+    .Any()'
+2025-09-05 00:08:03 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<bool>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT EXISTS (
+            SELECT 1
+            FROM Users AS u)) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT EXISTS (
+            SELECT 1
+            FROM Users AS u), 
+        False, 
+        new HashSet<string>(
+            new string[]{ }, 
+            StringComparer.Ordinal
+        )
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        bool? value1;
+        value1 = dataReader.IsDBNull(0) ? default(bool?) : (bool?)dataReader.GetBoolean(0);
+        return (bool)value1;
+    }, 
+    contextType: Backend.Data.AppDbContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)
+    .Single()'
+2025-09-05 00:08:03 [DBG] Opening connection to database 'main' on server 'app.db'.
+2025-09-05 00:08:03 [DBG] Opened connection to database 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db'.
+2025-09-05 00:08:03 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-09-05 00:08:03 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-09-05 00:08:03 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-09-05 00:08:03 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS "u")
+2025-09-05 00:08:03 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS "u")
+2025-09-05 00:08:03 [DBG] Closing data reader to 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db'.
+2025-09-05 00:08:03 [DBG] A data reader for 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db' is being disposed after spending 0ms reading results.
+2025-09-05 00:08:03 [DBG] Closing connection to database 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db'.
+2025-09-05 00:08:03 [DBG] Closed connection to database 'main' on server 'app.db' (0ms).
+2025-09-05 00:08:03 [DBG] Context 'AppDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-09-05 00:08:03 [DBG] Context 'AppDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-09-05 00:08:03 [DBG] The navigation 'Employee.User' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-09-05 00:08:03 [DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-09-05 00:08:03 [DBG] The navigation 'Employee.User' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-09-05 00:08:03 [DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-09-05 00:08:03 [DBG] SaveChanges starting for 'AppDbContext'.
+2025-09-05 00:08:03 [DBG] DetectChanges starting for 'AppDbContext'.
+2025-09-05 00:08:03 [DBG] DetectChanges completed for 'AppDbContext'.
+2025-09-05 00:08:03 [DBG] Opening connection to database 'main' on server 'app.db'.
+2025-09-05 00:08:03 [DBG] Opened connection to database 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db'.
+2025-09-05 00:08:03 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2025-09-05 00:08:03 [DBG] Began transaction with isolation level 'Serializable'.
+2025-09-05 00:08:03 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-09-05 00:08:03 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-09-05 00:08:03 [DBG] Initialized DbCommand for 'ExecuteReader' (3ms).
+2025-09-05 00:08:03 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 23), @p2='?' (Size = 11), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Users" ("Id", "Email", "PasswordHash", "Role")
+VALUES (@p0, @p1, @p2, @p3);
+2025-09-05 00:08:03 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 23), @p2='?' (Size = 11), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Users" ("Id", "Email", "PasswordHash", "Role")
+VALUES (@p0, @p1, @p2, @p3);
+2025-09-05 00:08:03 [DBG] Closing data reader to 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db'.
+2025-09-05 00:08:03 [DBG] A data reader for 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db' is being disposed after spending 1ms reading results.
+2025-09-05 00:08:03 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-09-05 00:08:03 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-09-05 00:08:03 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2025-09-05 00:08:03 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 25), @p2='?' (Size = 11), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Users" ("Id", "Email", "PasswordHash", "Role")
+VALUES (@p0, @p1, @p2, @p3);
+2025-09-05 00:08:03 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 25), @p2='?' (Size = 11), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Users" ("Id", "Email", "PasswordHash", "Role")
+VALUES (@p0, @p1, @p2, @p3);
+2025-09-05 00:08:03 [DBG] Closing data reader to 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db'.
+2025-09-05 00:08:03 [DBG] A data reader for 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db' is being disposed after spending 0ms reading results.
+2025-09-05 00:08:03 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-09-05 00:08:03 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-09-05 00:08:03 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2025-09-05 00:08:03 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 6), @p2='?' (Size = 2), @p3='?' (DbType = DateTime), @p4='?' (Size = 23), @p5='?' (Size = 15), @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime), @p8='?' (Size = 11), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Employees" ("Id", "Address", "CurrentWorkplace", "DateOfBirth", "Email", "FullName", "Gender", "JoinDate", "PasswordHash", "UserId", "VacationRemaining")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+2025-09-05 00:08:03 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 6), @p2='?' (Size = 2), @p3='?' (DbType = DateTime), @p4='?' (Size = 23), @p5='?' (Size = 15), @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime), @p8='?' (Size = 11), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Employees" ("Id", "Address", "CurrentWorkplace", "DateOfBirth", "Email", "FullName", "Gender", "JoinDate", "PasswordHash", "UserId", "VacationRemaining")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+2025-09-05 00:08:03 [DBG] Closing data reader to 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db'.
+2025-09-05 00:08:03 [DBG] A data reader for 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db' is being disposed after spending 0ms reading results.
+2025-09-05 00:08:03 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-09-05 00:08:03 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-09-05 00:08:03 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2025-09-05 00:08:03 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 7), @p2='?' (Size = 4), @p3='?' (DbType = DateTime), @p4='?' (Size = 25), @p5='?' (Size = 17), @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime), @p8='?' (Size = 11), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Employees" ("Id", "Address", "CurrentWorkplace", "DateOfBirth", "Email", "FullName", "Gender", "JoinDate", "PasswordHash", "UserId", "VacationRemaining")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+2025-09-05 00:08:03 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 7), @p2='?' (Size = 4), @p3='?' (DbType = DateTime), @p4='?' (Size = 25), @p5='?' (Size = 17), @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime), @p8='?' (Size = 11), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Employees" ("Id", "Address", "CurrentWorkplace", "DateOfBirth", "Email", "FullName", "Gender", "JoinDate", "PasswordHash", "UserId", "VacationRemaining")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+2025-09-05 00:08:03 [DBG] Closing data reader to 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db'.
+2025-09-05 00:08:03 [DBG] A data reader for 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db' is being disposed after spending 0ms reading results.
+2025-09-05 00:08:03 [DBG] Committing transaction.
+2025-09-05 00:08:03 [DBG] Committed transaction.
+2025-09-05 00:08:03 [DBG] Closing connection to database 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db'.
+2025-09-05 00:08:03 [DBG] Closed connection to database 'main' on server 'app.db' (0ms).
+2025-09-05 00:08:03 [DBG] Disposing transaction.
+2025-09-05 00:08:03 [DBG] An entity of type 'Employee' tracked by 'AppDbContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-09-05 00:08:03 [DBG] An entity of type 'Employee' tracked by 'AppDbContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-09-05 00:08:03 [DBG] An entity of type 'User' tracked by 'AppDbContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-09-05 00:08:03 [DBG] An entity of type 'User' tracked by 'AppDbContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-09-05 00:08:03 [DBG] SaveChanges completed for 'AppDbContext' with 4 entities written to the database.
+2025-09-05 00:08:03 [DBG] 'AppDbContext' disposed.
+2025-09-05 00:08:03 [DBG] Disposing connection to database 'main' on server 'app.db'.
+2025-09-05 00:08:03 [DBG] Disposed connection to database 'main' on server 'app.db' (0ms).
+2025-09-05 00:08:03 [DBG] Hosting starting
+2025-09-05 00:08:03 [INF] User profile is available. Using 'C:\Users\xmilk\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-05 00:08:03 [DBG] Reading data from file 'C:\Users\xmilk\AppData\Local\ASP.NET\DataProtection-Keys\key-1c385c28-cc6d-447d-ae30-f5b4f8a07abc.xml'.
+2025-09-05 00:08:03 [DBG] Reading data from file 'C:\Users\xmilk\AppData\Local\ASP.NET\DataProtection-Keys\key-652ff78d-da9f-4eb6-b9df-4163dc283720.xml'.
+2025-09-05 00:08:03 [DBG] Reading data from file 'C:\Users\xmilk\AppData\Local\ASP.NET\DataProtection-Keys\key-90574223-276b-4506-a45e-ffada2709fe7.xml'.
+2025-09-05 00:08:03 [DBG] Reading data from file 'C:\Users\xmilk\AppData\Local\ASP.NET\DataProtection-Keys\key-cb7e8bd2-dc2a-46d8-be02-3c607d2400fa.xml'.
+2025-09-05 00:08:03 [DBG] Reading data from file 'C:\Users\xmilk\AppData\Local\ASP.NET\DataProtection-Keys\key-f1a1cc4f-c622-4856-b98a-c7e82d92e756.xml'.
+2025-09-05 00:08:03 [DBG] Found key {1c385c28-cc6d-447d-ae30-f5b4f8a07abc}.
+2025-09-05 00:08:03 [DBG] Found key {652ff78d-da9f-4eb6-b9df-4163dc283720}.
+2025-09-05 00:08:03 [DBG] Found key {90574223-276b-4506-a45e-ffada2709fe7}.
+2025-09-05 00:08:03 [DBG] Found key {cb7e8bd2-dc2a-46d8-be02-3c607d2400fa}.
+2025-09-05 00:08:03 [DBG] Found key {f1a1cc4f-c622-4856-b98a-c7e82d92e756}.
+2025-09-05 00:08:03 [DBG] Considering key {652ff78d-da9f-4eb6-b9df-4163dc283720} with expiration date 2025-10-15 14:12:00Z as default key.
+2025-09-05 00:08:04 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-09-05 00:08:04 [DBG] Decrypting secret element using Windows DPAPI.
+2025-09-05 00:08:04 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-09-05 00:08:04 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2025-09-05 00:08:04 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2025-09-05 00:08:04 [DBG] Using key {652ff78d-da9f-4eb6-b9df-4163dc283720} as the default key.
+2025-09-05 00:08:04 [DBG] Key ring with default key {652ff78d-da9f-4eb6-b9df-4163dc283720} was loaded during application startup.
+2025-09-05 00:08:04 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-09-05 00:08:04 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-09-05 00:08:04 [INF] Now listening on: http://localhost:5211
+2025-09-05 00:08:04 [DBG] Loaded hosting startup assembly EmployeeManagement.Api
+2025-09-05 00:08:04 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-05 00:08:04 [INF] Hosting environment: Development
+2025-09-05 00:08:04 [INF] Content root path: C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api
+2025-09-05 00:08:04 [DBG] Hosting started
+2025-09-05 00:10:40 [DBG] Connection id "0HNFBOKQSMNSI" accepted.
+2025-09-05 00:10:40 [DBG] Connection id "0HNFBOKQSMNSI" started.
+2025-09-05 00:10:40 [INF] Request starting HTTP/1.1 POST http://localhost:5211/api/auth/login - application/json 80
+2025-09-05 00:10:40 [DBG] 1 candidate(s) found for the request path '/api/auth/login'
+2025-09-05 00:10:40 [DBG] Endpoint 'Backend.Controllers.AuthController.Login (EmployeeManagement.Api)' with route pattern 'api/Auth/login' is valid for the request path '/api/auth/login'
+2025-09-05 00:10:40 [DBG] Request matched endpoint 'Backend.Controllers.AuthController.Login (EmployeeManagement.Api)'
+2025-09-05 00:10:40 [WRN] Failed to determine the https port for redirect.
+2025-09-05 00:10:40 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-09-05 00:10:40 [INF] Executing endpoint 'Backend.Controllers.AuthController.Login (EmployeeManagement.Api)'
+2025-09-05 00:10:40 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Backend.DTOs.LoginRequest) on controller Backend.Controllers.AuthController (EmployeeManagement.Api).
+2025-09-05 00:10:40 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-09-05 00:10:40 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-09-05 00:10:40 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-09-05 00:10:40 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-09-05 00:10:40 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-09-05 00:10:40 [DBG] Executing controller factory for controller Backend.Controllers.AuthController (EmployeeManagement.Api)
+2025-09-05 00:10:40 [DBG] Executed controller factory for controller Backend.Controllers.AuthController (EmployeeManagement.Api)
+2025-09-05 00:10:40 [DBG] Attempting to bind parameter 'request' of type 'Backend.DTOs.LoginRequest' ...
+2025-09-05 00:10:40 [DBG] Attempting to bind parameter 'request' of type 'Backend.DTOs.LoginRequest' using the name '' in request data ...
+2025-09-05 00:10:40 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-09-05 00:10:40 [DBG] Connection id "0HNFBOKQSMNSI", Request id "0HNFBOKQSMNSI:00000001": started reading request body.
+2025-09-05 00:10:40 [DBG] Connection id "0HNFBOKQSMNSI", Request id "0HNFBOKQSMNSI:00000001": done reading request body.
+2025-09-05 00:10:40 [DBG] JSON input formatter succeeded, deserializing to type 'Backend.DTOs.LoginRequest'
+2025-09-05 00:10:40 [DBG] Done attempting to bind parameter 'request' of type 'Backend.DTOs.LoginRequest'.
+2025-09-05 00:10:40 [DBG] Done attempting to bind parameter 'request' of type 'Backend.DTOs.LoginRequest'.
+2025-09-05 00:10:40 [DBG] Attempting to validate the bound parameter 'request' of type 'Backend.DTOs.LoginRequest' ...
+2025-09-05 00:10:40 [DBG] Done attempting to validate the bound parameter 'request' of type 'Backend.DTOs.LoginRequest'.
+2025-09-05 00:10:40 [DBG] Entity Framework Core 9.0.7 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:9.0.7' with options: None
+2025-09-05 00:10:40 [DBG] Compiling query expression: 
+'DbSet<User>()
+    .FirstOrDefault(u => u.Email == __email_0 && u.PasswordHash == __password_1)'
+2025-09-05 00:10:40 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<User>(
+    asyncEnumerable: SingleQueryingEnumerable.Create<User>(
+        relationalQueryContext: (RelationalQueryContext)queryContext, 
+        relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.Email (string) Required, 1], [Property: User.PasswordHash (string) Required MaxLength(100), 2], [Property: User.Role (UserRole) Required, 3] }
+            SELECT TOP(1) u.Id, u.Email, u.PasswordHash, u.Role
+            FROM Users AS u
+            WHERE (u.Email == @__email_0) && (u.PasswordHash == @__password_1)) | Resolver: c => new RelationalCommandCache(
+            c.Dependencies.MemoryCache, 
+            c.RelationalDependencies.QuerySqlGeneratorFactory, 
+            c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.Email (string) Required, 1], [Property: User.PasswordHash (string) Required MaxLength(100), 2], [Property: User.Role (UserRole) Required, 3] }
+            SELECT TOP(1) u.Id, u.Email, u.PasswordHash, u.Role
+            FROM Users AS u
+            WHERE (u.Email == @__email_0) && (u.PasswordHash == @__password_1), 
+            False, 
+            new HashSet<string>(
+                new string[]{ }, 
+                StringComparer.Ordinal
+            )
+        )].GetRelationalCommandTemplate(parameters), 
+        readerColumns: null, 
+        shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+        {
+            User entity;
+            entity = 
+            {
+                MaterializationContext materializationContext1;
+                IEntityType entityType1;
+                User instance1;
+                InternalEntityEntry entry1;
+                bool hasNullKey1;
+                materializationContext1 = new MaterializationContext(
+                    [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                    queryContext.Context
+                );
+                instance1 = default(User);
+                entry1 = queryContext.TryGetEntry(
+                    key: [LIFTABLE Constant: Key: User.Id PK | Resolver: c => c.Dependencies.Model.FindEntityType("Backend.Models.User").FindPrimaryKey()], 
+                    keyValues: new object[]{ (object)dataReader.GetInt32(0) }, 
+                    throwOnNullKey: True, 
+                    hasNullKey: hasNullKey1);
+                !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+                {
+                    entityType1 = entry1.EntityType;
+                    return instance1 = (User)entry1.Entity;
+                } : 
+                {
+                    ISnapshot shadowSnapshot1;
+                    shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                    entityType1 = [LIFTABLE Constant: EntityType: User | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("Backend.Models.User")];
+                    instance1 = switch (entityType1)
+                    {
+                        case [LIFTABLE Constant: EntityType: User | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("Backend.Models.User")]: 
+                            {
+                                return 
+                                {
+                                    User instance;
+                                    instance = new User();
+                                    instance.<Id>k__BackingField = dataReader.GetInt32(0);
+                                    instance.<Email>k__BackingField = dataReader.GetString(1);
+                                    instance.<PasswordHash>k__BackingField = dataReader.GetString(2);
+                                    instance.<Role>k__BackingField = Invoke(((EnumToNumberConverter<UserRole, int>)((IReadOnlyProperty)[LIFTABLE Constant: Property: User.Role (UserRole) Required | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("Backend.Models.User").FindProperty("Role")]).GetTypeMapping().Converter).ConvertFromProviderTyped, dataReader.GetInt32(3));
+                                    (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                        context: materializationContext1.Context, 
+                                        entity: instance, 
+                                        queryTrackingBehavior: TrackAll, 
+                                        structuralType: [LIFTABLE Constant: EntityType: User | Resolver: namelessParameter{3} => namelessParameter{3}.Dependencies.Model.FindEntityType("Backend.Models.User")]) : default(void);
+                                    return instance;
+                                }}
+                        default: 
+                            default(User)
+                    }
+                    ;
+                    entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                        entityType: entityType1, 
+                        entity: instance1, 
+                        snapshot: shadowSnapshot1);
+                    return instance1;
+                } : default(void);
+                return instance1;
+            };
+            return entity;
+        }, 
+        contextType: Backend.Data.AppDbContext, 
+        standAloneStateManager: False, 
+        detailedErrorsEnabled: False, 
+        threadSafetyChecksEnabled: True), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-09-05 00:10:40 [DBG] Creating DbConnection.
+2025-09-05 00:10:40 [DBG] Created DbConnection. (2ms).
+2025-09-05 00:10:40 [DBG] Opening connection to database 'main' on server 'app.db'.
+2025-09-05 00:10:40 [DBG] Opened connection to database 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db'.
+2025-09-05 00:10:40 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-09-05 00:10:40 [DBG] Created DbCommand for 'ExecuteReader' (3ms).
+2025-09-05 00:10:40 [DBG] Initialized DbCommand for 'ExecuteReader' (7ms).
+2025-09-05 00:10:40 [DBG] Executing DbCommand [Parameters=[@__email_0='?' (Size = 25), @__password_1='?' (Size = 11)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."PasswordHash", "u"."Role"
+FROM "Users" AS "u"
+WHERE "u"."Email" = @__email_0 AND "u"."PasswordHash" = @__password_1
+LIMIT 1
+2025-09-05 00:10:40 [INF] Executed DbCommand (7ms) [Parameters=[@__email_0='?' (Size = 25), @__password_1='?' (Size = 11)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."PasswordHash", "u"."Role"
+FROM "Users" AS "u"
+WHERE "u"."Email" = @__email_0 AND "u"."PasswordHash" = @__password_1
+LIMIT 1
+2025-09-05 00:10:40 [DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-09-05 00:10:40 [DBG] Closing data reader to 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db'.
+2025-09-05 00:10:40 [DBG] A data reader for 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db' is being disposed after spending 9ms reading results.
+2025-09-05 00:10:40 [DBG] Closing connection to database 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db'.
+2025-09-05 00:10:40 [DBG] Closed connection to database 'main' on server 'app.db' (3ms).
+2025-09-05 00:10:40 [INF] ログイン処理成功 : UserId : 2
+2025-09-05 00:10:40 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-09-05 00:10:40 [DBG] No information found on request to perform content negotiation.
+2025-09-05 00:10:40 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-09-05 00:10:40 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-09-05 00:10:40 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-09-05 00:10:40 [INF] Executing OkObjectResult, writing value of type 'Backend.DTOs.LoginResponse'.
+2025-09-05 00:10:40 [INF] Executed action Backend.Controllers.AuthController.Login (EmployeeManagement.Api) in 505.5317ms
+2025-09-05 00:10:40 [INF] Executed endpoint 'Backend.Controllers.AuthController.Login (EmployeeManagement.Api)'
+2025-09-05 00:10:40 [DBG] Connection id "0HNFBOKQSMNSI" completed keep alive response.
+2025-09-05 00:10:40 [DBG] 'AppDbContext' disposed.
+2025-09-05 00:10:40 [DBG] Disposing connection to database 'main' on server 'app.db'.
+2025-09-05 00:10:40 [DBG] Disposed connection to database 'main' on server 'app.db' (2ms).
+2025-09-05 00:10:40 [INF] Request finished HTTP/1.1 POST http://localhost:5211/api/auth/login - 200 null application/json; charset=utf-8 798.8169ms
+2025-09-05 00:11:15 [INF] Request starting HTTP/1.1 GET http://localhost:5211/api/user/profile - null null
+2025-09-05 00:11:15 [DBG] 1 candidate(s) found for the request path '/api/user/profile'
+2025-09-05 00:11:15 [DBG] Endpoint 'Backend.Controllers.UserController.GetProfile (EmployeeManagement.Api)' with route pattern 'api/User/profile' is valid for the request path '/api/user/profile'
+2025-09-05 00:11:15 [DBG] Request matched endpoint 'Backend.Controllers.UserController.GetProfile (EmployeeManagement.Api)'
+2025-09-05 00:11:15 [DBG] Successfully validated the token.
+2025-09-05 00:11:15 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2025-09-05 00:11:15 [DBG] Authorization was successful.
+2025-09-05 00:11:15 [INF] Executing endpoint 'Backend.Controllers.UserController.GetProfile (EmployeeManagement.Api)'
+2025-09-05 00:11:15 [INF] Route matched with {action = "GetProfile", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProfile() on controller Backend.Controllers.UserController (EmployeeManagement.Api).
+2025-09-05 00:11:15 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-09-05 00:11:15 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-09-05 00:11:15 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-09-05 00:11:15 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-09-05 00:11:15 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-09-05 00:11:15 [DBG] Executing controller factory for controller Backend.Controllers.UserController (EmployeeManagement.Api)
+2025-09-05 00:11:15 [DBG] Executed controller factory for controller Backend.Controllers.UserController (EmployeeManagement.Api)
+2025-09-05 00:11:15 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-09-05 00:11:15 [DBG] No information found on request to perform content negotiation.
+2025-09-05 00:11:15 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-09-05 00:11:15 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-09-05 00:11:15 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-09-05 00:11:15 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`3[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-05 00:11:15 [INF] Executed action Backend.Controllers.UserController.GetProfile (EmployeeManagement.Api) in 20.1924ms
+2025-09-05 00:11:15 [INF] Executed endpoint 'Backend.Controllers.UserController.GetProfile (EmployeeManagement.Api)'
+2025-09-05 00:11:15 [DBG] Connection id "0HNFBOKQSMNSI" completed keep alive response.
+2025-09-05 00:11:15 [INF] Request finished HTTP/1.1 GET http://localhost:5211/api/user/profile - 200 null application/json; charset=utf-8 93.689ms
+2025-09-05 00:12:05 [INF] Request starting HTTP/1.1 GET http://localhost:5211/api/general - null null
+2025-09-05 00:12:05 [DBG] 1 candidate(s) found for the request path '/api/general'
+2025-09-05 00:12:05 [DBG] Endpoint 'Backend.Controllers.GeneralController.GetMyEmployeeInfo (EmployeeManagement.Api)' with route pattern 'api/General' is valid for the request path '/api/general'
+2025-09-05 00:12:05 [DBG] Request matched endpoint 'Backend.Controllers.GeneralController.GetMyEmployeeInfo (EmployeeManagement.Api)'
+2025-09-05 00:12:05 [DBG] Successfully validated the token.
+2025-09-05 00:12:05 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2025-09-05 00:12:05 [DBG] Authorization was successful.
+2025-09-05 00:12:05 [INF] Executing endpoint 'Backend.Controllers.GeneralController.GetMyEmployeeInfo (EmployeeManagement.Api)'
+2025-09-05 00:12:05 [INF] Route matched with {action = "GetMyEmployeeInfo", controller = "General"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyEmployeeInfo() on controller Backend.Controllers.GeneralController (EmployeeManagement.Api).
+2025-09-05 00:12:05 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-09-05 00:12:05 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-09-05 00:12:05 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-09-05 00:12:05 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-09-05 00:12:05 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-09-05 00:12:05 [DBG] Executing controller factory for controller Backend.Controllers.GeneralController (EmployeeManagement.Api)
+2025-09-05 00:12:05 [DBG] Executed controller factory for controller Backend.Controllers.GeneralController (EmployeeManagement.Api)
+2025-09-05 00:12:05 [INF] Executed action Backend.Controllers.GeneralController.GetMyEmployeeInfo (EmployeeManagement.Api) in 3.0553ms
+2025-09-05 00:12:05 [INF] Executed endpoint 'Backend.Controllers.GeneralController.GetMyEmployeeInfo (EmployeeManagement.Api)'
+2025-09-05 00:12:05 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Backend.Controllers.GeneralController.GetMyEmployeeInfo() in C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\Controllers\GeneralController.cs:line 101
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-09-05 00:12:05 [DBG] Connection id "0HNFBOKQSMNSI" completed keep alive response.
+2025-09-05 00:12:05 [INF] Request finished HTTP/1.1 GET http://localhost:5211/api/general - 500 null text/plain; charset=utf-8 64.7975ms
+2025-09-05 00:13:45 [DBG] Connection id "0HNFBOKQSMNSI" received FIN.
+2025-09-05 00:13:45 [DBG] Connection id "0HNFBOKQSMNSI" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-09-05 00:13:45 [DBG] Connection id "0HNFBOKQSMNSI" disconnecting.
+2025-09-05 00:13:45 [DBG] Connection id "0HNFBOKQSMNSI" stopped.
+2025-09-05 00:28:24 [INF] Application is shutting down...
+2025-09-05 00:28:24 [DBG] Hosting stopping
+2025-09-05 00:28:24 [DBG] Hosting stopped
+2025-09-05 00:28:31 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-09-05 00:28:31 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-09-05 00:28:31 [DBG] Entity Framework Core 9.0.7 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:9.0.7' with options: None
+2025-09-05 00:28:31 [DBG] Creating DbConnection.
+2025-09-05 00:28:31 [DBG] Created DbConnection. (7ms).
+2025-09-05 00:28:31 [DBG] Opening connection to database 'main' on server 'app.db'.
+2025-09-05 00:28:31 [DBG] Opened connection to database 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db'.
+2025-09-05 00:28:31 [DBG] Disposing connection to database 'main' on server 'app.db'.
+2025-09-05 00:28:31 [DBG] Disposed connection to database 'main' on server 'app.db' (1ms).
+2025-09-05 00:28:31 [DBG] Creating DbConnection.
+2025-09-05 00:28:31 [DBG] Created DbConnection. (0ms).
+2025-09-05 00:28:31 [DBG] Opening connection to database 'main' on server 'app.db'.
+2025-09-05 00:28:31 [DBG] Opened connection to database 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db'.
+2025-09-05 00:28:31 [DBG] Closing connection to database 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db'.
+2025-09-05 00:28:31 [DBG] Closed connection to database 'main' on server 'app.db' (2ms).
+2025-09-05 00:28:31 [DBG] Creating DbConnection.
+2025-09-05 00:28:31 [DBG] Created DbConnection. (0ms).
+2025-09-05 00:28:31 [DBG] Opening connection to database 'main' on server 'app.db'.
+2025-09-05 00:28:31 [DBG] An error occurred using the connection to database 'main' on server 'app.db'.
+2025-09-05 00:28:31 [DBG] Disposing connection to database 'main' on server 'app.db'.
+2025-09-05 00:28:31 [DBG] Disposed connection to database 'main' on server 'app.db' (0ms).
+2025-09-05 00:28:31 [DBG] Opening connection to database 'main' on server 'app.db'.
+2025-09-05 00:28:31 [DBG] Opened connection to database 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db'.
+2025-09-05 00:28:31 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-09-05 00:28:31 [DBG] Created DbCommand for 'ExecuteNonQuery' (2ms).
+2025-09-05 00:28:31 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (5ms).
+2025-09-05 00:28:31 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA journal_mode = 'wal';
+2025-09-05 00:28:31 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA journal_mode = 'wal';
+2025-09-05 00:28:31 [DBG] Closing connection to database 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db'.
+2025-09-05 00:28:31 [DBG] Closed connection to database 'main' on server 'app.db' (1ms).
+2025-09-05 00:28:31 [DBG] Opening connection to database 'main' on server 'app.db'.
+2025-09-05 00:28:31 [DBG] Opened connection to database 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db'.
+2025-09-05 00:28:31 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2025-09-05 00:28:31 [DBG] Began transaction with isolation level 'Serializable'.
+2025-09-05 00:28:31 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-09-05 00:28:31 [DBG] Created DbCommand for 'ExecuteNonQuery' (1ms).
+2025-09-05 00:28:31 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (2ms).
+2025-09-05 00:28:31 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Users" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Users" PRIMARY KEY AUTOINCREMENT,
+    "Email" TEXT NOT NULL,
+    "PasswordHash" TEXT NOT NULL,
+    "Role" INTEGER NOT NULL
+);
+2025-09-05 00:28:31 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Users" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Users" PRIMARY KEY AUTOINCREMENT,
+    "Email" TEXT NOT NULL,
+    "PasswordHash" TEXT NOT NULL,
+    "Role" INTEGER NOT NULL
+);
+2025-09-05 00:28:31 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-09-05 00:28:31 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2025-09-05 00:28:31 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2025-09-05 00:28:31 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Employees" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Employees" PRIMARY KEY AUTOINCREMENT,
+    "UserId" INTEGER NOT NULL,
+    "FullName" TEXT NOT NULL,
+    "DateOfBirth" TEXT NOT NULL,
+    "Gender" INTEGER NOT NULL,
+    "Address" TEXT NOT NULL,
+    "JoinDate" TEXT NOT NULL,
+    "VacationRemaining" INTEGER NOT NULL,
+    "CurrentWorkplace" TEXT NOT NULL,
+    "Email" TEXT NOT NULL,
+    "PasswordHash" TEXT NOT NULL,
+    CONSTRAINT "FK_Employees_Users_UserId" FOREIGN KEY ("UserId") REFERENCES "Users" ("Id") ON DELETE CASCADE
+);
+2025-09-05 00:28:31 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Employees" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Employees" PRIMARY KEY AUTOINCREMENT,
+    "UserId" INTEGER NOT NULL,
+    "FullName" TEXT NOT NULL,
+    "DateOfBirth" TEXT NOT NULL,
+    "Gender" INTEGER NOT NULL,
+    "Address" TEXT NOT NULL,
+    "JoinDate" TEXT NOT NULL,
+    "VacationRemaining" INTEGER NOT NULL,
+    "CurrentWorkplace" TEXT NOT NULL,
+    "Email" TEXT NOT NULL,
+    "PasswordHash" TEXT NOT NULL,
+    CONSTRAINT "FK_Employees_Users_UserId" FOREIGN KEY ("UserId") REFERENCES "Users" ("Id") ON DELETE CASCADE
+);
+2025-09-05 00:28:31 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-09-05 00:28:31 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2025-09-05 00:28:31 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2025-09-05 00:28:31 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_Employees_UserId" ON "Employees" ("UserId");
+2025-09-05 00:28:31 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_Employees_UserId" ON "Employees" ("UserId");
+2025-09-05 00:28:31 [DBG] Committing transaction.
+2025-09-05 00:28:31 [DBG] Committed transaction.
+2025-09-05 00:28:31 [DBG] Disposing transaction.
+2025-09-05 00:28:31 [DBG] Closing connection to database 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db'.
+2025-09-05 00:28:31 [DBG] Closed connection to database 'main' on server 'app.db' (0ms).
+2025-09-05 00:28:31 [DBG] Compiling query expression: 
+'DbSet<Employee>()
+    .Any()'
+2025-09-05 00:28:32 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<bool>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT EXISTS (
+            SELECT 1
+            FROM Employees AS e)) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT EXISTS (
+            SELECT 1
+            FROM Employees AS e), 
+        False, 
+        new HashSet<string>(
+            new string[]{ }, 
+            StringComparer.Ordinal
+        )
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        bool? value1;
+        value1 = dataReader.IsDBNull(0) ? default(bool?) : (bool?)dataReader.GetBoolean(0);
+        return (bool)value1;
+    }, 
+    contextType: Backend.Data.AppDbContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)
+    .Single()'
+2025-09-05 00:28:32 [DBG] Opening connection to database 'main' on server 'app.db'.
+2025-09-05 00:28:32 [DBG] Opened connection to database 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db'.
+2025-09-05 00:28:32 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-09-05 00:28:32 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-09-05 00:28:32 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-09-05 00:28:32 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Employees" AS "e")
+2025-09-05 00:28:32 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Employees" AS "e")
+2025-09-05 00:28:32 [DBG] Closing data reader to 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db'.
+2025-09-05 00:28:32 [DBG] A data reader for 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db' is being disposed after spending 4ms reading results.
+2025-09-05 00:28:32 [DBG] Closing connection to database 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db'.
+2025-09-05 00:28:32 [DBG] Closed connection to database 'main' on server 'app.db' (2ms).
+2025-09-05 00:28:32 [DBG] Compiling query expression: 
+'DbSet<User>()
+    .Any()'
+2025-09-05 00:28:32 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<bool>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT EXISTS (
+            SELECT 1
+            FROM Users AS u)) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT EXISTS (
+            SELECT 1
+            FROM Users AS u), 
+        False, 
+        new HashSet<string>(
+            new string[]{ }, 
+            StringComparer.Ordinal
+        )
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        bool? value1;
+        value1 = dataReader.IsDBNull(0) ? default(bool?) : (bool?)dataReader.GetBoolean(0);
+        return (bool)value1;
+    }, 
+    contextType: Backend.Data.AppDbContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)
+    .Single()'
+2025-09-05 00:28:32 [DBG] Opening connection to database 'main' on server 'app.db'.
+2025-09-05 00:28:32 [DBG] Opened connection to database 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db'.
+2025-09-05 00:28:32 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-09-05 00:28:32 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2025-09-05 00:28:32 [DBG] Initialized DbCommand for 'ExecuteReader' (3ms).
+2025-09-05 00:28:32 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS "u")
+2025-09-05 00:28:32 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS "u")
+2025-09-05 00:28:32 [DBG] Closing data reader to 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db'.
+2025-09-05 00:28:32 [DBG] A data reader for 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db' is being disposed after spending 1ms reading results.
+2025-09-05 00:28:32 [DBG] Closing connection to database 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db'.
+2025-09-05 00:28:32 [DBG] Closed connection to database 'main' on server 'app.db' (0ms).
+2025-09-05 00:28:32 [DBG] Context 'AppDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-09-05 00:28:32 [DBG] Context 'AppDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-09-05 00:28:32 [DBG] The navigation 'Employee.User' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-09-05 00:28:32 [DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-09-05 00:28:32 [DBG] The navigation 'Employee.User' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-09-05 00:28:32 [DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-09-05 00:28:32 [DBG] SaveChanges starting for 'AppDbContext'.
+2025-09-05 00:28:32 [DBG] DetectChanges starting for 'AppDbContext'.
+2025-09-05 00:28:32 [DBG] DetectChanges completed for 'AppDbContext'.
+2025-09-05 00:28:32 [DBG] Opening connection to database 'main' on server 'app.db'.
+2025-09-05 00:28:32 [DBG] Opened connection to database 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db'.
+2025-09-05 00:28:32 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2025-09-05 00:28:32 [DBG] Began transaction with isolation level 'Serializable'.
+2025-09-05 00:28:32 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-09-05 00:28:32 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-09-05 00:28:32 [DBG] Initialized DbCommand for 'ExecuteReader' (4ms).
+2025-09-05 00:28:32 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 23), @p2='?' (Size = 11), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Users" ("Id", "Email", "PasswordHash", "Role")
+VALUES (@p0, @p1, @p2, @p3);
+2025-09-05 00:28:32 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 23), @p2='?' (Size = 11), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Users" ("Id", "Email", "PasswordHash", "Role")
+VALUES (@p0, @p1, @p2, @p3);
+2025-09-05 00:28:32 [DBG] Closing data reader to 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db'.
+2025-09-05 00:28:32 [DBG] A data reader for 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db' is being disposed after spending 2ms reading results.
+2025-09-05 00:28:32 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-09-05 00:28:32 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2025-09-05 00:28:32 [DBG] Initialized DbCommand for 'ExecuteReader' (2ms).
+2025-09-05 00:28:32 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 25), @p2='?' (Size = 11), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Users" ("Id", "Email", "PasswordHash", "Role")
+VALUES (@p0, @p1, @p2, @p3);
+2025-09-05 00:28:32 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 25), @p2='?' (Size = 11), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Users" ("Id", "Email", "PasswordHash", "Role")
+VALUES (@p0, @p1, @p2, @p3);
+2025-09-05 00:28:32 [DBG] Closing data reader to 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db'.
+2025-09-05 00:28:32 [DBG] A data reader for 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db' is being disposed after spending 1ms reading results.
+2025-09-05 00:28:32 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-09-05 00:28:32 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-09-05 00:28:32 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2025-09-05 00:28:32 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 6), @p2='?' (Size = 2), @p3='?' (DbType = DateTime), @p4='?' (Size = 23), @p5='?' (Size = 15), @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime), @p8='?' (Size = 11), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Employees" ("Id", "Address", "CurrentWorkplace", "DateOfBirth", "Email", "FullName", "Gender", "JoinDate", "PasswordHash", "UserId", "VacationRemaining")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+2025-09-05 00:28:32 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 6), @p2='?' (Size = 2), @p3='?' (DbType = DateTime), @p4='?' (Size = 23), @p5='?' (Size = 15), @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime), @p8='?' (Size = 11), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Employees" ("Id", "Address", "CurrentWorkplace", "DateOfBirth", "Email", "FullName", "Gender", "JoinDate", "PasswordHash", "UserId", "VacationRemaining")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+2025-09-05 00:28:32 [DBG] Closing data reader to 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db'.
+2025-09-05 00:28:32 [DBG] A data reader for 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db' is being disposed after spending 0ms reading results.
+2025-09-05 00:28:32 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-09-05 00:28:32 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-09-05 00:28:32 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2025-09-05 00:28:32 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 7), @p2='?' (Size = 4), @p3='?' (DbType = DateTime), @p4='?' (Size = 25), @p5='?' (Size = 17), @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime), @p8='?' (Size = 11), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Employees" ("Id", "Address", "CurrentWorkplace", "DateOfBirth", "Email", "FullName", "Gender", "JoinDate", "PasswordHash", "UserId", "VacationRemaining")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+2025-09-05 00:28:32 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 7), @p2='?' (Size = 4), @p3='?' (DbType = DateTime), @p4='?' (Size = 25), @p5='?' (Size = 17), @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime), @p8='?' (Size = 11), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Employees" ("Id", "Address", "CurrentWorkplace", "DateOfBirth", "Email", "FullName", "Gender", "JoinDate", "PasswordHash", "UserId", "VacationRemaining")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+2025-09-05 00:28:32 [DBG] Closing data reader to 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db'.
+2025-09-05 00:28:32 [DBG] A data reader for 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db' is being disposed after spending 1ms reading results.
+2025-09-05 00:28:32 [DBG] Committing transaction.
+2025-09-05 00:28:32 [DBG] Committed transaction.
+2025-09-05 00:28:32 [DBG] Closing connection to database 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db'.
+2025-09-05 00:28:32 [DBG] Closed connection to database 'main' on server 'app.db' (0ms).
+2025-09-05 00:28:32 [DBG] Disposing transaction.
+2025-09-05 00:28:32 [DBG] An entity of type 'Employee' tracked by 'AppDbContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-09-05 00:28:32 [DBG] An entity of type 'Employee' tracked by 'AppDbContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-09-05 00:28:32 [DBG] An entity of type 'User' tracked by 'AppDbContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-09-05 00:28:32 [DBG] An entity of type 'User' tracked by 'AppDbContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-09-05 00:28:32 [DBG] SaveChanges completed for 'AppDbContext' with 4 entities written to the database.
+2025-09-05 00:28:32 [DBG] 'AppDbContext' disposed.
+2025-09-05 00:28:32 [DBG] Disposing connection to database 'main' on server 'app.db'.
+2025-09-05 00:28:32 [DBG] Disposed connection to database 'main' on server 'app.db' (1ms).
+2025-09-05 00:28:32 [DBG] Hosting starting
+2025-09-05 00:28:32 [INF] User profile is available. Using 'C:\Users\xmilk\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-05 00:28:32 [DBG] Reading data from file 'C:\Users\xmilk\AppData\Local\ASP.NET\DataProtection-Keys\key-1c385c28-cc6d-447d-ae30-f5b4f8a07abc.xml'.
+2025-09-05 00:28:32 [DBG] Reading data from file 'C:\Users\xmilk\AppData\Local\ASP.NET\DataProtection-Keys\key-652ff78d-da9f-4eb6-b9df-4163dc283720.xml'.
+2025-09-05 00:28:32 [DBG] Reading data from file 'C:\Users\xmilk\AppData\Local\ASP.NET\DataProtection-Keys\key-90574223-276b-4506-a45e-ffada2709fe7.xml'.
+2025-09-05 00:28:32 [DBG] Reading data from file 'C:\Users\xmilk\AppData\Local\ASP.NET\DataProtection-Keys\key-cb7e8bd2-dc2a-46d8-be02-3c607d2400fa.xml'.
+2025-09-05 00:28:32 [DBG] Reading data from file 'C:\Users\xmilk\AppData\Local\ASP.NET\DataProtection-Keys\key-f1a1cc4f-c622-4856-b98a-c7e82d92e756.xml'.
+2025-09-05 00:28:32 [DBG] Found key {1c385c28-cc6d-447d-ae30-f5b4f8a07abc}.
+2025-09-05 00:28:32 [DBG] Found key {652ff78d-da9f-4eb6-b9df-4163dc283720}.
+2025-09-05 00:28:32 [DBG] Found key {90574223-276b-4506-a45e-ffada2709fe7}.
+2025-09-05 00:28:32 [DBG] Found key {cb7e8bd2-dc2a-46d8-be02-3c607d2400fa}.
+2025-09-05 00:28:32 [DBG] Found key {f1a1cc4f-c622-4856-b98a-c7e82d92e756}.
+2025-09-05 00:28:32 [DBG] Considering key {652ff78d-da9f-4eb6-b9df-4163dc283720} with expiration date 2025-10-15 14:12:00Z as default key.
+2025-09-05 00:28:32 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-09-05 00:28:32 [DBG] Decrypting secret element using Windows DPAPI.
+2025-09-05 00:28:32 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-09-05 00:28:32 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2025-09-05 00:28:32 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2025-09-05 00:28:32 [DBG] Using key {652ff78d-da9f-4eb6-b9df-4163dc283720} as the default key.
+2025-09-05 00:28:32 [DBG] Key ring with default key {652ff78d-da9f-4eb6-b9df-4163dc283720} was loaded during application startup.
+2025-09-05 00:28:32 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-09-05 00:28:32 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-09-05 00:28:32 [INF] Now listening on: http://localhost:5211
+2025-09-05 00:28:32 [DBG] Loaded hosting startup assembly EmployeeManagement.Api
+2025-09-05 00:28:32 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-05 00:28:32 [INF] Hosting environment: Development
+2025-09-05 00:28:32 [INF] Content root path: C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api
+2025-09-05 00:28:32 [DBG] Hosting started
+2025-09-05 00:29:07 [DBG] Connection id "0HNFBOV4UFRDR" accepted.
+2025-09-05 00:29:07 [DBG] Connection id "0HNFBOV4UFRDR" started.
+2025-09-05 00:29:07 [INF] Request starting HTTP/1.1 POST http://localhost:5211/api/auth/login - application/json 80
+2025-09-05 00:29:07 [DBG] 1 candidate(s) found for the request path '/api/auth/login'
+2025-09-05 00:29:07 [DBG] Endpoint 'Backend.Controllers.AuthController.Login (EmployeeManagement.Api)' with route pattern 'api/Auth/login' is valid for the request path '/api/auth/login'
+2025-09-05 00:29:07 [DBG] Request matched endpoint 'Backend.Controllers.AuthController.Login (EmployeeManagement.Api)'
+2025-09-05 00:29:07 [WRN] Failed to determine the https port for redirect.
+2025-09-05 00:29:07 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-09-05 00:29:07 [INF] Executing endpoint 'Backend.Controllers.AuthController.Login (EmployeeManagement.Api)'
+2025-09-05 00:29:07 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Backend.DTOs.LoginRequest) on controller Backend.Controllers.AuthController (EmployeeManagement.Api).
+2025-09-05 00:29:07 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-09-05 00:29:07 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-09-05 00:29:07 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-09-05 00:29:07 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-09-05 00:29:07 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-09-05 00:29:07 [DBG] Executing controller factory for controller Backend.Controllers.AuthController (EmployeeManagement.Api)
+2025-09-05 00:29:07 [DBG] Executed controller factory for controller Backend.Controllers.AuthController (EmployeeManagement.Api)
+2025-09-05 00:29:07 [DBG] Attempting to bind parameter 'request' of type 'Backend.DTOs.LoginRequest' ...
+2025-09-05 00:29:07 [DBG] Attempting to bind parameter 'request' of type 'Backend.DTOs.LoginRequest' using the name '' in request data ...
+2025-09-05 00:29:07 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-09-05 00:29:07 [DBG] Connection id "0HNFBOV4UFRDR", Request id "0HNFBOV4UFRDR:00000001": started reading request body.
+2025-09-05 00:29:07 [DBG] Connection id "0HNFBOV4UFRDR", Request id "0HNFBOV4UFRDR:00000001": done reading request body.
+2025-09-05 00:29:07 [DBG] JSON input formatter succeeded, deserializing to type 'Backend.DTOs.LoginRequest'
+2025-09-05 00:29:07 [DBG] Done attempting to bind parameter 'request' of type 'Backend.DTOs.LoginRequest'.
+2025-09-05 00:29:07 [DBG] Done attempting to bind parameter 'request' of type 'Backend.DTOs.LoginRequest'.
+2025-09-05 00:29:07 [DBG] Attempting to validate the bound parameter 'request' of type 'Backend.DTOs.LoginRequest' ...
+2025-09-05 00:29:07 [DBG] Done attempting to validate the bound parameter 'request' of type 'Backend.DTOs.LoginRequest'.
+2025-09-05 00:29:07 [DBG] Entity Framework Core 9.0.7 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:9.0.7' with options: None
+2025-09-05 00:29:07 [DBG] Compiling query expression: 
+'DbSet<User>()
+    .FirstOrDefault(u => u.Email == __email_0 && u.PasswordHash == __password_1)'
+2025-09-05 00:29:07 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<User>(
+    asyncEnumerable: SingleQueryingEnumerable.Create<User>(
+        relationalQueryContext: (RelationalQueryContext)queryContext, 
+        relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.Email (string) Required, 1], [Property: User.PasswordHash (string) Required MaxLength(100), 2], [Property: User.Role (UserRole) Required, 3] }
+            SELECT TOP(1) u.Id, u.Email, u.PasswordHash, u.Role
+            FROM Users AS u
+            WHERE (u.Email == @__email_0) && (u.PasswordHash == @__password_1)) | Resolver: c => new RelationalCommandCache(
+            c.Dependencies.MemoryCache, 
+            c.RelationalDependencies.QuerySqlGeneratorFactory, 
+            c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.Email (string) Required, 1], [Property: User.PasswordHash (string) Required MaxLength(100), 2], [Property: User.Role (UserRole) Required, 3] }
+            SELECT TOP(1) u.Id, u.Email, u.PasswordHash, u.Role
+            FROM Users AS u
+            WHERE (u.Email == @__email_0) && (u.PasswordHash == @__password_1), 
+            False, 
+            new HashSet<string>(
+                new string[]{ }, 
+                StringComparer.Ordinal
+            )
+        )].GetRelationalCommandTemplate(parameters), 
+        readerColumns: null, 
+        shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+        {
+            User entity;
+            entity = 
+            {
+                MaterializationContext materializationContext1;
+                IEntityType entityType1;
+                User instance1;
+                InternalEntityEntry entry1;
+                bool hasNullKey1;
+                materializationContext1 = new MaterializationContext(
+                    [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                    queryContext.Context
+                );
+                instance1 = default(User);
+                entry1 = queryContext.TryGetEntry(
+                    key: [LIFTABLE Constant: Key: User.Id PK | Resolver: c => c.Dependencies.Model.FindEntityType("Backend.Models.User").FindPrimaryKey()], 
+                    keyValues: new object[]{ (object)dataReader.GetInt32(0) }, 
+                    throwOnNullKey: True, 
+                    hasNullKey: hasNullKey1);
+                !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+                {
+                    entityType1 = entry1.EntityType;
+                    return instance1 = (User)entry1.Entity;
+                } : 
+                {
+                    ISnapshot shadowSnapshot1;
+                    shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                    entityType1 = [LIFTABLE Constant: EntityType: User | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("Backend.Models.User")];
+                    instance1 = switch (entityType1)
+                    {
+                        case [LIFTABLE Constant: EntityType: User | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("Backend.Models.User")]: 
+                            {
+                                return 
+                                {
+                                    User instance;
+                                    instance = new User();
+                                    instance.<Id>k__BackingField = dataReader.GetInt32(0);
+                                    instance.<Email>k__BackingField = dataReader.GetString(1);
+                                    instance.<PasswordHash>k__BackingField = dataReader.GetString(2);
+                                    instance.<Role>k__BackingField = Invoke(((EnumToNumberConverter<UserRole, int>)((IReadOnlyProperty)[LIFTABLE Constant: Property: User.Role (UserRole) Required | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("Backend.Models.User").FindProperty("Role")]).GetTypeMapping().Converter).ConvertFromProviderTyped, dataReader.GetInt32(3));
+                                    (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                        context: materializationContext1.Context, 
+                                        entity: instance, 
+                                        queryTrackingBehavior: TrackAll, 
+                                        structuralType: [LIFTABLE Constant: EntityType: User | Resolver: namelessParameter{3} => namelessParameter{3}.Dependencies.Model.FindEntityType("Backend.Models.User")]) : default(void);
+                                    return instance;
+                                }}
+                        default: 
+                            default(User)
+                    }
+                    ;
+                    entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                        entityType: entityType1, 
+                        entity: instance1, 
+                        snapshot: shadowSnapshot1);
+                    return instance1;
+                } : default(void);
+                return instance1;
+            };
+            return entity;
+        }, 
+        contextType: Backend.Data.AppDbContext, 
+        standAloneStateManager: False, 
+        detailedErrorsEnabled: False, 
+        threadSafetyChecksEnabled: True), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-09-05 00:29:07 [DBG] Creating DbConnection.
+2025-09-05 00:29:07 [DBG] Created DbConnection. (3ms).
+2025-09-05 00:29:07 [DBG] Opening connection to database 'main' on server 'app.db'.
+2025-09-05 00:29:08 [DBG] Opened connection to database 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db'.
+2025-09-05 00:29:08 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-09-05 00:29:08 [DBG] Created DbCommand for 'ExecuteReader' (3ms).
+2025-09-05 00:29:08 [DBG] Initialized DbCommand for 'ExecuteReader' (6ms).
+2025-09-05 00:29:08 [DBG] Executing DbCommand [Parameters=[@__email_0='?' (Size = 25), @__password_1='?' (Size = 11)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."PasswordHash", "u"."Role"
+FROM "Users" AS "u"
+WHERE "u"."Email" = @__email_0 AND "u"."PasswordHash" = @__password_1
+LIMIT 1
+2025-09-05 00:29:08 [INF] Executed DbCommand (7ms) [Parameters=[@__email_0='?' (Size = 25), @__password_1='?' (Size = 11)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."PasswordHash", "u"."Role"
+FROM "Users" AS "u"
+WHERE "u"."Email" = @__email_0 AND "u"."PasswordHash" = @__password_1
+LIMIT 1
+2025-09-05 00:29:08 [DBG] Context 'AppDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-09-05 00:29:08 [DBG] Closing data reader to 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db'.
+2025-09-05 00:29:08 [DBG] A data reader for 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db' is being disposed after spending 29ms reading results.
+2025-09-05 00:29:08 [DBG] Closing connection to database 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db'.
+2025-09-05 00:29:08 [DBG] Closed connection to database 'main' on server 'app.db' (2ms).
+2025-09-05 00:29:08 [INF] ログイン処理成功 : UserId : 2
+2025-09-05 00:29:08 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-09-05 00:29:08 [DBG] No information found on request to perform content negotiation.
+2025-09-05 00:29:08 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-09-05 00:29:08 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-09-05 00:29:08 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-09-05 00:29:08 [INF] Executing OkObjectResult, writing value of type 'Backend.DTOs.LoginResponse'.
+2025-09-05 00:29:08 [INF] Executed action Backend.Controllers.AuthController.Login (EmployeeManagement.Api) in 411.3615ms
+2025-09-05 00:29:08 [INF] Executed endpoint 'Backend.Controllers.AuthController.Login (EmployeeManagement.Api)'
+2025-09-05 00:29:08 [DBG] Connection id "0HNFBOV4UFRDR" completed keep alive response.
+2025-09-05 00:29:08 [DBG] 'AppDbContext' disposed.
+2025-09-05 00:29:08 [DBG] Disposing connection to database 'main' on server 'app.db'.
+2025-09-05 00:29:08 [DBG] Disposed connection to database 'main' on server 'app.db' (2ms).
+2025-09-05 00:29:08 [INF] Request finished HTTP/1.1 POST http://localhost:5211/api/auth/login - 200 null application/json; charset=utf-8 653.2294ms
+2025-09-05 00:29:31 [INF] Request starting HTTP/1.1 GET http://localhost:5211/api/general - null null
+2025-09-05 00:29:31 [DBG] 1 candidate(s) found for the request path '/api/general'
+2025-09-05 00:29:31 [DBG] Endpoint 'Backend.Controllers.GeneralController.GetMyEmployeeInfo (EmployeeManagement.Api)' with route pattern 'api/General' is valid for the request path '/api/general'
+2025-09-05 00:29:31 [DBG] Request matched endpoint 'Backend.Controllers.GeneralController.GetMyEmployeeInfo (EmployeeManagement.Api)'
+2025-09-05 00:29:31 [DBG] Successfully validated the token.
+2025-09-05 00:29:31 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2025-09-05 00:29:31 [DBG] Authorization was successful.
+2025-09-05 00:29:31 [INF] Executing endpoint 'Backend.Controllers.GeneralController.GetMyEmployeeInfo (EmployeeManagement.Api)'
+2025-09-05 00:29:31 [INF] Route matched with {action = "GetMyEmployeeInfo", controller = "General"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyEmployeeInfo() on controller Backend.Controllers.GeneralController (EmployeeManagement.Api).
+2025-09-05 00:29:31 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-09-05 00:29:31 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-09-05 00:29:31 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-09-05 00:29:31 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-09-05 00:29:31 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-09-05 00:29:31 [DBG] Executing controller factory for controller Backend.Controllers.GeneralController (EmployeeManagement.Api)
+2025-09-05 00:29:31 [DBG] Executed controller factory for controller Backend.Controllers.GeneralController (EmployeeManagement.Api)
+2025-09-05 00:29:31 [DBG] Entity Framework Core 9.0.7 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:9.0.7' with options: None
+2025-09-05 00:29:31 [DBG] Compiling query expression: 
+'DbSet<Employee>()
+    .FirstOrDefault(e => e.UserId == __userId_0)'
+2025-09-05 00:29:31 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Employee>(
+    asyncEnumerable: SingleQueryingEnumerable.Create<Employee>(
+        relationalQueryContext: (RelationalQueryContext)queryContext, 
+        relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Employee.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Employee.Address (string) Required, 1], [Property: Employee.CurrentWorkplace (string) Required, 2], [Property: Employee.DateOfBirth (DateTime) Required, 3], [Property: Employee.Email (string) Required, 4], [Property: Employee.FullName (string) Required, 5], [Property: Employee.Gender (Gender?) Required, 6], [Property: Employee.JoinDate (DateTime) Required, 7], [Property: Employee.PasswordHash (string) Required MaxLength(100), 8], [Property: Employee.UserId (int) Required FK Index, 9], [Property: Employee.VacationRemaining (int) Required, 10] }
+            SELECT TOP(1) e.Id, e.Address, e.CurrentWorkplace, e.DateOfBirth, e.Email, e.FullName, e.Gender, e.JoinDate, e.PasswordHash, e.UserId, e.VacationRemaining
+            FROM Employees AS e
+            WHERE e.UserId == @__userId_0) | Resolver: c => new RelationalCommandCache(
+            c.Dependencies.MemoryCache, 
+            c.RelationalDependencies.QuerySqlGeneratorFactory, 
+            c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Employee.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Employee.Address (string) Required, 1], [Property: Employee.CurrentWorkplace (string) Required, 2], [Property: Employee.DateOfBirth (DateTime) Required, 3], [Property: Employee.Email (string) Required, 4], [Property: Employee.FullName (string) Required, 5], [Property: Employee.Gender (Gender?) Required, 6], [Property: Employee.JoinDate (DateTime) Required, 7], [Property: Employee.PasswordHash (string) Required MaxLength(100), 8], [Property: Employee.UserId (int) Required FK Index, 9], [Property: Employee.VacationRemaining (int) Required, 10] }
+            SELECT TOP(1) e.Id, e.Address, e.CurrentWorkplace, e.DateOfBirth, e.Email, e.FullName, e.Gender, e.JoinDate, e.PasswordHash, e.UserId, e.VacationRemaining
+            FROM Employees AS e
+            WHERE e.UserId == @__userId_0, 
+            False, 
+            new HashSet<string>(
+                new string[]{ }, 
+                StringComparer.Ordinal
+            )
+        )].GetRelationalCommandTemplate(parameters), 
+        readerColumns: null, 
+        shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+        {
+            Employee entity;
+            entity = 
+            {
+                MaterializationContext materializationContext1;
+                IEntityType entityType1;
+                Employee instance1;
+                InternalEntityEntry entry1;
+                bool hasNullKey1;
+                materializationContext1 = new MaterializationContext(
+                    [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                    queryContext.Context
+                );
+                instance1 = default(Employee);
+                entry1 = queryContext.TryGetEntry(
+                    key: [LIFTABLE Constant: Key: Employee.Id PK | Resolver: c => c.Dependencies.Model.FindEntityType("Backend.Models.Employee").FindPrimaryKey()], 
+                    keyValues: new object[]{ (object)dataReader.GetInt32(0) }, 
+                    throwOnNullKey: True, 
+                    hasNullKey: hasNullKey1);
+                !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+                {
+                    entityType1 = entry1.EntityType;
+                    return instance1 = (Employee)entry1.Entity;
+                } : 
+                {
+                    ISnapshot shadowSnapshot1;
+                    shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                    entityType1 = [LIFTABLE Constant: EntityType: Employee | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("Backend.Models.Employee")];
+                    instance1 = switch (entityType1)
+                    {
+                        case [LIFTABLE Constant: EntityType: Employee | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("Backend.Models.Employee")]: 
+                            {
+                                return 
+                                {
+                                    Employee instance;
+                                    instance = new Employee();
+                                    instance.<Id>k__BackingField = dataReader.GetInt32(0);
+                                    instance.<Address>k__BackingField = dataReader.GetString(1);
+                                    instance.<CurrentWorkplace>k__BackingField = dataReader.GetString(2);
+                                    instance.<DateOfBirth>k__BackingField = dataReader.GetDateTime(3);
+                                    instance.<Email>k__BackingField = dataReader.GetString(4);
+                                    instance.<FullName>k__BackingField = dataReader.GetString(5);
+                                    instance.<Gender>k__BackingField = (Gender?)Invoke(((EnumToNumberConverter<Gender, int>)((IReadOnlyProperty)[LIFTABLE Constant: Property: Employee.Gender (Gender?) Required | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("Backend.Models.Employee").FindProperty("Gender")]).GetTypeMapping().Converter).ConvertFromProviderTyped, dataReader.GetInt32(6));
+                                    instance.<JoinDate>k__BackingField = dataReader.GetDateTime(7);
+                                    instance.<PasswordHash>k__BackingField = dataReader.GetString(8);
+                                    instance.<UserId>k__BackingField = dataReader.GetInt32(9);
+                                    instance.<VacationRemaining>k__BackingField = dataReader.GetInt32(10);
+                                    (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                        context: materializationContext1.Context, 
+                                        entity: instance, 
+                                        queryTrackingBehavior: TrackAll, 
+                                        structuralType: [LIFTABLE Constant: EntityType: Employee | Resolver: namelessParameter{3} => namelessParameter{3}.Dependencies.Model.FindEntityType("Backend.Models.Employee")]) : default(void);
+                                    return instance;
+                                }}
+                        default: 
+                            default(Employee)
+                    }
+                    ;
+                    entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                        entityType: entityType1, 
+                        entity: instance1, 
+                        snapshot: shadowSnapshot1);
+                    return instance1;
+                } : default(void);
+                return instance1;
+            };
+            return entity;
+        }, 
+        contextType: Backend.Data.AppDbContext, 
+        standAloneStateManager: False, 
+        detailedErrorsEnabled: False, 
+        threadSafetyChecksEnabled: True), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-09-05 00:29:31 [DBG] Creating DbConnection.
+2025-09-05 00:29:31 [DBG] Created DbConnection. (2ms).
+2025-09-05 00:29:31 [DBG] Opening connection to database 'main' on server 'app.db'.
+2025-09-05 00:29:31 [DBG] Opened connection to database 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db'.
+2025-09-05 00:29:31 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-09-05 00:29:31 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-09-05 00:29:31 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2025-09-05 00:29:31 [DBG] Executing DbCommand [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "e"."Id", "e"."Address", "e"."CurrentWorkplace", "e"."DateOfBirth", "e"."Email", "e"."FullName", "e"."Gender", "e"."JoinDate", "e"."PasswordHash", "e"."UserId", "e"."VacationRemaining"
+FROM "Employees" AS "e"
+WHERE "e"."UserId" = @__userId_0
+LIMIT 1
+2025-09-05 00:29:31 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "e"."Id", "e"."Address", "e"."CurrentWorkplace", "e"."DateOfBirth", "e"."Email", "e"."FullName", "e"."Gender", "e"."JoinDate", "e"."PasswordHash", "e"."UserId", "e"."VacationRemaining"
+FROM "Employees" AS "e"
+WHERE "e"."UserId" = @__userId_0
+LIMIT 1
+2025-09-05 00:29:31 [DBG] Context 'AppDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-09-05 00:29:31 [DBG] Closing data reader to 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db'.
+2025-09-05 00:29:31 [DBG] A data reader for 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db' is being disposed after spending 10ms reading results.
+2025-09-05 00:29:31 [DBG] Closing connection to database 'main' on server 'C:\Users\xmilk\OneDrive\デスクトップ\portfolio\employee-management-app\backend\EmployeeManagement.Api\app.db'.
+2025-09-05 00:29:31 [DBG] Closed connection to database 'main' on server 'app.db' (2ms).
+2025-09-05 00:29:31 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-09-05 00:29:31 [DBG] No information found on request to perform content negotiation.
+2025-09-05 00:29:31 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-09-05 00:29:31 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-09-05 00:29:31 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-09-05 00:29:31 [INF] Executing OkObjectResult, writing value of type 'Backend.Models.Employee'.
+2025-09-05 00:29:31 [INF] Executed action Backend.Controllers.GeneralController.GetMyEmployeeInfo (EmployeeManagement.Api) in 201.8227ms
+2025-09-05 00:29:31 [INF] Executed endpoint 'Backend.Controllers.GeneralController.GetMyEmployeeInfo (EmployeeManagement.Api)'
+2025-09-05 00:29:31 [DBG] Connection id "0HNFBOV4UFRDR" completed keep alive response.
+2025-09-05 00:29:31 [DBG] 'AppDbContext' disposed.
+2025-09-05 00:29:31 [DBG] Disposing connection to database 'main' on server 'app.db'.
+2025-09-05 00:29:31 [DBG] Disposed connection to database 'main' on server 'app.db' (2ms).
+2025-09-05 00:29:31 [INF] Request finished HTTP/1.1 GET http://localhost:5211/api/general - 200 null application/json; charset=utf-8 293.9363ms
+2025-09-05 00:29:38 [DBG] Connection id "0HNFBOV4UFRDR" reset.
+2025-09-05 00:29:38 [DBG] Connection id "0HNFBOV4UFRDR" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-09-05 00:29:38 [DBG] Connection id "0HNFBOV4UFRDR" disconnecting.
+2025-09-05 00:29:38 [DBG] Connection id "0HNFBOV4UFRDR" stopped.
+2025-09-05 00:29:46 [INF] Application is shutting down...
+2025-09-05 00:29:46 [DBG] Hosting stopping
+2025-09-05 00:29:46 [DBG] Hosting stopped
