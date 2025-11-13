@@ -21,11 +21,14 @@ namespace Backend.Controllers
         // DB
         private readonly AppDbContext _db;
 
-        public AuthController(ILogger<AuthController> logger, AppDbContext db, AuthService authService)
+        private readonly JwtTokenGenerator _tokenGenerator;
+
+        public AuthController(ILogger<AuthController> logger, AppDbContext db, AuthService authService, JwtTokenGenerator tokenGenerator)
         {
             _logger = logger;
             _db = db;
             _authService = authService;
+            _tokenGenerator = tokenGenerator;
         }
 
         // ログインメソッド
@@ -47,7 +50,8 @@ namespace Backend.Controllers
             }
 
             // 一致要素有りの場合(200) 、 トークン作成+所持Roleを返す
-            var token = JwtTokenGenerator.GenerateToken(loginUser);
+            //var token = JwtTokenGenerator.GenerateToken(loginUser);
+            var token = _tokenGenerator.GenerateToken(loginUser);
 
             _logger.LogInformation($"ログイン処理成功 : UserId : {loginUser.Id}", loginUser.Id);
             return Ok(new LoginResponse

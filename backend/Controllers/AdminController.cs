@@ -242,12 +242,13 @@ namespace Backend.Controllers
                     Email = e.User.Email,
                     Role = e.User.Role
                 },
-                Skills = e.EmployeeSkills.Select(es => new SkillInfoDto
-                {
-                    Name = es.Skill.Name,
-                    Category = es.Skill.Category.ToString(),
-                    IconPath = es.Skill.IconPath
-                }).ToList()
+                Skills = e.EmployeeSkills
+                    .Select(es => new SkillInfoDto
+                    {
+                        Name = es.Skill.Name,
+                        Category = es.Skill.Category.ToString(),
+                        IconPath = es.Skill.IconPath
+                    }).ToList()
             }).ToList();
 
             // レスポンス形式

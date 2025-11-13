@@ -19,10 +19,13 @@ namespace Backend.Controllers
        // ƒƒOo—Í
         private readonly ILogger<RegistrationController> _logger;
 
-        public RegistrationController(ILogger<RegistrationController> logger, AppDbContext db)
+        private readonly JwtTokenGenerator _tokenGenerator;
+
+        public RegistrationController(ILogger<RegistrationController> logger, AppDbContext db, JwtTokenGenerator tokenGenerator)
         {
             _logger = logger;
             _db = db;
+            _tokenGenerator = tokenGenerator;
         }
 
         // ˆø”id(request.Id)‚ÉŠY“–‚·‚é]‹Æˆõî•ñ‚ğo—Í‚·‚é
@@ -87,11 +90,10 @@ namespace Backend.Controllers
             _logger.LogInformation("V]‹Æˆõ‚ğ“o˜^F{@User}", user);
 
             // ƒŒƒXƒ|ƒ“ƒX•Ô‹p
-            // return CreatedAtAction(nameof(GetEmployeeById), new { id = user.Id }, user);
             return Ok(new
             {
             	message = "ƒ†[ƒU[“o˜^Š®—¹",
-            	token = JwtTokenGenerator.GenerateToken(user)
+            	token = _tokenGenerator.GenerateToken(user)
             });
         }
     }

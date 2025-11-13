@@ -15,7 +15,7 @@ builder.Services.AddCors(options => {
     options.AddPolicy("AllowFrontend",
     policy =>
     {
-        policy.WithOrigins("http://localhost:5173")
+        policy.WithOrigins("http://localhost:5175")
         .AllowAnyHeader()
         .AllowAnyMethod()
         .AllowCredentials();
@@ -37,6 +37,9 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlite("Data Source=app.db"));
 
 // JWT認証設定
+builder.Services.AddScoped<JwtTokenGenerator>();
+
+var jwtSetting = builder.Configuration.GetSection("Jwt");
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -47,15 +50,14 @@ builder.Services.AddAuthentication(options =>
     options.TokenValidationParameters = new TokenValidationParameters
     {
         RoleClaimType = "Roles",
-
         ValidateIssuer = true,
         ValidateAudience = true,
         ValidateLifetime = true,
         ValidateIssuerSigningKey = true,
-        ValidIssuer = "yourapp",
-        ValidAudience = "yourapp",
+        ValidIssuer = jwtSetting["Issuer"],
+        ValidAudience = jwtSetting["Audience"],
         IssuerSigningKey = new SymmetricSecurityKey(
-            Encoding.UTF8.GetBytes("supersecretkey_supersecretkey53418762346287468725"))
+            Encoding.UTF8.GetBytes(jwtSetting["Key"]))
     };
 });
 
@@ -77,8 +79,6 @@ builder.Host.UseSerilog();
 
 var app = builder.Build();
 
-// ミドルウェア設定
-//app.UseHttpsRedirection();
 
 app.UseCors("AllowFrontend");
 
@@ -87,9 +87,6 @@ app.UseAuthentication(); // トークン認証
 app.UseAuthorization(); // [Authorize]の適用
 
 app.MapControllers(); // [ApiController]属性使用設定
-
-//app.UseStaticFiles();
-//app.MapFallbackToFile("index.html");
 
 app.UseStaticFiles();
 
