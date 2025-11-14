@@ -375,6 +375,7 @@ namespace Backend.Controllers
                 Skills = employee.EmployeeSkills
             .Select(es => new SkillInfoDto
             {
+                Id = es.SkillId,
                 Name = es.Skill.Name,
                 Category = es.Skill.Category.ToString(),
                 IconPath = es.Skill.IconPath

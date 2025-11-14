@@ -549,7 +549,7 @@
 
           <div class="flex justify-end mt-4 space-x-2">
             <button
-              @click="isEditMode = true"
+              @click="startEdit"
               class="bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded"
             >
               編集
@@ -583,7 +583,7 @@
             <div>
               <label class="block text-sm text-gray-700 mb-1">氏名</label>
               <input
-                v-model="selectedEmployee.fullName"
+                v-model="editableEmployee.fullName"
                 class="w-full border rounded px-3 py-2"
               />
             </div>
@@ -593,7 +593,7 @@
                 >メールアドレス</label
               >
               <input
-                v-model="selectedEmployee.user.email"
+                v-model="editableEmployee.user.email"
                 type="email"
                 class="w-full border rounded px-3 py-2"
               />
@@ -605,7 +605,7 @@
             <div>
               <label class="block text-sm text-gray-700 mb-1">住所</label>
               <input
-                v-model="selectedEmployee.address"
+                v-model="editableEmployee.address"
                 class="w-full border rounded px-3 py-2"
               />
             </div>
@@ -613,7 +613,7 @@
             <div>
               <label class="block text-sm text-gray-700 mb-1">勤務先</label>
               <input
-                v-model="selectedEmployee.currentWorkplace"
+                v-model="editableEmployee.currentWorkplace"
                 class="w-full border rounded px-3 py-2"
               />
             </div>
@@ -623,14 +623,14 @@
               <div class="flex space-x-4">
                 <label
                   ><input
-                    v-model="selectedEmployee.user.role"
+                    v-model="editableEmployee.user.role"
                     type="radio"
                     value="Admin"
                   />Admin</label
                 >
                 <label
                   ><input
-                    v-model="selectedEmployee.user.role"
+                    v-model="editableEmployee.user.role"
                     type="radio"
                     value="General"
                   />General</label
@@ -643,7 +643,7 @@
               <div class="flex space-x-4">
                 <label
                   ><input
-                    v-model="selectedEmployee.gender"
+                    v-model="editableEmployee.gender"
                     type="radio"
                     value="男性"
                   />
@@ -651,7 +651,7 @@
                 >
                 <label
                   ><input
-                    v-model="selectedEmployee.gender"
+                    v-model="editableEmployee.gender"
                     type="radio"
                     value="女性"
                   />
@@ -659,7 +659,7 @@
                 >
                 <label
                   ><input
-                    v-model="selectedEmployee.gender"
+                    v-model="editableEmployee.gender"
                     type="radio"
                     value="その他"
                   />
@@ -675,7 +675,7 @@
 
             <!-- 既存スキル一覧 -->
             <div
-              v-if="selectedEmployee.skills && selectedEmployee.skills.length"
+              v-if="editableEmployee.skills && editableEmployee.skills.length"
             >
               <div
                 v-for="(skillsByCategory, category) in groupedSkills"
@@ -699,7 +699,7 @@
                     />
                     <span>{{ skill.name }}</span>
                     <button
-                      @click="removeSkill(skill.name)"
+                      @click="removeSkillFromEditable(skill.name)"
                       class="ml-2 text-red-500 hover:text-red-700"
                     >
                       <i class="fa-solid fa-xmark"></i>
@@ -731,7 +731,7 @@
                 <li
                   v-for="skill in filteredSkills"
                   :key="skill.id"
-                  @click="assignSkill(skill)"
+                  @click="addSkillToEditable(skill)"
                   class="px-3 py-2 hover:bg-blue-50 cursor-pointer flex items-center"
                 >
                   <img
@@ -754,13 +754,7 @@
               保存
             </button>
             <button
-              @click="
-                cancelSkillEdit();
-                emailError = '';
-                viewEmployee(selectedEmployee.id);
-                isEditMode = false;
-                isDetailModalOpen = false;
-              "
+              @click="cancelEdit()"
               class="btn-outline px-5 py-2 rounded-lg transition"
             >
               キャンセル
@@ -863,6 +857,7 @@ import {
   showError,
 } from "@/utils/alertService";
 import qs from "qs";
+import { cloneDeep } from "lodash-es";
 
 // ----------------------
 //  初期化・状態管理
@@ -884,6 +879,8 @@ const filteredSkills = ref([]);
 const isSkillModalOpen = ref(false);
 const selectedSkills = ref([]);
 const isComposing = ref(false);
+const editableEmployee = ref(null);
+const originalSkillIds = ref([]);
 
 // ----------------------
 //  メニュー開閉制御
@@ -1082,10 +1079,28 @@ const viewEmployee = async (id) => {
   }
 };
 
+// 編集開始
+const startEdit = () => {
+  if (!selectedEmployee.value) return;
+  editableEmployee.value = cloneDeep(selectedEmployee.value);
+  originalSkillIds.value = (selectedEmployee.value.skills || []).map(s => s.id);
+  isEditMode.value = true;
+  emailError.value = "";
+};
+
+// 編集キャンセル
+const cancelEdit = () => {
+  editableEmployee.value = null;
+  emailError.value = "";
+  skillSearch.value = "";
+  filterSkills.value = [];
+  isEditMode.value = false;
+};
+
 // 指定従業員情報更新処理
 const updateEmployee = async () => {
   emailError.value = "";
-  const checkResult = validateEmailFormat(selectedEmployee.value.user.email);
+  const checkResult = validateEmailFormat(editableEmployee.value.user.email);
 
   if (checkResult) {
     emailError.value = checkResult;
@@ -1093,26 +1108,65 @@ const updateEmployee = async () => {
   }
 
   try {
+    // ユーザー基本情報更新
     await apiClient.put(
-      `/admin/edit/${selectedEmployee.value.id}`,
-      selectedEmployee.value
+      `/admin/edit/${editableEmployee.value.id}`,
+      editableEmployee.value
     );
+
+    // スキル差分計算
+    const newIds = (editableEmployee.value.skills || []).filter(s => s?.id).map(s => s.id);
+    const addedIds = newIds.filter(id => !originalSkillIds.value.includes(id));
+    const removedIds = originalSkillIds.value.filter(id => !newIds.includes(id));
+
+    // スキル追加処理
+    if (addedIds.length > 0) {
+      try {
+        await apiClient.post(`/employeeskill/assign`, {
+          employeeId: editableEmployee.value.id,
+          skillIds: addedIds
+        }, {skipGlobalErrorHandler: true}); 
+        
+      } catch (error) {
+        console.error("スキル追加エラー", error)
+        showWarning("スキルの追加に失敗しました")
+      }
+    }
+
+    // 削除処理
+    for (const skillId of removedIds) {     
+      try {
+        const employeeId = editableEmployee.value.id;
+        await apiClient.delete(
+        `/employeeskill/remove?employeeId=${employeeId}&skillId=${skillId}`);
+      } catch (error) {
+        console.error("スキル削除エラー:", error);
+        showWarning("スキルの削除に失敗しました");
+      }
+    }
+    
+    // 最新の情報を取得しselectedEmployeeを上書き
+    await viewEmployee(editableEmployee.value.id);
     showSuccess("従業員情報を更新しました");
+
+    // 編集用コピーは削除
+    editableEmployee.value = null;
     isEditMode.value = false;
     isDetailModalOpen.value = false;
+    
+    //画面リフレッシュ
     await clearSearch();
   } catch (error) {
     console.error("更新エラー:", error);
-    isEditMode.value = false;
-    isDetailModalOpen.value = false;
     showError("更新に失敗しました");
   }
 };
 
 // スキルをカテゴリごとにグループ化
 const groupedSkills = computed(() => {
-  if (!selectedEmployee.value?.skills) return {};
-  return selectedEmployee.value.skills.reduce((groups, skill) => {
+  const base = isEditMode.value ? (editableEmployee.value?.skills || []) : (selectedEmployee.value?.skills || []);
+  if (!base) return {};
+  return base.reduce((groups, skill) => {
     const category = skill.category || "未分類";
     if (!groups[category]) groups[category] = [];
     groups[category].push(skill);
@@ -1161,53 +1215,39 @@ const filterSkills = () => {
   );
 };
 
-  // スキル追加
-  const assignSkill = async (skill) => {
-  try {
-    await apiClient.post(`/employeeskill/assign`, {
-      employeeId: selectedEmployee.value.id,
-      skillIds: [skill.id],
-    }, {
-      skipGlobalErrorHandler: true,
-    });
-    showSuccess("スキルを追加しました");
-    await viewEmployee(selectedEmployee.value.id);
-    skillSearch.value = "";
-    filteredSkills.value = [];
-  } catch (error) {
-    if (error.response && error.response.status === 400) {
-      showWarning("既に登録済のスキルです");
-      return;
-    } else {
-      showError("スキル追加に失敗しました");
-      console.error("スキル追加に失敗しました:", error)
-    }
-  }
-};
+// サジェスト選択：フロントの編集用のコピーのみ追加する
+const addSkillToEditable = (skill) => {
+  if (!editableEmployee.value) return;
 
-function cancelSkillEdit() {
+  if (!skill.id) {
+    console.error("サジェストの skill .id が存在しません", skill);
+    showError("スキルデータが不正です");
+  }
+
+  if (!editableEmployee.value.skills) editableEmployee.value.skills = [];
+
+  const exists = editableEmployee.value.skills?.some(s => s.name === skill.name);
+
+  // 既に存在するか確認
+  if (exists) {
+    showWarning("既に追加されています");
+    return;
+  } 
+  editableEmployee.value.skills.push ({
+    id: skill.id,
+    name: skill.name,
+    category: skill.category,
+    iconPath: skill.iconPath
+  });
+  // UIクリア
   skillSearch.value = "";
   filteredSkills.value = [];
-}
+};
 
-// スキル削除
-const removeSkill = async (skillName) => {
-  try {
-    const skill = allSkills.value.find((s) => s.name === skillName);
-    if (!skill) return;
-
-    await apiClient.delete(`/employeeskill/remove`, {
-      data: {
-        employeeId: selectedEmployee.value.id,
-        skillId: skill.id,
-      },
-    });
-    showSuccess("スキルを削除しました");
-    await viewEmployee(selectedEmployee.value.id);
-  } catch (error) {
-    showError("スキル削除に失敗しました");
-    console.error("スキル削除失敗:", error);
-  }
+// サジェスト選択: フロント上のみスキル削除
+const removeSkillFromEditable = (skillName) => {
+  if (!editableEmployee.value || !editableEmployee.value.skills) return;
+  editableEmployee.value.skills = editableEmployee.value.skills.filter(s => s.name !== skillName);
 };
 
 // パスワード初期化

@@ -78,7 +78,7 @@ namespace Backend.Controllers
         // ƒXƒLƒ‹‰ğœ
         [HttpDelete("remove")]
         [Authorize]
-        public async Task<IActionResult> RemoveSkill([FromBody] RemoveSkillRequest request)
+        public async Task<IActionResult> RemoveSkill([FromQuery] RemoveSkillRequest request)
         {
             var target = await _db.EmployeeSkills
                 .FirstOrDefaultAsync(es => es.EmployeeId == request.EmployeeId && es.SkillId == request.SkillId);

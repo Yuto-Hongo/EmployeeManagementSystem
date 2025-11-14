@@ -24,6 +24,7 @@ namespace Backend.DTOs
 
     public class SkillInfoDto
     {
+        public int Id { get; set; }
         public string Name { get; set; } = string.Empty;
         public string Category { get; set; } = string.Empty;
         public string IconPath { get; set; } = string.Empty;
