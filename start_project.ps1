@@ -1,6 +1,6 @@
 <#
 =============================================
-Employee Management System Launcher
+Employee Management System Launcher (Debug Mode)
 Powered by ASP.NET Core + Vue (Windows 11)
 =============================================
 #>
@@ -12,9 +12,15 @@ $dbFile = "$backendPath\app.db"
 $backendUrl = "http://localhost:5211"
 $frontendUrl = "http://localhost:5173"
 
+# ログファイル（標準出力と標準エラー別）
+$backendOutLog = "$backendPath\backend_out.log"
+$backendErrLog = "$backendPath\backend_err.log"
+$frontendOutLog = "$frontendPath\frontend_out.log"
+$frontendErrLog = "$frontendPath\frontend_err.log"
+
 Write-Host ""
 Write-Host "============================================="
-Write-Host " EMPLOYEE MANAGEMENT SYSTEM" -ForegroundColor Cyan
+Write-Host " EMPLOYEE MANAGEMENT SYSTEM (Debug Mode)" -ForegroundColor Cyan
 Write-Host " Powered by ASP.NET Core + Vue" -ForegroundColor Yellow
 Write-Host "============================================="
 
@@ -43,59 +49,58 @@ if (Test-Path "$frontendPath\package.json") {
 # === DB確認 ===
 Write-Host "Database file will be created automatically by .NET (Migrate)."
 
-# === バックエンド起動（非表示） ===
+# === バックエンド起動（標準出力・標準エラー別ログ） ===
 Write-Host "Starting backend (ASP.NET Core)..."
 $backendProc = Start-Process "dotnet" -ArgumentList "run --urls=$backendUrl" `
     -WorkingDirectory $backendPath `
-    -WindowStyle Hidden -PassThru
+    -PassThru `
+    -NoNewWindow `
+    -RedirectStandardOutput $backendOutLog `
+    -RedirectStandardError $backendErrLog
 Write-Host "Backend started (PID: $($backendProc.Id))"
+Write-Host "Check logs at $backendOutLog (stdout) and $backendErrLog (stderr)."
 
-# === フロントエンド起動（非表示） ===
+# === フロントエンド起動（標準出力・標準エラー別ログ） ===
 Write-Host "Starting frontend (Vue/Vite)..."
-$frontendProc = Start-Process "npm" -ArgumentList "run dev -- --port 5173" `
+$frontendProc = Start-Process "cmd.exe" -ArgumentList "/c npm run dev -- --port 5173" `
     -WorkingDirectory $frontendPath `
-    -WindowStyle Hidden -PassThru
+    -PassThru `
+    -NoNewWindow `
+    -RedirectStandardOutput $frontendOutLog `
+    -RedirectStandardError $frontendErrLog
 Write-Host "Frontend started (PID: $($frontendProc.Id))"
-Write-Host ""
+Write-Host "Check logs at $frontendOutLog (stdout) and $frontendErrLog (stderr)."
 
 # === ブラウザ起動 ===
 Write-Host "Waiting for servers to start..."
-Start-Sleep -Seconds 5
+Start-Sleep -Seconds 15
 Start-Process $frontendUrl
 Write-Host "Browser launched: $frontendUrl"
 Write-Host ""
 
 # === 終了待機 ===
 Write-Host "============================================="
-Write-Host " Press 'Q' to stop all servers"
+Write-Host " Type 'Q' and press Enter to stop all servers"
 Write-Host "============================================="
 Write-Host ""
 
 do {
-    $key = [Console]::ReadKey($true)
-} until ($key.Key -eq "Q")
+    $input = Read-Host "Press Q to quit"
+} until ($input -eq "Q" -or $input -eq "q")
 
 Write-Host ""
 Write-Host "Stopping backend and frontend..."
 
 # === 安全停止 ===
-Stop-Process -Id $backendProc.Id -Force -ErrorAction SilentlyContinue
+if ($backendProc -and !$backendProc.HasExited) {
+    Stop-Process -Id $backendProc.Id -Force -ErrorAction SilentlyContinue
+    Write-Host "Backend stopped."
+}
 
-try {
-    $childNodePids = Get-CimInstance Win32_Process |
-        Where-Object { $_.ParentProcessId -eq $frontendProc.Id -and $_.Name -eq "node.exe" } |
-        Select-Object -ExpandProperty ProcessId
-
-    foreach ($pid in $childNodePids) {
-        Stop-Process -Id $pid -Force -ErrorAction SilentlyContinue
-    }
-
+if ($frontendProc -and !$frontendProc.HasExited) {
     Stop-Process -Id $frontendProc.Id -Force -ErrorAction SilentlyContinue
-}
-catch {
-    Write-Host "Failed to stop frontend completely (already exited?)."
+    Write-Host "Frontend stopped."
 }
 
-Write-Host "All services stopped."
-Start-Sleep -Seconds 2
+Write-Host "All servers stopped. Exiting."
 exit

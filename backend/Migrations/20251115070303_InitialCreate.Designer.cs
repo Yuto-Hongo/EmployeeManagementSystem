@@ -8,11 +8,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace backend.Migrations
+namespace EmployeeManagement.Api.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20251107163304_SeedSkillsData")]
-    partial class SeedSkillsData
+    [Migration("20251115070303_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
