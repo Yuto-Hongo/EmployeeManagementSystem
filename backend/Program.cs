@@ -93,7 +93,7 @@ app.UseStaticFiles();
 using (var scope = app.Services.CreateScope())
 {
     var dbContext = scope.ServiceProvider.GetRequiredService<AppDbContext>();
-    dbContext.Database.EnsureDeleted(); // DB完全削除 本番環境では必ずコメントアウトまたは削除すること
+    // dbContext.Database.EnsureDeleted(); // DB完全削除 本番環境では必ずコメントアウトまたは削除すること
     dbContext.Database.EnsureCreated(); // DB完全初期化 本番環境では必ずコメントアウトまたは削除すること
     AppDbContextSeed.Seed(dbContext); // Seed実行;
 }
