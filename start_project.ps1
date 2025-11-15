@@ -41,13 +41,7 @@ if (Test-Path "$frontendPath\package.json") {
 }
 
 # === DB確認 ===
-if (!(Test-Path $dbFile)) {
-    Write-Host ""
-    Write-Host "Database not found. Creating new: $dbFile"
-    New-Item $dbFile -ItemType File | Out-Null
-    Write-Host "Created database file." -ForegroundColor Green
-}
-Write-Host ""
+Write-Host "Database file will be created automatically by .NET (Migrate)."
 
 # === バックエンド起動（非表示） ===
 Write-Host "Starting backend (ASP.NET Core)..."
